@@ -1,3 +1,7 @@
+body {
+	font-family: "Lato",-apple-system,".SFNSText-Regular","San Francisco",Roboto,"Segoe UI","Helvetica Neue","Lucida Grande",sans-serif;
+}
+
 /*
  * Fork
  */
@@ -5,8 +9,8 @@
 .fork {
 	display: none;
 	position: absolute;
-	right: -50px;
-	top: 50px;
+	right: -60px;
+	top: 55px;
 	padding: .3em 3em;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -14,6 +18,7 @@
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
+
 @media (min-width: 42em) {
 	.fork {
 		display: inline;
@@ -31,12 +36,33 @@
 }
 
 .header .header__row {
-	color: #666;
 	padding: 1.4em 0;
 }
 
-.main {
-	padding-top: 2em;
+.logo {
+	padding: 1em 0 0 0;
+	margin: 0;
+}
+
+.logo .image {
+	display: inline-block;
+	width: 200px;
+}
+
+.product-name {
+	font-size: 4em;
+	font-weight: bold;
+}
+
+@media (min-width: 42em) {
+	.product-name {
+		font-size: 5em;
+	}
+}
+
+.product-name span {
+	font-size: 0.75em;
+	font-weight: normal;
 }
 
 /*
@@ -44,6 +70,10 @@
  */
 .content {
 	padding: 1em;
+}
+
+.main {
+	padding-top: 2em;
 }
 
 /*
