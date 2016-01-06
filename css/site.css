@@ -1,0 +1,72 @@
+/*
+ * Fork
+ */
+
+.fork {
+	display: none;
+	position: absolute;
+	right: -50px;
+	top: 50px;
+	padding: .3em 3em;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+@media (min-width: 42em) {
+	.fork {
+		display: inline;
+	}
+}
+
+/*
+ * Page Header
+ */
+
+.header {
+	text-align: center;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 2em;
+}
+
+.header .header__row {
+	color: #666;
+	padding: 1.4em 0;
+}
+
+.main {
+	padding-top: 2em;
+}
+
+/*
+ * Page Content
+ */
+.content {
+	padding: 1em;
+}
+
+/*
+ * Nav
+ */
+.nav {
+	font-size: 0.9em;
+}
+
+.nav .list__item {
+	padding: 0.4em 0;
+}
+
+/*
+ * Footer
+ */
+.footer {
+	margin-top: 2em;
+	padding: 2em 0;
+	border-top: 1px solid #eee;
+	font-size: 0.8em;
+}
+
+.footer__links {
+	text-align: right;
+}
