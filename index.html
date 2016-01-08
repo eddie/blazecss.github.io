@@ -4,11 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>BlazeCSS - Open Source Modular CSS Framework</title>
-	<meta name="description" content="Open Source Modular CSS Framework">
+	<meta name="description"
+				content="Blaze is designed to give you structure and a good starting point for your website.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato:300,400,900,300italic,400italic,900italic">
-	<link rel="stylesheet" href="css/blaze.min.css">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,400,900,300italic,400italic,900italic">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://yandex.st/highlightjs/8.2/styles/github.min.css">
+	<link rel="stylesheet" href="css/blaze.min.css">
 	<link rel="stylesheet" href="css/site.css">
 	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -39,7 +41,7 @@
 <a class="fork button button--green" href="https://github.com/BlazeCSS/blaze">Fork me on GitHub</a>
 
 <div class="header">
-	<section class="container container--small">
+	<div class="container container--small">
 		<h1 class="logo"><img class="image" src="images/blaze.png"></h1>
 
 		<div class="product-name u-color--blue">Blaze<span class="u-color--dark-orange">_CSS</span></div>
@@ -57,39 +59,307 @@
 				Github Project</a>
 			</small>
 		</p>
-	</section>
+	</div>
 </div>
 
 <div class="container container--large grid grid--wrap grid--top grid--small-full grid--medium-full">
 	<main class="grid__cell grid__cell--width-80 content">
 		<div class="alerts">
-			<div class="alerts__alert alerts__alert--yellow alerts__alert--static alerts__alert--visible loud">Website Under Development!</div>
+			<div class="alerts__alert alerts__alert--yellow alerts__alert--static alerts__alert--visible loud">Website Under
+				Development!
+			</div>
 		</div>
-		<h2 id="contributing" class="heading heading--medium">Contributing</h2>
+		<section id="intro">
+			<h2 class="heading heading--medium">A good foundation to build on</h2>
 
-		<p class="paragraph">
-			If you have an idea for a new component or would like to make a suggestion:
-		</p>
+			<p class="paragraph">
+				Blaze is a comprehensive starting point for any website.
+			</p>
 
-		<p class="paragraph">
-			<a class="link" href="https://github.com/BlazeCSS/blaze/issues">Raise an issue in GitHub</a> or
-			<a class="link" href="https://twitter.com/blazecss">send a tweet</a>
-		</p>
+			<p class="paragraph">It might be small;
+				<a class="link" href="https://raw.githubusercontent.com/BlazeCSS/blaze/master/dist/blaze.min.css">8.4kb fully
+					compressed</a>,
+				but it's responsive, it's modular and it comes with a large set of non-standard components.
+			</p>
 
-		<p>Happy coding!</p>
+			<p class="paragraph">
+				Designed to help you improve your development speed our components provide great structure. With modules such as
+				<a class="link" href="#grid">our grid</a>, <a class="link" href="#containers">containers</a> and
+				<a class="link" href="#typography">typography</a> we've got even the simplest of websites covered.
+			</p>
+		</section>
+
+		<section id="install">
+			<h2 class="heading heading--medium">Getting started <a class="link heading__sub" href="#install"><i class="fa fa-link"></i></a></h2>
+
+			<p class="paragraph">
+				You can start using Blaze in a variety of ways:
+			</p>
+
+			<h3 class="heading heading--small">Link via CDN</h3>
+
+			<pre class="pre"><code class="code code--multiline">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.min.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/base.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/grid.css"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/buttons.css"&gt;</code></pre>
+
+			<div class="grid grid--small-full">
+				<div class="grid__cell grid__cell--width-45">
+					<h3 class="heading heading--small">Install via NPM</h3>
+					<p class="paragraph">
+						<code class="code">bower install blazecss</code>
+					</p>
+					<p class="paragraph">
+						Blaze is available via the popular <a class="link" href="https://www.npmjs.com/package/blaze">NPM package
+						manager</a>.
+					</p>
+				</div>
+				<div class="grid__cell grid__cell--offset-5 grid__cell--width-45">
+					<h3 class="heading heading--small">Install via Bower</h3>
+					<p class="paragraph">
+						<code class="code">bower install blazecss</code>
+					</p>
+					<p class="paragraph">
+						Blaze is also hosted on <a class="link" href="http://bower.io/search/?q=blazecss">Bower</a>, the frontend
+						package manager.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="custom-build">
+			<h2 class="heading heading--medium">Custom Build <a class="link heading__sub" href="#custom-build"><i class="fa fa-link"></i></a></h2>
+			<p class="paragraph">
+				You may want to theme or override so much of Blaze that you should really build a customised version.
+				The best approach is to grab the code from GitHub, change the variables and mixins and build the framework
+				yourself.
+			</p>
+
+			<div class="grid letter-box--large">
+				<h4 class="heading heading--small window-box--none grid__cell grid__cell--width-33">
+					Step 1 <span class="heading heading__sub">Download</span>
+				</h4>
+
+				<p class="paragraph window-box--none grid__cell grid__cell--width-66">
+					Go to <a class="link" href="https://github.com/BlazeCSS/blaze">Blaze's GitHub repo</a> and either
+					clone or download the source.
+				</p>
+			</div>
+			<div class="grid letter-box--large">
+				<h4 class="heading heading--small window-box--none grid__cell grid__cell--width-33">
+					Step 2 <span class="heading heading__sub">Install</span>
+				</h4>
+
+				<p class="paragraph window-box--none grid__cell grid__cell--width-66">
+					Navigate to the directory in your command line and run: <br>
+					<code class="code">npm install</code>
+				</p>
+			</div>
+			<div class="grid letter-box--large">
+				<h4 class="heading heading--small window-box--none grid__cell grid__cell--width-33">
+					Step 3 <span class="heading heading__sub">Build</span>
+				</h4>
+
+				<p class="paragraph window-box--none grid__cell grid__cell--width-66">
+					Make any changes you want to the code and run: <br>
+					<code class="code">npm run build</code>
+				</p>
+			</div>
+			<div class="grid letter-box--large">
+				<h4 class="heading heading--small window-box--none grid__cell grid__cell--width-33">
+					Step 4 <span class="heading heading__sub">Output</span>
+				</h4>
+
+				<p class="paragraph window-box--none grid__cell grid__cell--width-66">
+					The output of your changes will be available in <span class="loud">/dist</span>
+				</p>
+			</div>
+		</section>
+
+		<section id="typography">
+			<h2 class="heading heading--medium">Typography <a class="link heading__sub" href="#typography"><i class="fa fa-link"></i></a></h2>
+			<p class="paragraph">
+				Blaze comes bundled with a nice typography module that covers different text visualisations.
+			</p>
+			<p class="paragraph">
+				The base font-family is:
+			</p>
+			<p class="paragraph">
+				<pre class="pre css"><code class="code code--multiline">body {
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+}</code></pre>
+			</p>
+			<p class="paragraph">
+				This attempts to give your website the same font family output as the device's system font.
+				</p>
+			<p class="paragraph">
+				We don't have a system font family in CSS yet and until we do this is as close as it gets. It of course can be overridden
+				via CSS or the custom build approach.
+			</p>
+			<p class="paragraph">Here is some background on Medium.com
+				<a class="link" href="https://medium.com/designing-medium/system-shock-6b1dc6d6596f">Article: System Shock</a>
+			</p>
+
+			<h3 class="heading heading--small">Paragraphs</h3>
+			<div class="grid grid--small-full">
+				<div class="grid__cell grid__cell--width-15">
+					<p class="paragraph">
+						Hello world
+					</p>
+				</div>
+				<div class="grid__cell grid__cell--width-85">
+					<p class="paragraph">
+						Use the paragraph class to style your....paragraphs!
+					</p>
+					<p class="paragraph">
+					<pre class="pre html"><code class="code code--multiline">&lt;p class="paragraph">.paragraph&lt;/p></code></pre>
+					</p>
+				</div>
+			</div>
+
+			<h3 class="heading heading--small">Highlighting text</h3>
+			<div class="grid grid--small-full">
+				<div class="grid__cell grid__cell--width-15">
+					<p class="paragraph">
+						<span class="highlight">.highlight</span>
+					</p>
+				</div>
+				<div class="grid__cell grid__cell--width-85">
+					<p class="paragraph">
+						To highlight text simply wrap the words with the highlight class:
+					</p>
+					<p class="paragraph">
+						<pre class="pre html"><code class="code code--multiline">&lt;span class="highlight">hello world&lt;/span></code></pre>
+					</p>
+					</div>
+			</div>
+
+			<h3 class="heading heading--small">Emphasising</h3>
+			<div class="grid grid--small-full">
+				<div class="grid__cell grid__cell--width-15">
+					<p class="paragraph">
+						<span class="loud">.loud</span>
+						<br>
+						<span class="quiet">.quiet</span>
+					</p>
+				</div>
+				<div class="grid__cell grid__cell--width-85">
+					<p class="paragraph">
+						Sometimes you want to shout about something or talk quietly:
+					</p>
+					<p class="paragraph">
+						<pre class="pre html"><code class="code code--multiline">&lt;span class="loud">arrgh shouting!&lt;/span>
+&lt;span class="quiet">whispering&lt;/span></code></pre>
+					</p>
+				</div>
+			</div>
+
+			<h3 class="heading heading--small">Abbreviations</h3>
+			<div class="grid grid--small-full">
+				<div class="grid__cell grid__cell--width-15">
+					<p class="paragraph">
+						<abbr class="abbr" title="Abbreviations">.abbr</abbr>
+					</p>
+				</div>
+				<div class="grid__cell grid__cell--width-85">
+					<p class="paragraph">
+						To enable greater accessibility you can enable abbreviations on elements.<br>
+						<em>The tag must have a title attribute</em>:
+					</p>
+					<p class="paragraph">
+						<pre class="pre html"><code class="code code--multiline">&lt;abbr class="abbr" title="Abbreviations">.abbr&lt;/abbr></code></pre>
+					</p>
+				</div>
+			</div>
+
+			<h3 class="heading heading--small">Keys on a keyboard</h3>
+			<div class="grid grid--small-full">
+				<div class="grid__cell grid__cell--width-15">
+					<p class="paragraph">
+						<kbd class="kbd">.kbd</kbd>
+					</p>
+				</div>
+				<div class="grid__cell grid__cell--width-85">
+					<p class="paragraph">
+						When you want to describe what keys to press usually as part of support documentation it's handy to use the
+						keyboard class:
+					</p>
+					<p class="paragraph">
+						<pre class="pre html"><code class="code code--multiline">&lt;kbd class="kbd">.kbd&lt;/kbd></code></pre>
+					</p>
+				</div>
+			</div>
+
+			<h3 class="heading heading--small">Inline and Multiline code</h3>
+			<div class="grid grid--small-full">
+				<div class="grid__cell grid__cell--width-15">
+					<p class="paragraph">
+						<code class="code">.code</code>
+					</p>
+				</div>
+				<div class="grid__cell grid__cell--width-85">
+					<p class="paragraph">
+						You can highlight <code class="code">code</code> within a page by using the <code class="code">.code</code> class.
+					</p>
+					<p class="paragraph">
+						The code class default is inline, to display multiline snippets add the <code class="code">.code--multiline</code> modifier.
+					</p>
+					<p class="paragraph">
+				<pre class="pre html"><code class="code code--multiline">&lt;code class="code code--multiline">
+  &lt;h1>hello&lt;/h1>
+  &lt;h2>world&lt;/h2>
+&lt;/code></code></pre>
+					</p>
+				</div>
+			</div>
+
+			<h3 class="heading heading--small">Blockquote</h3>
+			<div class="grid grid--small-full">
+				<div class="grid__cell grid__cell--width-15">
+						<blockquote class="blockquote">
+							<div class="blockquote__body">
+								Hello!
+							</div>
+							<footer class="blockquote__footer">- Joe</footer>
+						</blockquote>
+				</div>
+				<div class="grid__cell grid__cell--width-85">
+					<p class="paragraph">
+						To quote use the following code to make it stand out from the rest of the document:
+					</p>
+					<p class="paragraph">
+					<pre class="pre html"><code class="code code--multiline">&lt;blockquote class="blockquote">
+  &lt;div class="blockquote__body">
+    Hello!
+  &lt;/div>
+  &lt;footer class="blockquote__footer">
+    - Joe
+  &lt;/footer>
+&lt;/blockquote></code></pre>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="base">
+			<h2 class="heading heading--medium">Base <a class="link heading__sub" href="#base"><i class="fa fa-link"></i></a></h2>
+			<p class="paragraph">
+				Almost all of Blaze's styles build on top of base.css. It's a tiny extension of
+				<a class="link" href="https://necolas.github.io/normalize.css/">Normalize.css</a> - A modern, HTML5-ready alternative to CSS resets.
+				You do not have to use base.css with all of our modules so give them a try and if you're happy without then it's your call.
+			</p>
+		</section>
 	</main>
 
 	<nav class="grid__cell grid__cell--width-20 nav content">
 		<h3 class="heading heading--small">Getting Started</h3>
 		<ul class="list list--unstyled">
-			<li class="list__item"><a class="link" href="#">Install</a></li>
-			<li class="list__item"><a class="link" href="#">Custom build</a></li>
-			<li class="list__item"><a class="link" href="#contributing">Contributing</a></li>
+			<li class="list__item"><a class="link" href="#install">Install</a></li>
+			<li class="list__item"><a class="link" href="#custom-build">Custom build</a></li>
 		</ul>
 		<h3 class="heading heading--small">Components</h3>
 		<ul class="list list--unstyled">
-			<li class="list__item"><a class="link" href="#">Base</a></li>
-			<li class="list__item"><a class="link" href="#">Typography</a></li>
+			<li class="list__item"><a class="link" href="#typography">Typography</a></li>
 			<li class="list__item"><a class="link" href="#">Headings</a></li>
 			<li class="list__item"><a class="link" href="#">Addresses</a></li>
 			<li class="list__item"><a class="link" href="#">Badges</a></li>
@@ -123,6 +393,11 @@
 			<li class="list__item"><a class="link" href="#">Toasts</a></li>
 
 			<li class="list__item"><a class="link" href="#">Colours</a></li>
+			<li class="list__item"><a class="link" href="#base">Base</a></li>
+		</ul>
+		<h3 class="heading heading--small">Community</h3>
+		<ul class="list list--unstyled">
+		<li class="list__item"><a class="link" href="#">Contributing</a></li>
 		</ul>
 	</nav>
 

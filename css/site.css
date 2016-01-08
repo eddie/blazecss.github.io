@@ -1,5 +1,16 @@
 body {
-	font-family: "Lato",-apple-system,".SFNSText-Regular","San Francisco",Roboto,"Segoe UI","Helvetica Neue","Lucida Grande",sans-serif;
+	font-size: 18px;
+	overflow-x: hidden;
+}
+
+@media (max-width: 42em) {
+	body {
+		font-size: 16px;
+	}
+}
+
+section {
+	margin-bottom: 5em;
 }
 
 /*
@@ -10,7 +21,7 @@ body {
 	display: none;
 	position: absolute;
 	right: -60px;
-	top: 55px;
+	top: 70px;
 	padding: .3em 3em;
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
@@ -92,7 +103,7 @@ body {
  */
 .footer {
 	margin-top: 2em;
-	padding: 2em 0;
+	padding: 2em 1em;
 	border-top: 1px solid #eee;
 	font-size: 0.8em;
 }
