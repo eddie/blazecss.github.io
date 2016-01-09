@@ -1,7 +1,13 @@
 body {
-	font-size: 18px;
 	overflow-x: hidden;
 }
+
+@media (min-width: 42em) {
+	body {
+		font-size: 18px;
+	}
+}
+
 
 section {
 	margin-bottom: 5em;
@@ -36,12 +42,20 @@ section {
 
 .header {
 	text-align: center;
-	border-bottom: 1px solid #eee;
 	padding-bottom: 2em;
 }
 
 .header .header__row {
 	padding: 1.4em 0;
+}
+
+.header--secondary {
+	font-size: 0.9em;
+	padding: 2em 0 4em;
+}
+
+.header--secondary .grid__cell {
+	padding: 1em;
 }
 
 .logo {
@@ -56,7 +70,6 @@ section {
 
 .product-name {
 	font-size: 3.5em;
-	font-weight: bold;
 }
 
 @media (min-width: 42em) {
@@ -73,10 +86,6 @@ section {
 /*
  * Page Content
  */
-.content {
-	padding: 1em;
-}
-
 .main {
 	padding-top: 2em;
 }
