@@ -1,0 +1,188 @@
+---
+layout: page
+title: Typography
+---
+
+<p class="paragraph">
+	Blaze comes bundled with a nice typography module that covers different text visualisations.
+</p>
+
+<p class="paragraph">
+	The base font-family is:
+</p>
+
+<p class="paragraph">
+<pre class="pre css"><code class="code code--multiline">body { font-family: -apple-system, ".SFNSText-Regular",
+	"San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }</code></pre>
+</p>
+<p class="paragraph">
+	This attempts to give your website the same font family output as the device's system font.
+</p>
+
+<p class="paragraph">
+	We don't have a system font family in CSS yet and until we do this is as close as it gets. It of course can be
+	overridden via CSS or the custom build approach.
+</p>
+
+<p class="paragraph">Here is some background on Medium.com
+	<a class="link" href="https://medium.com/designing-medium/system-shock-6b1dc6d6596f">Article: System Shock</a>
+</p>
+
+<h3 class="heading heading--medium">Paragraphs</h3>
+
+<div class="grid grid--small-full grid--no-gutter">
+	<div class="grid__cell grid__cell--width-20">
+		<p class="paragraph">
+			.paragraph
+		</p>
+	</div>
+	<div class="grid__cell grid__cell--width-80">
+		<p class="paragraph">
+			Use the paragraph class to style your....paragraphs!
+		</p>
+
+		<p class="paragraph">
+					<pre class="pre html"><code class="code code--multiline">&lt;p
+						class="paragraph">.paragraph&lt;/p></code></pre>
+		</p>
+	</div>
+</div>
+
+<h3 class="heading heading--medium">Highlighting text</h3>
+
+<div class="grid grid--small-full grid--no-gutter">
+	<div class="grid__cell grid__cell--width-20">
+		<p class="paragraph">
+			<span class="highlight">.highlight</span>
+		</p>
+	</div>
+	<div class="grid__cell grid__cell--width-80">
+		<p class="paragraph">
+			To highlight text simply wrap the words with the highlight class:
+		</p>
+
+		<p class="paragraph">
+					<pre class="pre html"><code class="code code--multiline">&lt;span class="highlight">hello
+						world&lt;/span></code></pre>
+		</p>
+	</div>
+</div>
+
+<h3 class="heading heading--medium">Emphasising</h3>
+
+<div class="grid grid--small-full grid--no-gutter">
+	<div class="grid__cell grid__cell--width-20">
+		<p class="paragraph">
+			<span class="loud">.loud</span>
+			<br>
+			<span class="quiet">.quiet</span>
+		</p>
+	</div>
+	<div class="grid__cell grid__cell--width-80">
+		<p class="paragraph">
+			Sometimes you want to shout about something or talk quietly:
+		</p>
+
+		<p class="paragraph">
+						<pre class="pre html"><code class="code code--multiline">&lt;span class="loud">arrgh shouting!&lt;/span>
+							&lt;span class="quiet">whispering&lt;/span></code></pre>
+		</p>
+	</div>
+</div>
+
+<h3 class="heading heading--medium">Abbreviations</h3>
+
+<div class="grid grid--small-full grid--no-gutter">
+	<div class="grid__cell grid__cell--width-20">
+		<p class="paragraph">
+			<abbr class="abbr" title="Abbreviations">.abbr</abbr>
+		</p>
+	</div>
+	<div class="grid__cell grid__cell--width-80">
+		<p class="paragraph">
+			To enable greater accessibility you can enable abbreviations on elements.<br>
+			<em>The tag must have a title attribute</em>:
+		</p>
+
+		<p class="paragraph">
+		<pre class="pre html"><code class="code code--multiline">&lt;abbr class="abbr" title="Abbreviations">.abbr&lt;/abbr></code></pre>
+		</p>
+	</div>
+</div>
+
+<h3 class="heading heading--medium">Keys on a keyboard</h3>
+
+<div class="grid grid--small-full grid--no-gutter">
+	<div class="grid__cell grid__cell--width-20">
+		<p class="paragraph">
+			<kbd class="kbd">.kbd</kbd>
+		</p>
+	</div>
+	<div class="grid__cell grid__cell--width-80">
+		<p class="paragraph">
+			When you want to describe what keys to press usually as part of support documentation it's handy to use the
+			keyboard class:
+		</p>
+
+		<p class="paragraph">
+		<pre class="pre html"><code class="code code--multiline">&lt;kbd class="kbd">.kbd&lt;/kbd></code></pre>
+		</p>
+	</div>
+</div>
+
+<h3 class="heading heading--medium">Inline and Multiline code</h3>
+
+<div class="grid grid--small-full grid--no-gutter">
+	<div class="grid__cell grid__cell--width-20">
+		<p class="paragraph">
+			<code class="code">.code</code>
+		</p>
+	</div>
+	<div class="grid__cell grid__cell--width-80">
+		<p class="paragraph">
+			You can highlight <code class="code">code</code> within a page by using the <code class="code">.code</code>
+			class.
+		</p>
+
+		<p class="paragraph">
+			Default is inline, to display multiline snippets add the <code class="code">.code--multiline</code>
+			modifier.
+		</p>
+
+		<p class="paragraph">
+				<pre class="pre html"><code class="code code--multiline">&lt;code class="code code--multiline">
+					&lt;h1>hello&lt;/h1>
+					&lt;h2>world&lt;/h2>
+					&lt;/code></code></pre>
+		</p>
+	</div>
+</div>
+
+<h3 class="heading heading--medium">Blockquote</h3>
+
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__cell--width-20">
+		<blockquote class="blockquote">
+			<div class="blockquote__body">
+				Hello!
+			</div>
+			<footer class="blockquote__footer">- Joe</footer>
+		</blockquote>
+	</div>
+	<div class="grid__cell grid__cell--width-80">
+		<p class="paragraph">
+			To quote use the following code to make it stand out from the rest of the page:
+		</p>
+
+		<p class="paragraph">
+					<pre class="pre html"><code class="code code--multiline">&lt;blockquote class="blockquote">
+						&lt;div class="blockquote__body">
+						Hello!
+						&lt;/div>
+						&lt;footer class="blockquote__footer">
+						- Joe
+						&lt;/footer>
+						&lt;/blockquote></code></pre>
+		</p>
+	</div>
+</div>

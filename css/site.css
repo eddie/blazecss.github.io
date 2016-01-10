@@ -81,6 +81,9 @@ section {
 /*
  * Page Content
  */
+.page-header {
+	border-bottom: 1px solid #eee;
+}
 .main {
 	padding-top: 2em;
 }
