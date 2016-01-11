@@ -7,17 +7,11 @@
 
 {% include header.html %}
 
-<div class="container container--large grid grid--wrap grid--top grid--small-full grid--medium-full">
-	<main class="grid__cell grid__cell--width-80">
-		{{ content }}
-	</main>
-	<nav class="grid__cell grid__cell--width-20 nav">
-		{% include nav.html %}
-	</nav>
-
-	<footer class="grid__cell grid__cell--width-100 grid footer">
+<div class="container container--large">
+	<footer class="grid footer">
 		{% include footer.html %}
 	</footer>
+</div>
 
 	<script src="//cdn.jsdelivr.net/highlight.js/8.6/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad()</script>
@@ -30,8 +24,6 @@
 		ga('create', 'UA-36978977-6', 'auto');
 		ga('send', 'pageview');
 	</script>
-</div>
-
 </body>
 
 </html>
