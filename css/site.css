@@ -49,6 +49,14 @@ section {
 	padding: 1.4em 0;
 }
 
+.header--primary {
+	background: #ff7043;
+	background: -moz-linear-gradient(left,  #f63b00 0%, #ff7043 50%, #f63b00 100%);
+	background: -webkit-linear-gradient(left,  #f63b00 0%,#ff7043 50%,#f63b00 100%);
+	background: linear-gradient(to right,  #f63b00 0%,#ff7043 50%,#f63b00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f63b00', endColorstr='#f63b00',GradientType=1 );
+}
+
 .header--secondary {
 	font-size: 0.9em;
 	padding: 2em 0 4em;
@@ -102,7 +110,8 @@ section {
 
 .nav .list__item.active {
 	display: inline-block;
-	padding: 0.3em 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 	margin: 0;
 	border-radius: 4px;
 	background-color: #42A5F5;
