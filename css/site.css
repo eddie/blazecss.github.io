@@ -124,10 +124,15 @@ section {
 /*
  * Footer
  */
-.footer {
+.footer{
 	padding: 2em 1em;
-	border-top: 1px solid #eee;
 	font-size: 0.8em;
+}
+
+.footer--page {
+	padding: 3em 2em 1em;
+	margin-top: 3em;
+	border-top: 1px solid #eee;
 }
 
 .footer__links {
