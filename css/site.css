@@ -138,3 +138,17 @@ section {
 .footer__links {
 	text-align: right;
 }
+
+/*
+ * Grid outlines
+ */
+
+.grid--demo.grid {
+	padding: .5em;
+	border: 2px solid hotpink;
+}
+
+.grid--demo .grid__cell {
+	padding: .5em;
+	border: 2px solid deepskyblue;
+}
