@@ -7,6 +7,13 @@ title: Grid
 	The grid is the easiest way to produce a fluid responsive layout. Its easy to use and very flexible.
 </p>
 
+<p class="paragraph">
+	Colour key:
+		<div class="grid-key grid-key--grid">&mdash; grids are pink</div>
+		<div class="grid-key grid-key--grid-cell">&mdash; cells are blue</div>
+		<div class="grid-key grid-key--padding">&mdash; padding is green</div>
+</p>
+
 <h2 class="heading heading--medium">Basic Grid</h2>
 <p class="paragraph">
 	Use the <code class="code">.grid</code> class to wrap your <code class="code">.grid__cell</code> elements.
@@ -18,9 +25,9 @@ title: Grid
 &lt;/div></code></pre>
 <div class="letter-box--small">
 	<div class="grid grid--demo">
-		<div class="grid__cell">first</div>
-		<div class="grid__cell">second</div>
-		<div class="grid__cell">third</div>
+		<div class="grid__cell"><div class="grid-text">first</div></div>
+		<div class="grid__cell"><div class="grid-text">second</div></div>
+		<div class="grid__cell"><div class="grid-text">third</div></div>
 	</div>
 </div>
 
@@ -37,9 +44,9 @@ title: Grid
 
 <div class="letter-box--small">
 	<div class="grid grid--demo">
-		<div class="grid__cell grid__cell--width-50">first</div>
-		<div class="grid__cell">second</div>
-		<div class="grid__cell">third</div>
+		<div class="grid__cell grid__cell--width-50"><div class="grid-text">first</div></div>
+		<div class="grid__cell"><div class="grid-text">second</div></div>
+		<div class="grid__cell"><div class="grid-text">third</div></div>
 	</div>
 </div>
 
@@ -49,14 +56,14 @@ title: Grid
 	conjunction with widths to perfectly align your cells.
 </p>
 <pre class="pre html"><code class="code code--multiline">&lt;div class="grid">
-  &lt;div class="grid__cell grid__cell--width-10">first&lt;/div>
-  &lt;div class="grid__cell grid__cell--width-10 grid__cell--offset-80">second&lt;/div>
+  &lt;div class="grid__cell grid__cell--width-20">first&lt;/div>
+  &lt;div class="grid__cell grid__cell--width-20 grid__cell--offset-60">second&lt;/div>
 &lt;/div></code></pre>
 
 <div class="letter-box--small">
 	<div class="grid grid--demo">
-		<div class="grid__cell grid__cell--width-20">first</div>
-		<div class="grid__cell grid__cell--width-20 grid__cell--offset-60">second</div>
+		<div class="grid__cell grid__cell--width-20"><div class="grid-text">first</div></div>
+		<div class="grid__cell grid__cell--width-20 grid__cell--offset-60"><div class="grid-text">second</div></div>
 	</div>
 </div>
 
@@ -75,8 +82,8 @@ title: Grid
 
 <div class="letter-box--small">
 	<div class="grid grid--demo">
-		<div class="grid__cell grid__cell--width-50">first</div>
-		<div class="grid__cell grid__cell--width-66">second</div>
+		<div class="grid__cell grid__cell--width-50"><div class="grid-text">first</div></div>
+		<div class="grid__cell grid__cell--width-66"><div class="grid-text">second</div></div>
 	</div>
 </div>
 
@@ -90,8 +97,8 @@ title: Grid
 
 <div class="letter-box--small">
 	<div class="grid grid--wrap grid--demo">
-		<div class="grid__cell grid__cell--width-50">first</div>
-		<div class="grid__cell grid__cell--width-66">second</div>
+		<div class="grid__cell grid__cell--width-50"><div class="grid-text">first</div></div>
+		<div class="grid__cell grid__cell--width-66"><div class="grid-text">second</div></div>
 	</div>
 </div>
 
@@ -100,7 +107,7 @@ title: Grid
 	You can nest grids inside cells with relative ease...with nesting you're into advanced territory!
 </p>
 <pre class="pre html"><code class="code code--multiline">&lt;div class="grid">
-  &lt;div class="cell">
+  &lt;div class="grid__cell">
     &lt;div class="grid">
       &lt;div class="grid__cell">first&lt;/div>
       &lt;div class="grid__cell">second&lt;/div>
@@ -117,15 +124,15 @@ title: Grid
 	<div class="grid grid--demo">
 			<div class="grid__cell">
 				<div class="grid">
-					<div class="grid__cell">first</div>
-					<div class="grid__cell">second</div>
+					<div class="grid__cell"><div class="grid-text">first</div></div>
+					<div class="grid__cell"><div class="grid-text">second</div></div>
 				</div>
 				<div class="grid">
-					<div class="grid__cell">third</div>
-					<div class="grid__cell">fourth</div>
+					<div class="grid__cell"><div class="grid-text">third</div></div>
+					<div class="grid__cell"><div class="grid-text">fourth</div></div>
 				</div>
 			</div>
-			<div class="grid__cell">fifth</div>
+			<div class="grid__cell"><div class="grid-text">fifth</div></div>
 		</div>
 </div>
 <small class="paragraph">We've added padding to the cells as part of the demo.</small>
@@ -155,16 +162,16 @@ title: Grid
 
 <div class="letter-box--small">
 	<div class="grid grid--bottom grid--demo">
-		<div class="grid__cell">first</div>
-		<div class="grid__cell">second</div>
-		<div class="grid__cell">third</div>
-		<div class="grid__cell">fourth
+		<div class="grid__cell"><div class="grid-text">first</div></div>
+		<div class="grid__cell"><div class="grid-text">second</div></div>
+		<div class="grid__cell"><div class="grid-text">third</div></div>
+		<div class="grid__cell"><div class="grid-text">fourth
 			<br>fourth
 			<br>fourth
 			<br>fourth
 			<br>fourth
 			<br>
-		</div>
+		</div></div><div class="grid-text"></div>
 	</div>
 </div>
 
@@ -192,16 +199,16 @@ title: Grid
 
 <div class="letter-box--small">
 	<div class="grid grid--bottom grid--demo">
-		<div class="grid__cell grid__cell--top">first</div>
-		<div class="grid__cell grid__cell--center">second</div>
-		<div class="grid__cell">third</div>
-		<div class="grid__cell">fourth
+		<div class="grid__cell grid__cell--top"><div class="grid-text">first</div></div>
+		<div class="grid__cell grid__cell--center"><div class="grid-text">second</div></div>
+		<div class="grid__cell"><div class="grid-text">third</div></div>
+		<div class="grid__cell"><div class="grid-text">fourth
 			<br>fourth
 			<br>fourth
 			<br>fourth
 			<br>fourth
 			<br>
-		</div>
+		</div></div>
 	</div>
 </div>
 
@@ -218,18 +225,57 @@ title: Grid
 	<code class="code">.grid--{ small | medium | large }-{ fit | full }</code>
 </p>
 <pre class="pre html"><code class="code code--multiline">&lt;div class="grid grid--small-full grid--medium-fit grid--large-full">
-	&lt;div class="grid__cell">first&lt;/div>
-	&lt;div class="grid__cell">second&lt;/div>
-	&lt;div class="grid__cell">third&lt;/div>
-	&lt;/div></code></pre>
+  &lt;div class="grid__cell">first&lt;/div>
+  &lt;div class="grid__cell">second&lt;/div>
+  &lt;div class="grid__cell">third&lt;/div>
+&lt;/div></code></pre>
 <div class="letter-box--small">
 	<div class="grid grid--small-full grid--medium-fit grid--large-full grid--demo">
-		<div class="grid__cell">first</div>
-		<div class="grid__cell">second</div>
-		<div class="grid__cell">third</div>
+		<div class="grid__cell"><div class="grid-text">first</div></div>
+		<div class="grid__cell"><div class="grid-text">second</div></div>
+		<div class="grid__cell"><div class="grid-text">third</div></div>
 	</div>
 </div>
 <p class="paragraph">
 	The above example will display the cells full width for small and large size screens. For medium screens the
 	cells will adjust to fit the available space. Try it out, either resize your browser or rotate your phone into landscape.
 </p>
+
+<h2 class="heading heading--medium">Gutters</h2>
+<p class="paragraph">
+	Blaze's grid comes with a gutter around each grid cell; some padding either side.
+</p>
+<p class="paragraph">
+	Sometimes you want your cells to be flush with each other. To turn off all gutters use
+	<code class="code">.grid--no-gutter</code>
+</p>
+
+<pre class="pre html"><code class="code code--multiline">&lt;div class="grid grid--no-gutter">
+  &lt;div class="grid__cell">first&lt;/div>
+  &lt;div class="grid__cell">second&lt;/div>
+  &lt;div class="grid__cell">third&lt;/div>
+&lt;/div></code></pre>
+<div class="letter-box--small">
+	<div class="grid grid--no-gutter grid--demo">
+		<div class="grid__cell"><div class="grid-text">first</div></div>
+		<div class="grid__cell"><div class="grid-text">second</div></div>
+		<div class="grid__cell"><div class="grid-text">third</div></div>
+	</div>
+</div>
+
+<p class="paragraph">
+	...or cell specific <code class="code">.grid__cell--no-gutter</code>
+</p>
+
+<pre class="pre html"><code class="code code--multiline">&lt;div class="grid">
+  &lt;div class="grid__cell">first&lt;/div>
+  &lt;div class="grid__cell">second&lt;/div>
+  &lt;div class="grid__cell grid__cell--no-gutter">third&lt;/div>
+&lt;/div></code></pre>
+<div class="letter-box--small">
+	<div class="grid grid--demo">
+		<div class="grid__cell"><div class="grid-text">first</div></div>
+		<div class="grid__cell"><div class="grid-text">second</div></div>
+		<div class="grid__cell grid__cell--no-gutter"><div class="grid-text">third</div></div>
+	</div>
+</div>
