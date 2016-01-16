@@ -99,6 +99,15 @@ section {
 /*
  * Page Content
  */
+.page-strip {
+	background: #ff7043;
+	background: -moz-linear-gradient(left, #ef4f52 0%, #ff9573 50%, #ef4f52 100%);
+	background: -webkit-linear-gradient(left, #ef4f52 0%, #ff9573 50%, #ef4f52 100%);
+	background: linear-gradient(to right, #ef4f52 0%, #ff9573 50%, #ef4f52 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef4f52', endColorstr='#ef4f52', GradientType=1);
+	height: 1em;
+}
+
 .page-header {
 	border-bottom: 1px solid #eee;
 }
