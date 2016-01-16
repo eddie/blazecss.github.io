@@ -39,9 +39,6 @@ navigation-components:
 - text: Grid
   url: /components/grid/
   layout: page
-- text: Alignment
-  url: /components/alignment/
-  layout: page
 - text: Containers
   url: /components/containers/
   layout: page

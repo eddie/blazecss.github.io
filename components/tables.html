@@ -1,0 +1,336 @@
+---
+layout: page
+title: Tables
+---
+
+<p class="paragraph">
+	Tables; bad for layout, great for displaying tabular data.
+</p>
+
+<h2 class="heading heading--medium">Basic Table</h2>
+<table class="table">
+	<caption class="table__caption">Basic table</caption>
+	<thead>
+	<tr class="table__row table__row--heading">
+		<th class="table__cell">First name</th>
+		<th class="table__cell">Last name</th>
+		<th class="table__cell">Username</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr class="table__row">
+		<td class="table__cell">Jim</td>
+		<td class="table__cell">Krik</td>
+		<td class="table__cell">@captaink</td>
+	</tr>
+	<tr class="table__row">
+		<td class="table__cell">Mr.</td>
+		<td class="table__cell">Spock</td>
+		<td class="table__cell">@science101</td>
+	</tr>
+	<tr class="table__row">
+		<td class="table__cell">Nyota</td>
+		<td class="table__cell">Uhura</td>
+		<td class="table__cell">@comms</td>
+	</tr>
+	</tbody>
+</table>
+<p class="paragraph"><pre class="pre html"><code class="code code--multiline">&lt;table class="table">
+  &lt;caption class="table__caption">Basic table&lt;/caption>
+  &lt;thead>
+  &lt;tr class="table__row table__row--heading">
+    &lt;th class="table__cell">First name&lt;/th>
+    &lt;th class="table__cell">Last name&lt;/th>
+    &lt;th class="table__cell">Username&lt;/th>
+  &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Jim&lt;/td>
+    &lt;td class="table__cell">Krik&lt;/td>
+    &lt;td class="table__cell">@captaink&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Mr.&lt;/td>
+    &lt;td class="table__cell">Spock&lt;/td>
+    &lt;td class="table__cell">@science101&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Nyota&lt;/td>
+    &lt;td class="table__cell">Uhura&lt;/td>
+    &lt;td class="table__cell">@comms&lt;/td>
+  &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre></p>
+
+<h2 class="heading heading--medium">Striped Table</h2>
+<table class="table table--striped">
+	<caption class="table__caption">Striped rows</caption>
+	<thead>
+	<tr class="table__row table__row--heading">
+		<th class="table__cell">First name</th>
+		<th class="table__cell">Last name</th>
+		<th class="table__cell">Username</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr class="table__row">
+		<td class="table__cell">Jim</td>
+		<td class="table__cell">Krik</td>
+		<td class="table__cell">@captaink</td>
+	</tr>
+	<tr class="table__row">
+		<td class="table__cell">Mr.</td>
+		<td class="table__cell">Spock</td>
+		<td class="table__cell">@science101</td>
+	</tr>
+	<tr class="table__row">
+		<td class="table__cell">Nyota</td>
+		<td class="table__cell">Uhura</td>
+		<td class="table__cell">@comms</td>
+	</tr>
+	</tbody>
+</table>
+<p class="paragraph"><pre class="pre html"><code class="code code--multiline">&lt;table class="table table--striped">
+  &lt;caption class="table__caption">Striped rows&lt;/caption>
+  &lt;thead>
+  &lt;tr class="table__row table__row--heading">
+    &lt;th class="table__cell">First name&lt;/th>
+    &lt;th class="table__cell">Last name&lt;/th>
+    &lt;th class="table__cell">Username&lt;/th>
+  &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Jim&lt;/td>
+    &lt;td class="table__cell">Krik&lt;/td>
+    &lt;td class="table__cell">@captaink&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Mr.&lt;/td>
+    &lt;td class="table__cell">Spock&lt;/td>
+    &lt;td class="table__cell">@science101&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Nyota&lt;/td>
+    &lt;td class="table__cell">Uhura&lt;/td>
+    &lt;td class="table__cell">@comms&lt;/td>
+  &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre></p>
+
+<h2 class="heading heading--medium">Clickable Table</h2>
+<table class="table table--clickable">
+	<caption class="table__caption">Clickable table with inactive row</caption>
+	<thead>
+	<tr class="table__row table__row--heading">
+		<th class="table__cell">First name</th>
+		<th class="table__cell">Last name</th>
+		<th class="table__cell">Username</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr class="table__row table__row--inactive">
+		<td class="table__cell">Jim</td>
+		<td class="table__cell">Krik</td>
+		<td class="table__cell">@captaink</td>
+	</tr>
+	<tr class="table__row">
+		<td class="table__cell">Mr.</td>
+		<td class="table__cell">Spock</td>
+		<td class="table__cell">@science101</td>
+	</tr>
+	<tr class="table__row">
+		<td class="table__cell">Nyota</td>
+		<td class="table__cell">Uhura</td>
+		<td class="table__cell">@comms</td>
+	</tr>
+	</tbody>
+</table>
+<p class="paragraph"><pre class="pre html"><code class="code code--multiline">&lt;table class="table table--clickable">
+  &lt;caption class="table__caption">Clickable table with inactive row&lt;/caption>
+  &lt;thead>
+  &lt;tr class="table__row table__row--heading">
+    &lt;th class="table__cell">First name&lt;/th>
+    &lt;th class="table__cell">Last name&lt;/th>
+    &lt;th class="table__cell">Username&lt;/th>
+  &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+  &lt;tr class="table__row table__row--inactive">
+    &lt;td class="table__cell">Jim&lt;/td>
+    &lt;td class="table__cell">Krik&lt;/td>
+    &lt;td class="table__cell">@captaink&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Mr.&lt;/td>
+    &lt;td class="table__cell">Spock&lt;/td>
+    &lt;td class="table__cell">@science101&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Nyota&lt;/td>
+    &lt;td class="table__cell">Uhura&lt;/td>
+    &lt;td class="table__cell">@comms&lt;/td>
+  &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre></p>
+
+<h2 class="heading heading--medium">Clickable Row</h2>
+<table class="table">
+	<caption class="table__caption">Clickable row, inactive row</caption>
+	<thead>
+	<tr class="table__row table__row--heading">
+		<th class="table__cell">First name</th>
+		<th class="table__cell">Last name</th>
+		<th class="table__cell">Username</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr class="table__row table__row--clickable">
+		<td class="table__cell">Jim</td>
+		<td class="table__cell">Krik</td>
+		<td class="table__cell">@captaink</td>
+	</tr>
+	<tr class="table__row table__row--inactive">
+		<td class="table__cell">Mr.</td>
+		<td class="table__cell">Spock</td>
+		<td class="table__cell">@science101</td>
+	</tr>
+	<tr class="table__row">
+		<td class="table__cell">Nyota</td>
+		<td class="table__cell">Uhura</td>
+		<td class="table__cell">@comms</td>
+	</tr>
+	</tbody>
+</table>
+<p class="paragraph"><pre class="pre html"><code class="code code--multiline">&lt;table class="table">
+  &lt;caption class="table__caption">Clickable row, inactive row&lt;/caption>
+  &lt;thead>
+  &lt;tr class="table__row table__row--heading">
+    &lt;th class="table__cell">First name&lt;/th>
+    &lt;th class="table__cell">Last name&lt;/th>
+    &lt;th class="table__cell">Username&lt;/th>
+  &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+  &lt;tr class="table__row table__row--clickable">
+    &lt;td class="table__cell">Jim&lt;/td>
+    &lt;td class="table__cell">Krik&lt;/td>
+    &lt;td class="table__cell">@captaink&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row table__row--inactive">
+    &lt;td class="table__cell">Mr.&lt;/td>
+    &lt;td class="table__cell">Spock&lt;/td>
+    &lt;td class="table__cell">@science101&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Nyota&lt;/td>
+    &lt;td class="table__cell">Uhura&lt;/td>
+    &lt;td class="table__cell">@comms&lt;/td>
+  &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre></p>
+
+<h2 class="heading heading--medium">Condensed</h2>
+<table class="table table--condensed">
+	<caption class="table__caption">Small table and text</caption>
+	<thead>
+	<tr class="table__row table__row--heading">
+		<th class="table__cell">First name</th>
+		<th class="table__cell">Last name</th>
+		<th class="table__cell">Username</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr class="table__row">
+		<td class="table__cell">Jim</td>
+		<td class="table__cell">Krik</td>
+		<td class="table__cell">@captaink</td>
+	</tr>
+	<tr class="table__row">
+		<td class="table__cell">Mr.</td>
+		<td class="table__cell">Spock</td>
+		<td class="table__cell">@science101</td>
+	</tr>
+	<tr class="table__row">
+		<td class="table__cell">Nyota</td>
+		<td class="table__cell">Uhura</td>
+		<td class="table__cell">@comms</td>
+	</tr>
+	</tbody>
+</table>
+<p class="paragraph"><pre class="pre html"><code class="code code--multiline">&lt;table class="table table--condensed">
+  &lt;caption class="table__caption">Small table and text&lt;/caption>
+  &lt;thead>
+  &lt;tr class="table__row table__row--heading">
+    &lt;th class="table__cell">First name&lt;/th>
+    &lt;th class="table__cell">Last name&lt;/th>
+    &lt;th class="table__cell">Username&lt;/th>
+  &lt;/tr>
+  &lt;/thead>
+  &lt;tbody>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Jim&lt;/td>
+    &lt;td class="table__cell">Krik&lt;/td>
+    &lt;td class="table__cell">@captaink&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Mr.&lt;/td>
+    &lt;td class="table__cell">Spock&lt;/td>
+    &lt;td class="table__cell">@science101&lt;/td>
+  &lt;/tr>
+  &lt;tr class="table__row">
+    &lt;td class="table__cell">Nyota&lt;/td>
+    &lt;td class="table__cell">Uhura&lt;/td>
+    &lt;td class="table__cell">@comms&lt;/td>
+  &lt;/tr>
+  &lt;/tbody>
+&lt;/table></code></pre></p>
+
+<h2 class="heading heading--medium">Using divs</h2>
+<div class="table table--striped">
+	<div class="table__caption">divs instead of trs ths tds</div>
+	<div class="table__row table__row--heading">
+		<span class="table__cell">First name</span>
+		<span class="table__cell">Last name</span>
+		<span class="table__cell">Username</span>
+	</div>
+	<div class="table__row">
+		<span class="table__cell">Jim</span>
+		<span class="table__cell">Krik</span>
+		<span class="table__cell">@captaink</span>
+	</div>
+	<div class="table__row">
+		<span class="table__cell">Mr.</span>
+		<span class="table__cell">Spock</span>
+		<span class="table__cell">@science101</span>
+	</div>
+	<div class="table__row">
+		<span class="table__cell">Nyota</span>
+		<span class="table__cell">Uhura</span>
+		<span class="table__cell">@comms</span>
+	</div>
+</div>
+<p class="paragraph"><pre class="pre html"><code class="code code--multiline">&lt;div class="table table--striped">
+  &lt;div class="table__caption">divs instead of trs ths tds&lt;/div>
+  &lt;div class="table__row table__row--heading">
+    &lt;span class="table__cell">First name&lt;/span>
+    &lt;span class="table__cell">Last name&lt;/span>
+    &lt;span class="table__cell">Username&lt;/span>
+  &lt;/div>
+  &lt;div class="table__row">
+    &lt;span class="table__cell">Jim&lt;/span>
+    &lt;span class="table__cell">Krik&lt;/span>
+    &lt;span class="table__cell">@captaink&lt;/span>
+  &lt;/div>
+  &lt;div class="table__row">
+    &lt;span class="table__cell">Mr.&lt;/span>
+    &lt;span class="table__cell">Spock&lt;/span>
+    &lt;span class="table__cell">@science101&lt;/span>
+  &lt;/div>
+  &lt;div class="table__row">
+    &lt;span class="table__cell">Nyota&lt;/span>
+    &lt;span class="table__cell">Uhura&lt;/span>
+    &lt;span class="table__cell">@comms&lt;/span>
+  &lt;/div>
+&lt;/div></code></pre></p>
