@@ -191,3 +191,10 @@ section {
 .grid-text {
 	background-color: #fff;
 }
+
+/*
+ * Buttons demo
+ */
+.button-demo .button {
+	margin: 5px 0;
+}
