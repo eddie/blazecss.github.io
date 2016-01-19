@@ -54,9 +54,6 @@ navigation-components:
 - text: Buttons
   url: /components/buttons/
   layout: page
-- text: Links
-  url: /components/links/
-  layout: page
 - text: Lists
   url: /components/lists/
   layout: page
