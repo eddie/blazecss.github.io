@@ -42,9 +42,6 @@ navigation-components:
 - text: Containers
   url: /components/containers/
   layout: page
-- text: Images
-  url: /components/images/
-  layout: page
 - text: Tables
   url: /components/tables/
   layout: page
@@ -95,6 +92,9 @@ navigation-components:
   layout: page
 - text: Toasts
   url: /components/toasts/
+  layout: page
+- text: Images
+  url: /components/images/
   layout: page
 - text: Colours
   url: /components/colours/
