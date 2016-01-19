@@ -1,0 +1,142 @@
+---
+layout: page
+title: Lists
+---
+
+<p class="paragraph">
+	Ordered, un-ordered, indented, Blaze has you covered when it comes to making lists.
+</p>
+
+<h2 class="heading heading--medium">Un-ordered</h2>
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__width--50 letter-box--small">
+		<ul class="list">
+			<li class="list__item">Lorem ipsum dolor sit amet</li>
+			<li class="list__item">Consectetur adipiscing elit</li>
+			<li class="list__item">Nulla volutpat aliquam velit
+				<ul class="list">
+					<li class="list__item">Phasellus iaculis neque</li>
+					<li class="list__item">Purus sodales ultricies</li>
+					<li class="list__item">Vestibulum laoreet porttitor sem</li>
+					<li class="list__item">Ac tristique libero volutpat at</li>
+				</ul>
+			</li>
+			<li class="list__item">Faucibus porta lacus fringilla vel</li>
+		</ul>
+	</div>
+	<div class="grid__cell grid__width--50 letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;ul class="list">
+  &lt;li class="list__item">Lorem ipsum dolor sit amet&lt;/li>
+  &lt;li class="list__item">Consectetur adipiscing elit&lt;/li>
+  &lt;li class="list__item">Nulla volutpat aliquam velit
+    &lt;ul class="list">
+      &lt;li class="list__item">Phasellus iaculis neque&lt;/li>
+      &lt;li class="list__item">Purus sodales ultricies&lt;/li>
+      &lt;li class="list__item">Vestibulum laoreet porttitor sem&lt;/li>
+      &lt;li class="list__item">Ac tristique libero volutpat at&lt;/li>
+    &lt;/ul>
+  &lt;/li>
+&lt;li class="list__item">Faucibus porta lacus fringilla vel&lt;/li>
+&lt;/ul></code></pre></div>
+</div>
+
+<h2 class="heading heading--medium">Ordered</h2>
+<p class="paragraph">
+	The <code class="code">.list--ordered</code> modifier will apply correct numbering to ordered lists and nested lists.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__width--50 letter-box--small">
+		<ol class="list list--ordered">
+			<li class="list__item">Lorem ipsum dolor sit amet</li>
+			<li class="list__item">Consectetur adipiscing elit</li>
+			<li class="list__item">Nulla volutpat aliquam velit
+				<ol class="list list--ordered">
+					<li class="list__item">Phasellus iaculis neque</li>
+					<li class="list__item">Purus sodales ultricies
+						<ol class="list list--ordered">
+							<li class="list__item">Lorem ipsum dolor sit amet</li>
+							<li class="list__item">Consectetur adipiscing elit</li>
+						</ol>
+					</li>
+					<li class="list__item">Vestibulum laoreet porttitor sem</li>
+					<li class="list__item">Ac tristique libero volutpat at</li>
+				</ol>
+			</li>
+			<li class="list__item">Faucibus porta lacus fringilla vel</li>
+		</ol>
+	</div>
+	<div class="grid__cell grid__width--50 letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;ol class="list list--ordered">
+  &lt;li class="list__item">Lorem ipsum dolor sit amet&lt;/li>
+  &lt;li class="list__item">Consectetur adipiscing elit&lt;/li>
+  &lt;li class="list__item">Nulla volutpat aliquam velit
+    &lt;ol class="list list--ordered">
+      &lt;li class="list__item">Phasellus iaculis neque&lt;/li>
+      &lt;li class="list__item">Purus sodales ultricies
+        &lt;ol class="list list--ordered">
+          &lt;li class="list__item">Lorem ipsum dolor sit amet&lt;/li>
+          &lt;li class="list__item">Consectetur adipiscing elit&lt;/li>
+        &lt;/ol>
+      &lt;/li>
+      &lt;li class="list__item">Vestibulum laoreet porttitor sem&lt;/li>
+      &lt;li class="list__item">Ac tristique libero volutpat at&lt;/li>
+    &lt;/ol>
+  &lt;/li>
+  &lt;li class="list__item">Faucibus porta lacus fringilla vel&lt;/li>
+&lt;/ol></code></pre></div>
+</div>
+
+<h2 class="heading heading--medium">Un-styled</h2>
+<p class="paragraph">
+	Applying <code class="code">.list--unstyled</code> to a list will remove the bullet points.
+</p>
+<p class="paragraph">
+	You can remove bullet points on individual items by adding the <code class="code">.list__item--unstyled</code> modifier.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__width--50 letter-box--small">
+		<ul class="list list--unstyled">
+			<li class="list__item"><strong>I'm an unstyled list</strong></li>
+			<li class="list__item">Consectetur adipiscing elit</li>
+			<li class="list__item">Nulla volutpat aliquam velit
+				<ul class="list">
+					<li class="list__item">Phasellus iaculis neque</li>
+					<li class="list__item">Purus sodales ultricies</li>
+					<li class="list__item--unstyled"><strong>I'm an unstyled item</strong></li>
+					<li class="list__item">Ac tristique libero volutpat at</li>
+				</ul>
+			</li>
+			<li class="list__item">Faucibus porta lacus fringilla vel</li>
+		</ul>
+	</div>
+	<div class="grid__cell grid__width--50 letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;ul class="list list--unstyled">
+  &lt;li class="list__item">&lt;strong>I'm an unstyled list&lt;/strong>&lt;/li>
+  &lt;li class="list__item">Consectetur adipiscing elit&lt;/li>
+  &lt;li class="list__item">Nulla volutpat aliquam velit
+    &lt;ul class="list"> &lt;!-- Has bullet points-->
+      &lt;li class="list__item">Phasellus iaculis neque&lt;/li>
+      &lt;li class="list__item">Purus sodales ultricies&lt;/li>
+      &lt;li class="list__item--unstyled">&lt;strong>I'm an unstyled item&lt;/strong>&lt;/li>
+      &lt;li class="list__item">Ac tristique libero volutpat at&lt;/li>
+    &lt;/ul>
+  &lt;/li>
+  &lt;li class="list__item">Faucibus porta lacus fringilla vel&lt;/li>
+&lt;/ul></code></pre></div>
+</div>
+
+<h2 class="heading heading--medium">Un-styled</h2>
+<p class="paragraph">
+	To make your list items flow left to right apply the <code class="code">.list--inline</code> modifier.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__width--50 letter-box--small">
+		<ul class="list list--inline">
+			<li class="list__item">Lorem</li>
+			<li class="list__item">ipsum</li>
+			<li class="list__item">dolor</li>
+		</ul>
+	</div>
+	<div class="grid__cell grid__width--50 letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;ul class="list list--inline">
+  &lt;li class="list__item">Lorem&lt;/li>
+  &lt;li class="list__item">ipsum&lt;/li>
+  &lt;li class="list__item">dolor&lt;/li>
+&lt;/ul></code></pre></div>
+</div>

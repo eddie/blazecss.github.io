@@ -96,9 +96,6 @@ navigation-components:
 - text: Images
   url: /components/images/
   layout: page
-- text: Colours
-  url: /components/colours/
-  layout: page
 - text: Base
   url: /components/base/
   layout: page
