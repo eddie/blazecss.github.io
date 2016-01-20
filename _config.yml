@@ -13,89 +13,89 @@ markdown: kramdown
 navigation-getting-started:
 - text: Install
   url: /getting-started/install/
-  layout: page
+  
 - text: Custom build
   url: /getting-started/custombuild/
-  layout: page
+  
 
 navigation-community:
 - text: Contributing
   url: /community/contributing/
-  layout: page
+  
 
 navigation-components:
 - text: Typography
   url: /components/typography/
-  layout: page
+  
 - text: Headings
   url: /components/headings/
-  layout: page
+  
 - text: Addresses
   url: /components/addresses/
-  layout: page
+  
 - text: Badges
   url: /components/badges/
-  layout: page
+  
 - text: Grid
   url: /components/grid/
-  layout: page
+  
 - text: Containers
   url: /components/containers/
-  layout: page
+  
 - text: Tables
   url: /components/tables/
-  layout: page
+  
 - text: Cards
   url: /components/cards/
-  layout: page
+  
 - text: Buttons
   url: /components/buttons/
-  layout: page
+  
 - text: Lists
   url: /components/lists/
-  layout: page
+  
 - text: Menus
   url: /components/menus/
-  layout: page
+  
 - text: Tabs
   url: /components/tabs/
-  layout: page
+  
 - text: Inputs
   url: /components/inputs/
-  layout: page
+  
 - text: Toggles
   url: /components/toggles/
-  layout: page
+  
 - text: Tags
   url: /components/tags/
-  layout: page
+  
 - text: Ranges
   url: /components/ranges/
-  layout: page
+  
 - text: Calendars
   url: /components/calendars/
-  layout: page
+  
 - text: Modals
   url: /components/modals/
-  layout: page
+  
 - text: Drawers
   url: /components/drawers/
-  layout: page
+  
 - text: Overlays
   url: /components/overlays/
-  layout: page
+  
 - text: Bubbles
   url: /components/bubbles/
-  layout: page
+  
 - text: Alerts
   url: /components/alerts/
-  layout: page
+  
 - text: Toasts
   url: /components/toasts/
-  layout: page
+  
 - text: Images
   url: /components/images/
-  layout: page
+  
 - text: Base
   url: /components/base/
-  layout: page
+  
