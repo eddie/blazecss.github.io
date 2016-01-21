@@ -72,7 +72,7 @@ navigation-components:
 - text: Ranges
   url: /components/ranges/
   
-- text: Calendars (docs tbc)
+- text: Calendars
   url: /components/calendars/
   
 - text: Modals (docs tbc)
