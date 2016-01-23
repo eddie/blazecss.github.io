@@ -1,0 +1,176 @@
+---
+layout: page
+title: Modals
+---
+
+<p class="paragraph">
+	Modal popups, with great power comes great responsibility. Please use modals wisely.
+</p>
+
+<h2 class="heading heading--medium">Basic Modal</h2>
+<p class="paragraph">
+	Your basic modal has a variety of elements to it. <code class="code">.overlay</code> will expand to fill the current
+	space, more information on <a class="link" href="/components/overlays">overlays</a> is available.
+</p>
+<p class="paragraph">
+	The modal it self consists of a <code class="code">.modal__header</code>, <code class="code">.modal__body</code> and
+	a <code class="code">.modal__footer</code>.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__width--50 modal-demo">
+		<div class="overlay"></div>
+		<div class="modal">
+			<header class="modal__header">
+				<button type="button" class="button button--close">&times;</button>
+				<h3 class="heading heading--small">Modal heading</h3>
+			</header>
+
+			<div class="modal__body">
+				This is the modal body
+			</div>
+
+			<footer class="modal__footer">
+				<button type="button" class="button button--primary">Close</button>
+			</footer>
+		</div>
+	</div>
+	<div class="grid__cell grid__width--50"><pre class="pre html"><code class="code code--multiline">&lt;div class="overlay">&lt;/div>
+&lt;div class="modal">
+  &lt;header class="modal__header">
+    &lt;button type="button" class="button button--close">&times;&lt;/button>
+    &lt;h3 class="heading heading--small">Modal heading&lt;/h3>
+  &lt;/header>
+
+  &lt;div class="modal__body">
+    This is the modal body
+  &lt;/div>
+
+  &lt;footer class="modal__footer">
+    &lt;button type="button" class="button button--primary">Close&lt;/button>
+  &lt;/footer>
+&lt;/div></code></pre></div>
+</div>
+
+<h2 class="heading heading--medium">Ghost Modal</h2>
+<p class="paragraph">
+	This modal has no body, hence "ghost". Lol.
+</p>
+<p class="paragraph">
+	To make a ghost modal simply add the <code class="code">.modal--ghost</code> modifier.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__width--50 modal-demo">
+		<div class="overlay"></div>
+		<div class="modal modal--ghost">
+			<header class="modal__header">
+				<button type="button" class="button button--close">&times;</button>
+				<h3 class="heading heading--small">Modal heading</h3>
+			</header>
+
+			<div class="modal__body">
+				This is the modal body
+			</div>
+
+			<footer class="modal__footer">
+				<button type="button" class="button button--primary">Close</button>
+			</footer>
+		</div>
+	</div>
+	<div class="grid__cell grid__width--50"><pre class="pre html"><code class="code code--multiline">&lt;div class="overlay">&lt;/div>
+&lt;div class="modal modal--ghost">
+  &lt;header class="modal__header">
+    &lt;button type  ="button" class="button button--close">&times;&lt;/button>
+    &lt;h3 class="heading heading--small">Modal heading&lt;/h3>
+  &lt;/header>
+
+  &lt;div class="modal__body">
+    This is the modal body
+  &lt;/div>
+
+  &lt;footer class="modal__footer">
+    &lt;button type="button" class="button button--primary">Close&lt;/button>
+  &lt;/footer>
+&lt;/div></code></pre></div>
+</div>
+
+<h2 class="heading heading--medium">Block footer buttons</h2>
+<p class="paragraph">
+	Apply the <code class="code">.modal__footer--block</code> modifier to the footer to make your buttons full width.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__width--50 modal-demo">
+		<div class="overlay"></div>
+		<div class="modal">
+			<header class="modal__header">
+				<button type="button" class="button button--close">&times;</button>
+				<h3 class="heading heading--small">Modal heading</h3>
+			</header>
+
+			<div class="modal__body">
+				This is the modal body
+			</div>
+
+			<footer class="modal__footer modal__footer--block">
+				<button type="button" class="button button--success">Save</button>
+				<button type="button" class="button button--error">Cancel</button>
+			</footer>
+		</div>
+	</div>
+	<div class="grid__cell grid__width--50"><pre class="pre html"><code class="code code--multiline">&lt;div class="overlay">&lt;/div>
+&lt;div class="modal">
+  &lt;header class="modal__header">
+    &lt;button type  ="button" class="button button--close">&times;&lt;/button>
+    &lt;h3 class="heading heading--small">Modal heading&lt;/h3>
+  &lt;/header>
+
+  &lt;div class="modal__body">
+    This is the modal body
+  &lt;/div>
+
+  &lt;footer class="modal__footer modal__footer--block">
+    &lt;button type="button" class="button button--success">Save&lt;/button>
+    &lt;button type="button" class="button button--error">Cancel&lt;/button>
+  &lt;/footer>
+&lt;/div></code></pre></div>
+</div>
+
+<h2 class="heading heading--medium">Modal Shadow</h2>
+<p class="paragraph">
+	To give your modal some perspective add the <code class="code">.modal--high</code>, <code class="code">.modal--higher</code> or
+	<code class="code">.modal--highest</code> modifier.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__width--50 modal-demo">
+		<div class="overlay"></div>
+		<div class="modal modal--highest">
+			<header class="modal__header">
+				<button type="button" class="button button--close">&times;</button>
+				<h3 class="heading heading--small">Modal heading</h3>
+			</header>
+
+			<div class="modal__body">
+				This is the modal body
+			</div>
+
+			<footer class="modal__footer">
+				<button type="button" class="button button--primary">Close</button>
+			</footer>
+		</div>
+	</div>
+	<div class="grid__cell grid__width--50"><pre class="pre html"><code class="code code--multiline">&lt;div class="overlay">&lt;/div>
+&lt;div class="modal modal--highest">
+  &lt;header class="modal__header">
+    &lt;button type="button" class="button button--close">&times;&lt;/button>
+    &lt;h3 class="heading heading--small">Modal heading&lt;/h3>
+  &lt;/header>
+
+  &lt;div class="modal__body">
+    This is the modal body
+  &lt;/div>
+
+  &lt;footer class="modal__footer">
+    &lt;button type="button" class="button button--primary">Close&lt;/button>
+  &lt;/footer>
+&lt;/div></code></pre></div>
+</div>
+

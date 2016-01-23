@@ -191,3 +191,14 @@ section {
 .button-demo .button {
 	margin: 5px 0;
 }
+
+/*
+ * Modal demo containers
+ */
+.modal-demo {
+	position: relative;
+	height: 550px;
+	overflow: hidden;
+	background-image: url(https://unsplash.it/1024/963?random);
+	background-size: cover;
+}

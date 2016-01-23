@@ -75,7 +75,7 @@ navigation-components:
 - text: Calendars
   url: /components/calendars/
   
-- text: Modals (docs tbc)
+- text: Modals
   url: /components/modals/
   
 - text: Drawers (docs tbc)
