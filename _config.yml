@@ -84,7 +84,7 @@ navigation-components:
 - text: Drawers
   url: /components/drawers/
 
-- text: Bubbles (docs tbc)
+- text: Bubbles
   url: /components/bubbles/
   
 - text: Alerts (docs tbc)
