@@ -74,16 +74,16 @@ navigation-components:
   
 - text: Calendars
   url: /components/calendars/
-  
+
+- text: Overlays
+  url: /components/overlays/
+
 - text: Modals
   url: /components/modals/
   
 - text: Drawers
   url: /components/drawers/
-  
-- text: Overlays (docs tbc)
-  url: /components/overlays/
-  
+
 - text: Bubbles (docs tbc)
   url: /components/bubbles/
   
