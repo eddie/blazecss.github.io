@@ -78,7 +78,7 @@ navigation-components:
 - text: Modals
   url: /components/modals/
   
-- text: Drawers (docs tbc)
+- text: Drawers
   url: /components/drawers/
   
 - text: Overlays (docs tbc)
