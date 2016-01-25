@@ -105,6 +105,10 @@ section {
 	border-bottom: 1px solid #eee;
 }
 
+.page-header .image {
+	width: 150px;
+}
+
 .main {
 	padding-top: 2em;
 	padding-bottom: 2em;
