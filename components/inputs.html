@@ -1,0 +1,517 @@
+---
+layout: page
+title: Inputs
+---
+
+<p class="paragraph">
+	From single input controls like text boxes to full form patterns.
+</p>
+<p class="paragraph">
+	Add <code class="code">.field</code> to your text boxes.
+</p>
+
+<h2 class="heading heading--medium">Text Input</h2>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field" placeholder="Type in here..." type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field" type="text"></code></pre></div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<textarea class="field" placeholder="Type in here..."></textarea>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;textarea class="field">&lt;/textarea></code></pre></div>
+</div>
+
+<h3 class="heading heading--small">Colours</h3>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field field--success" placeholder=".field--success" type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field field--success" type="text"></code></pre></div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field field--error" placeholder=".field--error" type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field field--error" type="text"></code></pre></div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field" disabled placeholder="disabled" type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field" disabled type="text"></code></pre></div>
+</div>
+
+<h3 class="heading heading--small">Sizes</h3>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field field--xsmall" placeholder=".field--xsmall" type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field field--xsmall" type="text"></code></pre></div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field field--small" placeholder=".field--small" type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field field--small" type="text"></code></pre></div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field field--medium" placeholder=".field--medium" type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field field--medium" type="text"></code></pre></div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field field--large" placeholder=".field--large" type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field field--large" type="text"></code></pre></div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field field--xlarge" placeholder=".field--xlarge" type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field field--xlarge" type="text"></code></pre></div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<input class="field field--super" placeholder=".field--super" type="text">
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;input class="field field--super" type="text"></code></pre></div>
+</div>
+
+<h2 class="heading heading--medium">Field and Input Groups</h2>
+<p class="paragraph">
+	If you want to squash a controls together...
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<div class="field-group">
+			<input class="field" placeholder=".field-group">
+			<textarea class="field" placeholder=".field-group"></textarea>
+			<input class="field" placeholder=".field-group">
+		</div>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;div class="field-group">
+  &lt;input class="field">
+  &lt;textarea class="field">&lt;/textarea>
+  &lt;input class="field">
+&lt;/div></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<div class="field-group-inline">
+			<input class="field" placeholder=".field-group-inline">
+			<input class="field" placeholder=".field-group-inline">
+			<input class="field" placeholder=".field-group-inline">
+		</div>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;div class="field-group-inline">
+  &lt;input class="field">
+  &lt;textarea class="field">&lt;/textarea>
+  &lt;input class="field">
+&lt;/div></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<div class="input-group">
+			<input class="field" placeholder=".input-group">
+			<button class="button button--primary">Action</button>
+		</div>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;div class="input-group">
+  &lt;input class="field" type="text">
+  &lt;button class="button button--primary">Action&lt;/button>
+&lt;/div></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<div class="input-group">
+			<button class="button button--secondary">Action</button>
+			<input class="field" placeholder=".input-group">
+			<button class="button button--primary">Action</button>
+		</div>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;div class="input-group">
+  &lt;button class="button button--secondary">Action&lt;/button>
+  &lt;input class="field" type="text">
+  &lt;button class="button button--primary">Action&lt;/button>
+&lt;/div></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<div class="input-group">
+			<button class="button button--secondary">Action</button>
+			<input class="field" placeholder=".input-group">
+		</div>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;div class="input-group">
+  &lt;button class="button button--secondary">Action&lt;/button>
+  &lt;input class="field" type="text">
+&lt;/div></code></pre>
+	</div>
+</div>
+
+<h2 class="heading heading--medium">Selects</h2>
+<p class="paragraph">
+	Add <code class="code">.choice</code> to your selects, radios and checkboxes.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<select class="choice">
+			<option>First option</option>
+		</select>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;select class="choice">
+  &lt;option>...&lt;/option>
+&lt;/select></code></pre>
+	</div>
+</div>
+
+<h3 class="heading heading--small">Colours</h3>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<select class="choice choice--success">
+			<option>.choice--success</option>
+		</select>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;select class="choice choice--success">
+  &lt;option>...&lt;/option>
+&lt;/select></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<select class="choice choice--error">
+			<option>.choice--error</option>
+		</select>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;select class="choice choice--error">
+  &lt;option>...&lt;/option>
+&lt;/select></code></pre>
+	</div>
+</div>
+
+<h3 class="heading heading--small">Sizes</h3>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<select class="choice choice--xsmall">
+			<option>.choice--xsmall</option>
+		</select>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;select class="choice choice--xsmall">
+  &lt;option>...&lt;/option>
+&lt;/select></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<select class="choice choice--small">
+			<option>.choice--small</option>
+		</select>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;select class="choice choice--small">
+  &lt;option>...&lt;/option>
+&lt;/select></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<select class="choice choice--medium">
+			<option>.choice--medium</option>
+		</select>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;select class="choice choice--medium">
+  &lt;option>...&lt;/option>
+&lt;/select></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<select class="choice choice--large">
+			<option>.choice--large</option>
+		</select>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;select class="choice choice--large">
+  &lt;option>...&lt;/option>
+&lt;/select></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<select class="choice choice--xlarge">
+			<option>.choice--xlarge</option>
+		</select>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;select class="choice choice--xlarge">
+  &lt;option>...&lt;/option>
+&lt;/select></code></pre>
+	</div>
+</div>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<select class="choice choice--super">
+			<option>.choice--super</option>
+		</select>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;select class="choice choice--super">
+  &lt;option>...&lt;/option>
+&lt;/select></code></pre>
+	</div>
+</div>
+
+<h2 class="heading heading--medium">Checkboxes and Radios</h2>
+<p class="paragraph">
+	Place your checkboxes and radios within labels and append the <code class="code">.choice</code> class.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<label class="choice">
+			<input type="checkbox"> Tick the box
+		</label>
+		<label class="choice">
+			<input name="radios" type="radio" checked> Yes
+		</label>
+		<label class="choice">
+			<input name="radios" type="radio"> No
+		</label>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;label class="choice">
+  &lt;input type="checkbox"> Tick the box
+&lt;/label>
+&lt;label class="choice">
+  &lt;input name="radios" type="radio" checked> Yes
+&lt;/label>
+&lt;label class="choice">
+  &lt;input name="radios" type="radio"> No
+&lt;/label></code></pre>
+	</div>
+</div>
+
+<h3 class="heading heading--small">Colours</h3>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<label class="choice choice--success">
+			<input type="checkbox" checked> <span class="mono">.choice--success</span>
+		</label>
+		<label class="choice choice--error">
+			<input type="radio" checked> <span class="mono">.choice--error</span>
+		</label>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;label class="choice choice--success">
+  &lt;input type="checkbox"> &lt;span class="mono">.choice--success&lt;/span>
+&lt;/label>
+&lt;label class="choice choice--error">
+  &lt;input type="checkbox"> &lt;span class="mono">.choice--error&lt;/span>
+&lt;/label></code></pre>
+	</div>
+</div>
+
+<h3 class="heading heading--small">Sizes</h3>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<label class="choice choice--xsmall">
+			<input type="checkbox" checked> <span class="mono">.choice--xsmall</span>
+		</label>
+		<label class="choice choice--small">
+			<input type="checkbox" checked> <span class="mono">.choice--small</span>
+		</label>
+		<label class="choice choice--medium">
+			<input type="checkbox" checked> <span class="mono">.choice--medium</span>
+		</label>
+		<label class="choice choice--large">
+			<input type="checkbox" checked> <span class="mono">.choice--large</span>
+		</label>
+		<label class="choice choice--xlarge">
+			<input type="checkbox" checked> <span class="mono">.choice--xlarge</span>
+		</label>
+		<label class="choice choice--super">
+			<input type="checkbox" checked> <span class="mono">.choice--super</span>
+		</label>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;label class="choice choice--xsmall">
+  &lt;input type="checkbox" checked> &lt;span class="mono">.choice--xsmall&lt;/span>
+&lt;/label>
+&lt;label class="choice choice--small">
+  &lt;input type="checkbox" checked> &lt;span class="mono">.choice--small&lt;/span>
+&lt;/label>
+&lt;label class="choice choice--medium">
+  &lt;input type="checkbox" checked> &lt;span class="mono">.choice--medium&lt;/span>
+&lt;/label>
+&lt;label class="choice choice--large">
+  &lt;input type="checkbox" checked> &lt;span class="mono">.choice--large&lt;/span>
+&lt;/label>
+&lt;label class="choice choice--xlarge">
+  &lt;input type="checkbox" checked> &lt;span class="mono">.choice--xlarge&lt;/span>
+&lt;/label>
+&lt;label class="choice choice--super">
+  &lt;input type="checkbox" checked> &lt;span class="mono">.choice--super&lt;/span>
+&lt;/label></code></pre>
+	</div>
+</div>
+
+<h2 class="heading heading--medium">Fieldsets and Legends</h2>
+<p class="paragraph">
+	Use <code class="code">.fieldset</code> and <code class="code">.fieldset__legend</code> classes to apply Blaze's styles to ensure
+	consistent fieldset behaviours.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<fieldset class="fieldset">
+			<legend class="fieldset__legend">A group of controls</legend>
+			<label class="choice">
+				<input type="radio" name="optionsRadios">
+				Option one
+			</label>
+			<label class="choice">
+				<input type="radio" name="optionsRadios">
+				Option two
+			</label>
+		</fieldset>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;fieldset class="fieldset">
+  &lt;legend class="fieldset__legend">A group of controls&lt;/legend>
+  &lt;label class="choice">
+    &lt;input type="radio" name="optionsRadios"> Option one
+  &lt;/label>
+  &lt;label class="choice">
+    &lt;input type="radio" name="optionsRadios"> Option two
+  &lt;/label>
+&lt;/fieldset></code></pre>
+	</div>
+</div>
+
+<h3 class="heading heading--small">Disabled Fieldset</h3>
+<p class="paragraph">
+	Disabling a fieldset will disable all controls within it and Blaze will apply the disabled styling.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<fieldset class="fieldset" disabled>
+			<legend class="fieldset__legend">A group of controls</legend>
+			<label class="choice">
+				<input type="radio" name="optionsRadios">
+				Option one
+			</label>
+			<label class="choice">
+				<input type="radio" name="optionsRadios">
+				Option two
+			</label>
+		</fieldset>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;fieldset class="fieldset" disabled>
+  &lt;legend class="fieldset__legend">A group of controls&lt;/legend>
+  &lt;label class="choice">
+    &lt;input type="radio" name="optionsRadios"> Option one
+  &lt;/label>
+  &lt;label class="choice">
+    &lt;input type="radio" name="optionsRadios"> Option two
+  &lt;/label>
+&lt;/fieldset></code></pre>
+	</div>
+</div>
+
+<h2 class="heading heading--medium">Labels and Form Elements</h2>
+<p class="paragraph">
+	You can either use the <code class="code">for</code> attribute on labels to tie the label to the input
+	or wrap your fields within labels. If you wrap your fields within labels replace the <code class="code">.field</code>
+	class with <code class="code">.label__field</code> element class on your text inputs.
+</p>
+<p class="paragraph">
+	We recommend wrapping your label and inputs within a <code class="code">.form-element</code>
+	block, this will supply the block with some vertical padding; ready to be placed within a form.
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<div class="form-element">
+			<label class="label" for="nickname">Nickname:</label>
+			<input id="nickname" class="field" placeholder="Nickname" >
+		</div>
+		<label class="label form-element">
+			Real name:
+			<input class="label__field" placeholder="Real name">
+		</label>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;!-- Approach one -->
+&lt;div class="form-element">
+  &lt;label class="label" for="nickname">Nickname:&lt;/label>
+  &lt;input id="nickname" class="field" placeholder="Nickname" >
+&lt;/div>
+&lt;!-- Approach two -->
+&lt;label class="label form-element">
+  Real name:
+  &lt;input class="label__field" placeholder="Real name">
+&lt;/label></code></pre>
+	</div>
+</div>
+
+<h2 class="heading heading--medium">Forms</h2>
+<p class="paragraph">
+	Blaze has no classes for forms, rather it relies on styling the child blocks of forms;
+	fieldsets, legends, form-elements, labels, fields and choices. 
+</p>
+<div class="grid grid--small-full">
+	<div class="grid__cell letter-box--small">
+		<fieldset class="fieldset">
+			<legend class="fieldset__legend">Please complete the form:</legend>
+			<div class="form-element">
+				<label class="label" for="houseno">Address line 1:</label>
+				<input id="houseno" placeholder="House name or number" class="field">
+			</div>
+			<label class="label form-element">
+				Postcode:
+				<input class="label__field" placeholder="e.g. AB12 3CD">
+			</label>
+			<label class="label choice">
+				<input type="checkbox">
+				Send me span
+			</label>
+			<fieldset class="fieldset list list--inline list--unstyled">
+				<legend class="fieldset__legend">Account login:</legend>
+				<label class="label choice list__item">
+					<input type="radio" name="account" checked>
+					New user
+				</label>
+				<label class="label choice list__item">
+					<input type="radio" name="account">
+					Existing user
+				</label>
+			</fieldset>
+		</fieldset>
+	</div>
+	<div class="grid__cell letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;fieldset class="fieldset">
+  &lt;legend class="fieldset__legend">Please complete the form:&lt;/legend>
+  &lt;div class="form-element">
+    &lt;label class="label" for="houseno">
+      Address line 1:
+    &lt;/label>
+    &lt;input id="houseno" placeholder="House name or number" class="field">
+  &lt;/div>
+  &lt;label class="label form-element">
+    Postcode:
+    &lt;input class="label__field" placeholder="e.g. AB12 3CD">
+  &lt;/label>
+  &lt;label class="label choice">
+    &lt;input type="checkbox">
+    Send me span
+  &lt;/label>
+  &lt;fieldset class="fieldset list list--inline list--unstyled">
+    &lt;legend class="fieldset__legend">Account login:&lt;/legend>
+    &lt;label class="label choice list__item">
+      &lt;input type="radio" name="account" checked>
+      New user
+    &lt;/label>
+    &lt;label class="label choice list__item">
+      &lt;input type="radio" name="account">
+      Existing user
+    &lt;/label>
+  &lt;/fieldset>
+&lt;/fieldset></code></pre>
+	</div>
+</div>
