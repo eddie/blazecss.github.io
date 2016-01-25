@@ -60,7 +60,7 @@ navigation-components:
 - text: Tabs
   url: /components/tabs/
   
-- text: Inputs (docs tbc)
+- text: Inputs
   url: /components/inputs/
   
 - text: Toggles
