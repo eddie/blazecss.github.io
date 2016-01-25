@@ -90,7 +90,7 @@ navigation-components:
 - text: Alerts
   url: /components/alerts/
   
-- text: Toasts (docs tbc)
+- text: Toasts
   url: /components/toasts/
   
 - text: Images (docs tbc)

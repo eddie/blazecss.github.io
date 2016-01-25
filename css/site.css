@@ -193,8 +193,15 @@ section {
 }
 
 /*
- * Modal demo containers
+ * Demo containers
  */
+.toast-demo {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+	border: 1px solid #eee;
+}
+
 .modal-demo {
 	position: relative;
 	height: 550px;
