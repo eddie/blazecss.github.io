@@ -93,7 +93,7 @@ navigation-components:
 - text: Toasts
   url: /components/toasts/
   
-- text: Images (docs tbc)
+- text: Images
   url: /components/images/
   
 - text: Base

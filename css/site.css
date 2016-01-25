@@ -195,6 +195,12 @@ section {
 /*
  * Demo containers
  */
+.demo-container {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+
 .toast-demo {
 	position: relative;
 	height: 400px;
