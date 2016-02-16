@@ -1,0 +1,19 @@
+<h3 class="heading heading--medium">Getting Started</h3>
+<ul class="list list--unstyled">
+	<li class="list__item"><a class="link" href="#getting-started">Install</a></li>
+	<li class="list__item"><a class="link" href="#custom-build">Custom build</a></li>
+</ul>
+<h3 class="heading heading--medium">Components</h3>
+<ul class="list list--unstyled">
+	{% for link in site.navigation-components %}
+		{% assign active = nil %}
+		{% if page.url == link.url or page.layout == link.layout %}
+			{% assign active = 'active' %}
+		{% endif %}
+		<li class="list__item {{ active }}"><a class="link" href="{{ link.url }}">{{ link.text }}</a></li>
+	{% endfor %}
+</ul>
+<h3 class="heading heading--medium">Community</h3>
+<ul class="list list--unstyled">
+	<li class="list__item"><a class="link" href="#">Contributing</a></li>
+</ul>

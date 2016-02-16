@@ -5,6 +5,7 @@ description: Blaze is designed to give you structure and a good starting point f
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blazecss.com" # the base hostname & protocol for your site
 twitter_username: blazecss
+version: '1.1.1'
 
 # Build settings
 markdown: kramdown
@@ -24,78 +25,81 @@ navigation-community:
   
 
 navigation-components:
-- text: Typography
-  url: /components/typography/
-  
-- text: Headings
-  url: /components/headings/
-  
 - text: Addresses
   url: /components/addresses/
-  
+
+- text: Alerts
+  url: /components/alerts/
+
 - text: Badges
   url: /components/badges/
-  
-- text: Grid
-  url: /components/grid/
-  
-- text: Containers
-  url: /components/containers/
-  
-- text: Tables
-  url: /components/tables/
-  
-- text: Cards
-  url: /components/cards/
-  
+
+- text: Bubbles
+  url: /components/bubbles/
+
 - text: Buttons
   url: /components/buttons/
-  
-- text: Lists
-  url: /components/lists/
-  
-- text: Menus
-  url: /components/menus/
-  
-- text: Tabs
-  url: /components/tabs/
-  
-- text: Inputs
-  url: /components/inputs/
-  
-- text: Toggles
-  url: /components/toggles/
-  
-- text: Tags
-  url: /components/tags/
-  
-- text: Ranges
-  url: /components/ranges/
-  
+
 - text: Calendars
   url: /components/calendars/
+
+- text: Cards
+  url: /components/cards/
+
+- text: Containers
+  url: /components/containers/
+
+- text: Drawers
+  url: /components/drawers/
+
+- text: Grid
+  url: /components/grid/
+
+- text: Headings
+  url: /components/headings/
+
+- text: Images
+  url: /components/images/
+
+- text: Inputs
+  url: /components/inputs/
+
+- text: Lists
+  url: /components/lists/
+
+- text: Menus
+  url: /components/menus/
+
+- text: Modals
+  url: /components/modals/
 
 - text: Overlays
   url: /components/overlays/
 
-- text: Modals
-  url: /components/modals/
-  
-- text: Drawers
-  url: /components/drawers/
+- text: Pagination
+  url: /components/pagination/
 
-- text: Bubbles
-  url: /components/bubbles/
+- text: Ranges
+  url: /components/ranges/
+
+- text: Tables
+  url: /components/tables/
+
+- text: Typography
+  url: /components/typography/
+
+- text: Tabs
+  url: /components/tabs/
+
+- text: Tags
+  url: /components/tags/
   
-- text: Alerts
-  url: /components/alerts/
-  
+- text: Toggles
+  url: /components/toggles/
+
 - text: Toasts
   url: /components/toasts/
-  
-- text: Images
-  url: /components/images/
-  
+
 - text: Base
   url: /components/base/
   
