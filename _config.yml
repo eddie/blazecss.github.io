@@ -5,7 +5,7 @@ description: Blaze is designed to give you structure and a good starting point f
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blazecss.com" # the base hostname & protocol for your site
 twitter_username: blazecss
-version: '1.1.1'
+version: '1.1.2'
 
 # Build settings
 markdown: kramdown
@@ -14,15 +14,15 @@ markdown: kramdown
 navigation-getting-started:
 - text: Install
   url: /getting-started/install/
-  
+
 - text: Custom build
   url: /getting-started/custombuild/
-  
+
 
 navigation-community:
 - text: Contributing
   url: /community/contributing/
-  
+
 
 navigation-components:
 - text: Addresses
@@ -93,7 +93,7 @@ navigation-components:
 
 - text: Tags
   url: /components/tags/
-  
+
 - text: Toggles
   url: /components/toggles/
 
@@ -102,4 +102,3 @@ navigation-components:
 
 - text: Base
   url: /components/base/
-  
