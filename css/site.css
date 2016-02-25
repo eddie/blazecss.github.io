@@ -110,6 +110,15 @@ section {
 	padding-bottom: 2em;
 }
 
+.view-code {
+	margin-top: 2em;
+}
+
+.view-code .link {
+	display: block;
+	padding: 0.4em 0;
+}
+
 /*
  * Nav
  */
