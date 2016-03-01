@@ -8,6 +8,7 @@ title: Menus
 	dropdown replacements rather than page segments.
 </p>
 
+<h2 class="heading heading--medium">Single Selection</h2>
 <div class="grid grid--small-full letter-box--large">
 	<div class="grid__cell grid__cell--width-50">
 		<ul class="menu menu--high">
@@ -41,4 +42,62 @@ title: Menus
   &lt;li class="menu__item">Menu 9&lt;/li>
   &lt;li class="menu__item">Menu 10&lt;/li>
 &lt;/ul></code></pre></div>
+</div>
+
+<h2 class="heading heading--medium">Combo Selection</h2>
+<p class="paragrapah">
+	Combine the <code class="code">choice</code> checkboxes with menus to easily produce combo dropdowns.
+</p>
+<div class="grid grid--small-full letter-box--large">
+	<div class="grid__cell grid__cell--width-50">
+		<div class="menu menu--high">
+			<label class="menu__item choice">
+				<input type="checkbox"> Item 1
+			</label>
+			<label class="menu__item choice">
+				<input type="checkbox"> Item 2
+			</label>
+			<div class="menu__item menu__item--divider">Divider</div>
+			<label class="menu__item choice choice--disabled">
+				<input type="checkbox" disabled> Disabled item
+			</label>
+			<label class="menu__item choice">
+				<input type="checkbox"> Item 4
+			</label>
+			<label class="menu__item choice">
+				<input type="checkbox"> Item 5
+			</label>
+			<label class="menu__item choice">
+				<input type="checkbox"> Item 6
+			</label>
+			<div class="menu__item menu__item--divider">Divider</div>
+			<label class="menu__item choice">
+				<input type="checkbox"> Item 7
+			</label>
+			<label class="menu__item choice">
+				<input type="checkbox"> Item 8
+			</label>
+			<label class="menu__item choice">
+				<input type="checkbox"> Item 9
+			</label>
+			<label class="menu__item choice">
+				<input type="checkbox"> Item 10
+			</label>
+		</div>
+	</div>
+	<div class="grid__cell grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;div class="menu menu--high">
+  &lt;label class="menu__item choice">
+    &lt;input type="checkbox"> Item 1
+  &lt;/label>
+  &lt;label class="menu__item choice">
+    &lt;input type="checkbox"> Item 2
+  &lt;/label>
+  &lt;div class="menu__item menu__item--divider">Divider&lt;/div>
+  &lt;label class="menu__item choice choice--disabled">
+    &lt;input type="checkbox" disabled> Disabled item
+  &lt;/label>
+  &lt;label class="menu__item choice">
+    &lt;input type="checkbox"> Item 4
+  &lt;/label>
+&lt;/div></code></pre></div>
 </div>
