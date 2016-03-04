@@ -36,6 +36,29 @@ section {
 }
 
 /*
+ * Menu button for smaller screens
+ */
+
+a.navbtn, a.navbtn:hover, a.navbtn:active {
+	position: absolute;
+	top: 1.3rem;
+	right: 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid;
+	padding: 2px 5px;
+	border-radius: 3px;
+	font-size: 0.9rem;
+}
+
+@media (min-width: 42em) {
+	.navbtn {
+		display: none;
+	}
+}
+
+
+/*
  * Page Header
  */
 
