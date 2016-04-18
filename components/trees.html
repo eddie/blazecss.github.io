@@ -1,0 +1,50 @@
+---
+layout: page
+title: Trees
+---
+
+<p class="paragraph">
+	Expandable tree structure
+</p>
+
+<h2 class="heading heading--medium">Expandable and Expanded</h2>
+<div class="grid grid--small-full">
+	<div class="grid__cell grid__cell--width-50 letter-box--small">
+		<ul class="tree">
+			<li class="tree__item tree__item--expandable"><span class="link">Directory 1</span></li>
+			<li class="tree__item tree__item--expandable"><span class="link">Directory 2</span></li>
+			<li class="tree__item tree__item--expanded"><span class="link">Directory 3</span></li>
+				<ul class="tree">
+					<li class="tree__item">File 1</li>
+					<li class="tree__item">File 2</li>
+					<li class="tree__item">File 3</li>
+					<li class="tree__item">File 4</li>
+				</ul>
+			</li>
+			<li class="tree__item tree__item--expandable"><span class="link">Directory 4</span></li>
+			<li class="tree__item tree__item--expanded"><span class="link">Directory 5</span></li>
+				<ul class="tree">
+					<li class="tree__item quiet">(empty)</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="grid__cell grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;ul class="tree">
+  &lt;li class="tree__item tree__item--expandable">&lt;span class="link">Directory 1&lt;/span>&lt;/li>
+    &lt;li class="tree__item tree__item--expandable">&lt;span class="link">Directory 2&lt;/span>&lt;/li>
+    &lt;li class="tree__item tree__item--expanded">&lt;span class="link">Directory 3&lt;/span>&lt;/li>
+    &lt;ul class="tree">
+      &lt;li class="tree__item">File 1&lt;/li>
+      &lt;li class="tree__item">File 2&lt;/li>
+      &lt;li class="tree__item">File 3&lt;/li>
+      &lt;li class="tree__item">File 4&lt;/li>
+    &lt;/ul>
+    &lt;/li>
+    &lt;li class="tree__item tree__item--expandable">&lt;span class="link">Directory 4&lt;/span>&lt;/li>
+    &lt;li class="tree__item tree__item--expanded">&lt;span class="link">Directory 5&lt;/span>&lt;/li>
+    &lt;ul class="tree">
+      &lt;li class="tree__item quiet">(empty)&lt;/li>
+    &lt;/ul>
+    &lt;/li>
+  &lt;/ul></code></pre></div>
+</div>
