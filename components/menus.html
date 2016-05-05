@@ -3,100 +3,100 @@ layout: page
 title: Menus
 ---
 
-<p class="paragraph">
-	Menus inherit a lot of styles from <a class="link" href="/components/cards">Cards</a> but are primarily designed as
+<p class="c-paragraph">
+	Menus inherit a lot of styles from <a class="c-link" href="/components/cards">Cards</a> but are primarily designed as
 	dropdown replacements rather than page segments.
 </p>
 
-<h2 class="heading heading--medium">Single Selection</h2>
-<div class="grid grid--small-full letter-box--large">
-	<div class="grid__cell grid__cell--width-50">
-		<ul class="menu menu--high">
-			<li class="menu__item">Menu 1</li>
-			<li class="menu__item">Menu 2</li>
-			<li class="menu__item menu__item--divider">Divider</li>
-			<li class="menu__item">Menu 3</li>
-			<li class="menu__item">Menu 4</li>
-			<li class="menu__item menu__item--disabled">Menu item disabled</li>
-			<li class="menu__item menu__item--active">Menu item active</li>
-			<li class="menu__item">Menu 5</li>
-			<li class="menu__item">Menu 6</li>
-			<li class="menu__item">Menu 7</li>
-			<li class="menu__item">Menu 8</li>
-			<li class="menu__item">Menu 9</li>
-			<li class="menu__item">Menu 10</li>
+<h2 class="c-heading c-heading--medium">Single Selection</h2>
+<div class="o-grid o-grid--small-full letter-box--large">
+	<div class="o-grid__cell o-grid__cell--width-50">
+		<ul class="c-menu c-menu--high">
+			<li class="c-menu__item">Menu 1</li>
+			<li class="c-menu__item">Menu 2</li>
+			<li class="c-menu__item c-menu__item--divider">Divider</li>
+			<li class="c-menu__item">Menu 3</li>
+			<li class="c-menu__item">Menu 4</li>
+			<li class="c-menu__item c-menu__item--disabled">Menu item disabled</li>
+			<li class="c-menu__item c-menu__item--active">c-menu item active</li>
+			<li class="c-menu__item">Menu 5</li>
+			<li class="c-menu__item">Menu 6</li>
+			<li class="c-menu__item">Menu 7</li>
+			<li class="c-menu__item">Menu 8</li>
+			<li class="c-menu__item">Menu 9</li>
+			<li class="c-menu__item">Menu 10</li>
 		</ul>
 	</div>
-	<div class="grid__cell grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;ul class="menu menu--high">
-  &lt;li class="menu__item">Menu 1&lt;/li>
-  &lt;li class="menu__item">Menu 2&lt;/li>
-  &lt;li class="menu__item menu__item--divider">Divider&lt;/li>
-  &lt;li class="menu__item">Menu 3&lt;/li>
-  &lt;li class="menu__item">Menu 4&lt;/li>
-  &lt;li class="menu__item menu__item--disabled">Menu item disabled&lt;/li>
-  &lt;li class="menu__item menu__item--active">Menu item active&lt;/li>
-  &lt;li class="menu__item">Menu 5&lt;/li>
-  &lt;li class="menu__item">Menu 6&lt;/li>
-  &lt;li class="menu__item">Menu 7&lt;/li>
-  &lt;li class="menu__item">Menu 8&lt;/li>
-  &lt;li class="menu__item">Menu 9&lt;/li>
-  &lt;li class="menu__item">Menu 10&lt;/li>
+	<div class="o-grid__cell o-grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="c-code c-code--multiline">&lt;ul class="c-menu c-menu--high">
+  &lt;li class="c-menu__item">Menu 1&lt;/li>
+  &lt;li class="c-menu__item">Menu 2&lt;/li>
+  &lt;li class="c-menu__item c-menu__item--divider">Divider&lt;/li>
+  &lt;li class="c-menu__item">Menu 3&lt;/li>
+  &lt;li class="c-menu__item">Menu 4&lt;/li>
+  &lt;li class="c-menu__item c-menu__item--disabled">Menu item disabled&lt;/li>
+  &lt;li class="c-menu__item c-menu__item--active">Menu item active&lt;/li>
+  &lt;li class="c-menu__item">Menu 5&lt;/li>
+  &lt;li class="c-menu__item">Menu 6&lt;/li>
+  &lt;li class="c-menu__item">Menu 7&lt;/li>
+  &lt;li class="c-menu__item">Menu 8&lt;/li>
+  &lt;li class="c-menu__item">Menu 9&lt;/li>
+  &lt;li class="c-menu__item">Menu 10&lt;/li>
 &lt;/ul></code></pre></div>
 </div>
 
-<h2 class="heading heading--medium">Combo Selection</h2>
+<h2 class="c-heading c-heading--medium">Combo Selection</h2>
 <p class="paragrapah">
-	Combine the <code class="code">choice</code> checkboxes with menus to easily produce combo dropdowns.
+	Combine the <code class="c-code">c-choice</code> checkboxes with menus to easily produce combo dropdowns.
 </p>
-<div class="grid grid--small-full letter-box--large">
-	<div class="grid__cell grid__cell--width-50">
-		<div class="menu menu--high">
-			<label class="menu__item choice">
+<div class="o-grid o-grid--small-full letter-box--large">
+	<div class="o-grid__cell o-grid__cell--width-50">
+		<div class="c-menu c-menu--high">
+			<label class="c-menu__item c-choice">
 				<input type="checkbox"> Item 1
 			</label>
-			<label class="menu__item choice">
+			<label class="c-menu__item c-choice">
 				<input type="checkbox"> Item 2
 			</label>
-			<div class="menu__item menu__item--divider">Divider</div>
-			<label class="menu__item choice choice--disabled">
+			<div class="c-menu__item c-menu__item--divider">Divider</div>
+			<label class="c-menu__item c-choice c-choice--disabled">
 				<input type="checkbox" disabled> Disabled item
 			</label>
-			<label class="menu__item choice">
+			<label class="c-menu__item c-choice">
 				<input type="checkbox"> Item 4
 			</label>
-			<label class="menu__item choice">
+			<label class="c-menu__item c-choice">
 				<input type="checkbox"> Item 5
 			</label>
-			<label class="menu__item choice">
+			<label class="c-menu__item c-choice">
 				<input type="checkbox"> Item 6
 			</label>
-			<div class="menu__item menu__item--divider">Divider</div>
-			<label class="menu__item choice">
+			<div class="c-menu__item c-menu__item--divider">Divider</div>
+			<label class="c-menu__item c-choice">
 				<input type="checkbox"> Item 7
 			</label>
-			<label class="menu__item choice">
+			<label class="c-menu__item c-choice">
 				<input type="checkbox"> Item 8
 			</label>
-			<label class="menu__item choice">
+			<label class="c-menu__item c-choice">
 				<input type="checkbox"> Item 9
 			</label>
-			<label class="menu__item choice">
+			<label class="c-menu__item c-choice">
 				<input type="checkbox"> Item 10
 			</label>
 		</div>
 	</div>
-	<div class="grid__cell grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="code code--multiline">&lt;div class="menu menu--high">
-  &lt;label class="menu__item choice">
+	<div class="o-grid__cell o-grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="c-code c-code--multiline">&lt;div class="c-menu c-menu--high">
+  &lt;label class="c-menu__item c-choice">
     &lt;input type="checkbox"> Item 1
   &lt;/label>
-  &lt;label class="menu__item choice">
+  &lt;label class="c-menu__item c-choice">
     &lt;input type="checkbox"> Item 2
   &lt;/label>
-  &lt;div class="menu__item menu__item--divider">Divider&lt;/div>
-  &lt;label class="menu__item choice choice--disabled">
+  &lt;div class="c-menu__item c-menu__item--divider">Divider&lt;/div>
+  &lt;label class="c-menu__item c-choice c-choice--disabled">
     &lt;input type="checkbox" disabled> Disabled item
   &lt;/label>
-  &lt;label class="menu__item choice">
+  &lt;label class="c-menu__item c-choice">
     &lt;input type="checkbox"> Item 4
   &lt;/label>
 &lt;/div></code></pre></div>

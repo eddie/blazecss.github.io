@@ -3,27 +3,27 @@
 
 {% include head.html %}
 
-<body>
-<a class="link navbtn" href="#nav"><i class="fa fa-bars fa-2x"></i></a>
+<body class="c-text">
+<a class="c-link navbtn" href="#nav"><i class="fa fa-bars fa-2x"></i></a>
 {% include page-header.html %}
 
-<div class="container container--xlarge grid grid--wrap grid--top grid--small-full grid--medium-full">
-	<main class="grid__cell grid__cell--width-80">
+<div class="o-container o-container--xlarge o-grid o-grid--wrap o-grid--top o-grid--small-full o-grid--medium-full">
+	<main class="o-grid__cell o-grid__cell--width-80">
 		<section>
-			<h2 class="heading heading--large">
+			<h2 class="c-heading c-heading--large">
 				{{ page.title }}
 			</h2>
 			{{ content }}
 		</section>
 	</main>
-	<nav id="nav" class="grid__cell grid__cell--width-20 nav">
+	<nav id="nav" class="o-grid__cell o-grid__cell--width-20 nav">
 		<div class="view-code">
-			<a class="link" href="https://raw.githubusercontent.com/BlazeCSS/blaze/master/dist/blaze.min.css" download>
-				<i class="fa fa-download button__icon-left"></i>
+			<a class="c-link" href="https://raw.githubusercontent.com/BlazeCSS/blaze/master/dist/blaze.min.css" download>
+				<i class="fa fa-download c-button__icon-left"></i>
 				Download
 			</a>
-			<a class="link" href="https://github.com/BlazeCSS/blaze">
-				<i class="fa fa-code button__icon-left"></i>
+			<a class="c-link" href="https://github.com/BlazeCSS/blaze">
+				<i class="fa fa-code c-button__icon-left"></i>
 				Source
 			</a>
 		</div>

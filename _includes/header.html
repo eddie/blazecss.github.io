@@ -1,48 +1,42 @@
-<a class="fork button button--primary" href="https://github.com/BlazeCSS/blaze">
-	<i class="fa fa-code-fork button__icon-left"></i>
+<a class="fork c-button c-button--secondary c-button--small" href="https://github.com/BlazeCSS/blaze">
+	<i class="fa fa-code-fork c-button__icon-left"></i>
 	Fork me on GitHub
 </a>
 
 <div class="page-strip"></div>
 <div class="header header--primary">
-	<div class="container container--small">
-		<div class="grid">
-			<h1 class="grid__cell grid__cell--offset-25 grid__cell--width-50">
-				<a href="/"><img class="image" src="/images/blaze.png"></a>
+	<div class="o-container o-container--small">
+		<div class="o-grid">
+			<h1 class="o-grid__cell o-grid__cell--offset-25 o-grid__cell--width-50">
+				<a href="/"><img class="o-image" src="/images/blaze.png"></a>
 			</h1>
 		</div>
 
-		<div class="product-name">Blaze<span style="color:#FF7043;font-weight:normal;">_CSS</span></div>
+		<div class="product-name">Blaze<span style="color:#FF3D00;font-weight:normal;">_CSS</span></div>
 
 		<div class="header__row">
 			Open source modular CSS framework providing great structure for building websites quickly
 		</div>
 
-		<div class="header__row">
-			<ul class="list list--inline">
-				<li class="list__item">Modular</li>
-				<li class="list__item">Customisable</li>
-				<li class="list__item">{{ site.size }} gzip!</li>
-			</ul>
+		<div class="header__row o-grid">
+			<div class="o-grid__cell">
+				<a class="c-button c-button--primary c-button--block hero-button"
+					 href="/getting-started/install">Get Started</a>
+			</div>
 		</div>
 
-		<p class="paragraph header__row">
-			<a class="button button--secondary"
-				 href="https://cdn.jsdelivr.net/blazecss/latest/blaze.min.css" download>
-				<i class="fa fa-download button__icon-left"></i>Download</a>
-			<a class="button button--primary"
-				 href="/getting-started/install">
-				<i class="fa fa-book button__icon-left"></i>Docs</a>
-		</p>
-
-		<p class="paragraph header__row">
+		<div class="header__row">
 			<small>
-				<span class="badge badge--success">v{{ site.version }}</span>
-				<a class="link pillar-box--medium" href="https://github.com/BlazeCSS/blaze">
+				<span class="c-badge c-badge--success u-pillar-box--medium">v{{ site.version }}</span>
+				<a class="c-link u-pillar-box--medium"
+					 href="https://cdn.jsdelivr.net/blazecss/latest/blaze.min.css" download>
+					<i class="fa fa-download"></i> Download
+				</a>
+				<a class="c-link" href="https://github.com/BlazeCSS/blaze">
 					<i class="fa fa-github-alt"></i> GitHub Project
 				</a>
 			</small>
-		</p>
+		</div>
 	</div>
 </div>
 

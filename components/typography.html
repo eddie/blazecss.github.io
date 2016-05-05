@@ -3,194 +3,194 @@ layout: page
 title: Typography
 ---
 
-<p class="paragraph">
+<p class="c-paragraph">
 	Blaze comes bundled with a nice typography module that covers different text visualisations.
 </p>
 
-<p class="paragraph">
+<p class="c-paragraph">
 	The base font-family is:
 </p>
 
-<p class="paragraph">
-	<pre class="pre css"><code class="code code--multiline">body { font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }</code></pre>
+<p class="c-paragraph">
+	<pre class="c-pre css"><code class="c-code c-code--multiline">.c-text { font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif; }</code></pre>
 </p>
-<p class="paragraph">
-	This attempts to give your website the same font family output as the device's system font.
+<p class="c-paragraph">
+	This attempts to give your text the same font family output as the device's system font.
 </p>
 
-<p class="paragraph">
+<p class="c-paragraph">
 	We don't have a system font family in CSS yet and until we do this is as close as it gets. It of course can be
 	overridden via CSS or the custom build approach.
 </p>
 
-<p class="paragraph">Here is some background on Medium.com
-	<a class="link" href="https://medium.com/designing-medium/system-shock-6b1dc6d6596f">Article: System Shock</a>
+<p class="c-paragraph">Here is some background on Medium.com
+	<a class="c-link" href="https://medium.com/designing-medium/system-shock-6b1dc6d6596f">Article: System Shock</a>
 </p>
 
-<h3 class="heading heading--medium">Paragraphs</h3>
+<h3 class="c-heading c-heading--medium">Paragraphs</h3>
 
-<div class="grid grid--small-full grid--no-gutter">
-	<div class="grid__cell grid__cell--width-20">
-		<p class="paragraph">
-			.paragraph
+<div class="o-grid o-grid--small-full o-grid--no-gutter">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<p class="c-paragraph">
+			.c-paragraph
 		</p>
 	</div>
-	<div class="grid__cell grid__cell--width-80">
-		<p class="paragraph">
+	<div class="o-grid__cell o-grid__cell--width-80">
+		<p class="c-paragraph">
 			Use the paragraph class to style your....paragraphs!
 		</p>
 
-		<p class="paragraph">
-			<pre class="pre html"><code class="code code--multiline">&lt;p class="paragraph">.paragraph&lt;/p></code></pre>
+		<p class="c-paragraph">
+			<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;p class="c-paragraph">.c-paragraph&lt;/p></code></pre>
 		</p>
 	</div>
 </div>
 
-<h3 class="heading heading--medium">Hyperlinks</h3>
+<h3 class="c-heading c-heading--medium">Hyper-links</h3>
 
-<div class="grid grid--small-full grid--no-gutter">
-	<div class="grid__cell grid__cell--width-20">
-		<p class="paragraph">
-			<a href="#" class="link">.link</a><br>
-			<a href="#" class="link link--primary">primary</a><br>
-			<a href="#" class="link link--secondary">secondary</a><br>
-			<a href="#" class="link link--success">success</a><br>
-			<a href="#" class="link link--error">error</a>
+<div class="o-grid o-grid--small-full o-grid--no-gutter">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<p class="c-paragraph">
+			<a href="#" class="c-link">.c-link</a><br>
+			<a href="#" class="c-link c-link--primary">primary</a><br>
+			<a href="#" class="c-link c-link--secondary">secondary</a><br>
+			<a href="#" class="c-link c-link--success">success</a><br>
+			<a href="#" class="c-link c-link--error">error</a>
 		</p>
 	</div>
-	<div class="grid__cell grid__cell--width-80">
-		<p class="paragraph">
-			To utilise Blaze's consistent styles for hyperlinks or to make text look like a hyperlink add
-			the <code class="code">.link</code> class.
+	<div class="o-grid__cell o-grid__cell--width-80">
+		<p class="c-paragraph">
+			To utilise Blaze's consistent styles for hyper-links or to make text look like a hyper-link add
+			the <code class="c-code">.c-link</code> class.
 		</p>
-		<p class="paragraph">
-		<pre class="pre html"><code class="code code--multiline">&lt;a class="link">hyperlink&lt;/a></code></pre>
+		<p class="c-paragraph">
+		<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;a class="c-link">hyper-link&lt;/a></code></pre>
 		</p>
 	</div>
 </div>
 
-<h3 class="heading heading--medium">Highlighting text</h3>
+<h3 class="c-heading c-heading--medium">Highlighting text</h3>
 
-<div class="grid grid--small-full grid--no-gutter">
-	<div class="grid__cell grid__cell--width-20">
-		<p class="paragraph">
-			<span class="highlight">.highlight</span>
+<div class="o-grid o-grid--small-full o-grid--no-gutter">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<p class="c-paragraph">
+			<span class="c-text--highlight">.c-text--highlight</span>
 		</p>
 	</div>
-	<div class="grid__cell grid__cell--width-80">
-		<p class="paragraph">
+	<div class="o-grid__cell o-grid__cell--width-80">
+		<p class="c-paragraph">
 			To highlight text simply wrap the words with the highlight class:
 		</p>
 
-		<p class="paragraph">
-			<pre class="pre html"><code class="code code--multiline">&lt;span class="highlight">hello world&lt;/span></code></pre>
+		<p class="c-paragraph">
+			<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;span class="c-text--highlight">hello world&lt;/span></code></pre>
 		</p>
 	</div>
 </div>
 
-<h3 class="heading heading--medium">Emphasising</h3>
+<h3 class="c-heading c-heading--medium">Emphasising</h3>
 
-<div class="grid grid--small-full grid--no-gutter">
-	<div class="grid__cell grid__cell--width-20">
-		<p class="paragraph">
-			<span class="loud">.loud</span>
+<div class="o-grid o-grid--small-full o-grid--no-gutter">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<p class="c-paragraph">
+			<span class="c-text--loud">.c-text--loud</span>
 			<br>
-			<span class="quiet">.quiet</span>
+			<span class="c-text--quiet">.c-text--quiet</span>
 		</p>
 	</div>
-	<div class="grid__cell grid__cell--width-80">
-		<p class="paragraph">
+	<div class="o-grid__cell o-grid__cell--width-80">
+		<p class="c-paragraph">
 			Sometimes you want to shout about something or talk quietly:
 		</p>
 
-		<p class="paragraph">
-			<pre class="pre html"><code class="code code--multiline">&lt;span class="loud">arrgh shouting!&lt;/span>
-&lt;span class="quiet">whispering&lt;/span></code></pre>
+		<p class="c-paragraph">
+			<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;span class="c-text--loud">arrgh shouting!&lt;/span>
+&lt;span class="c-text--quiet">whispering&lt;/span></code></pre>
 		</p>
 	</div>
 </div>
 
-<h3 class="heading heading--medium">Abbreviations</h3>
+<h3 class="c-heading c-heading--medium">Abbreviations</h3>
 
-<div class="grid grid--small-full grid--no-gutter">
-	<div class="grid__cell grid__cell--width-20">
-		<p class="paragraph">
-			<abbr class="abbr" title="Abbreviations">.abbr</abbr>
+<div class="o-grid o-grid--small-full o-grid--no-gutter">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<p class="c-paragraph">
+			<abbr class="c-text--help" title="Help text">.c-text--help</abbr>
 		</p>
 	</div>
-	<div class="grid__cell grid__cell--width-80">
-		<p class="paragraph">
+	<div class="o-grid__cell o-grid__cell--width-80">
+		<p class="c-paragraph">
 			To enable greater accessibility you can enable abbreviations on elements.<br>
 			<em>The tag must have a title attribute</em>:
 		</p>
 
-		<p class="paragraph">
-			<pre class="pre html"><code class="code code--multiline">&lt;abbr class="abbr" title="Abbreviations">.abbr&lt;/abbr></code></pre>
+		<p class="c-paragraph">
+			<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;abbr class="c-text--help" title="Help text">.c-text--help&lt;/abbr></code></pre>
 		</p>
 	</div>
 </div>
 
-<h3 class="heading heading--medium">Monospaced</h3>
+<h3 class="c-heading c-heading--medium">Monospaced</h3>
 
-<div class="grid grid--small-full grid--no-gutter">
-	<div class="grid__cell grid__cell--width-20">
-		<p class="paragraph">
-			<span class="mono">.mono</span>
+<div class="o-grid o-grid--small-full o-grid--no-gutter">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<p class="c-paragraph">
+			<span class="c-text--mono">.c-text--mono</span>
 		</p>
 	</div>
-	<div class="grid__cell grid__cell--width-80">
-		<p class="paragraph">
-			Use the mono class to use our mono font-family.
+	<div class="o-grid__cell o-grid__cell--width-80">
+		<p class="c-paragraph">
+			This class uses our mono font-family.
 		</p>
 
-		<p class="paragraph">
-		<pre class="pre html"><code class="code code--multiline">&lt;span class="mono">.mono&lt;/span></code></pre>
+		<p class="c-paragraph">
+		<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;span class="c-text--mono">.c-text--mono&lt;/span></code></pre>
 		</p>
 	</div>
 </div>
 
 
-<h3 class="heading heading--medium">Keys on a keyboard</h3>
+<h3 class="c-heading c-heading--medium">Keys on a keyboard</h3>
 
-<div class="grid grid--small-full grid--no-gutter">
-	<div class="grid__cell grid__cell--width-20">
-		<p class="paragraph">
-			<kbd class="kbd">.kbd</kbd>
+<div class="o-grid o-grid--small-full o-grid--no-gutter">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<p class="c-paragraph">
+			<kbd class="c-kbd">.c-kbd</kbd>
 		</p>
 	</div>
-	<div class="grid__cell grid__cell--width-80">
-		<p class="paragraph">
+	<div class="o-grid__cell o-grid__cell--width-80">
+		<p class="c-paragraph">
 			When you want to describe what keys to press usually as part of support documentation it's handy to use the
 			keyboard class:
 		</p>
 
-		<p class="paragraph">
-			<pre class="pre html"><code class="code code--multiline">&lt;kbd class="kbd">.kbd&lt;/kbd></code></pre>
+		<p class="c-paragraph">
+			<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;kbd class="c-kbd">.c-kbd&lt;/kbd></code></pre>
 		</p>
 	</div>
 </div>
 
-<h3 class="heading heading--medium">Inline and Multiline code</h3>
+<h3 class="c-heading c-heading--medium">Inline and Multiline code</h3>
 
-<div class="grid grid--small-full grid--no-gutter">
-	<div class="grid__cell grid__cell--width-20">
-		<p class="paragraph">
-			<code class="code">.code</code>
+<div class="o-grid o-grid--small-full o-grid--no-gutter">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<p class="c-paragraph">
+			<code class="c-code">.c-code</code>
 		</p>
 	</div>
-	<div class="grid__cell grid__cell--width-80">
-		<p class="paragraph">
-			You can highlight <code class="code">code</code> within a page by using the <code class="code">.code</code>
+	<div class="o-grid__cell o-grid__cell--width-80">
+		<p class="c-paragraph">
+			You can highlight <code class="c-code">code</code> within a page by using the <code class="c-code">.c-code</code>
 			class.
 		</p>
 
-		<p class="paragraph">
-			Default is inline, to display multiline snippets add the <code class="code">.code--multiline</code>
+		<p class="c-paragraph">
+			Default is inline, to display multi-line snippets add the <code class="c-code">.c-code--multiline</code>
 			modifier.
 		</p>
 
-		<p class="paragraph">
-				<pre class="pre html"><code class="code code--multiline">&lt;code class="code code--multiline">
+		<p class="c-paragraph">
+				<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;code class="c-code c-code--multiline">
   &lt;h1>hello&lt;/h1>
   &lt;h2>world&lt;/h2>
 &lt;/code></code></pre>
@@ -198,28 +198,28 @@ title: Typography
 	</div>
 </div>
 
-<h3 class="heading heading--medium">Blockquote</h3>
+<h3 class="c-heading c-heading--medium">Blockquote</h3>
 
-<div class="grid grid--small-full">
-	<div class="grid__cell grid__cell--width-20">
-		<blockquote class="blockquote">
-			<div class="blockquote__body">
+<div class="o-grid o-grid--small-full">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<blockquote class="c-blockquote">
+			<div class="c-blockquote__body">
 				Hello!
 			</div>
-			<footer class="blockquote__footer">- Joe</footer>
+			<footer class="c-blockquote__footer">- Joe</footer>
 		</blockquote>
 	</div>
-	<div class="grid__cell grid__cell--width-80">
-		<p class="paragraph">
+	<div class="o-grid__cell o-grid__cell--width-80">
+		<p class="c-paragraph">
 			To quote use the following code to make it stand out from the rest of the page:
 		</p>
 
-		<p class="paragraph">
-			<pre class="pre html"><code class="code code--multiline">&lt;blockquote class="blockquote">
-  &lt;div class="blockquote__body">
+		<p class="c-paragraph">
+			<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;blockquote class="c-blockquote">
+  &lt;div class="c-blockquote__body">
     Hello!
   &lt;/div>
-  &lt;footer class="blockquote__footer">
+  &lt;footer class="c-blockquote__footer">
     - Joe
   &lt;/footer>
 &lt;/blockquote></code></pre>

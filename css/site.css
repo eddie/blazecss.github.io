@@ -2,6 +2,10 @@ body {
 	overflow-x: hidden;
 }
 
+.c-text {
+	font-family: "Lato",-apple-system,".SFNSText-Regular","San Francisco",Roboto,"Segoe UI","Helvetica Neue","Lucida Grande",sans-serif;
+}
+
 @media (min-width: 42em) {
 	body {
 		font-size: 18px;
@@ -19,7 +23,7 @@ section {
 .fork {
 	display: none;
 	position: absolute;
-	right: -70px;
+	right: -60px;
 	top: 70px;
 	padding: .3em 3em;
 	-webkit-transform: rotate(45deg);
@@ -67,7 +71,8 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 }
 
 .header .header__row {
-	padding: 1.4em 0;
+	padding-top: 1.4em;
+	padding-bottom: 1.4em;
 }
 
 .header--primary {
@@ -88,7 +93,12 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	background-color: #000;
 }
 
-.logo .image {
+.header--white {
+	color: inherit;
+	background-color: #FFF;
+}
+
+.logo .o-image {
 	display: inline-block;
 	width: 200px;
 }
@@ -110,15 +120,19 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	font-weight: normal;
 }
 
+.hero-button {
+	letter-spacing: 4px;
+}
+
 /*
  * Page Content
  */
 .page-strip {
 	background: #ff7043;
-	background: -moz-linear-gradient(left, #ef4f52 0%, #ff9573 50%, #ef4f52 100%);
-	background: -webkit-linear-gradient(left, #ef4f52 0%, #ff9573 50%, #ef4f52 100%);
-	background: linear-gradient(to right, #ef4f52 0%, #ff9573 50%, #ef4f52 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef4f52', endColorstr='#ef4f52', GradientType=1);
+	background: -moz-linear-gradient(left, #ff3d00 0%, #ff7043 50%, #ff3d00 100%);
+	background: -webkit-linear-gradient(left, #ff3d00 0%, #ff7043 50%, #ff3d00 100%);
+	background: linear-gradient(to right, #ff3d00 0%, #ff7043 50%, #ff3d00 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d00', endColorstr='#ff3d00', GradientType=1);
 	height: 1em;
 }
 
@@ -135,7 +149,7 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	margin-top: 2em;
 }
 
-.view-code .link {
+.view-code .c-link {
 	display: block;
 	padding: 0.4em 0;
 }
@@ -147,11 +161,11 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	font-size: 0.9em;
 }
 
-.nav .list__item {
+.nav .c-list__item {
 	padding: 0.4em 0;
 }
 
-.nav .list__item.active {
+.nav .c-list__item.active {
 	display: inline-block;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
@@ -160,7 +174,7 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	background-color: #42A5F5;
 }
 
-.nav .list__item.active .link {
+.nav .c-list__item.active .c-link {
 	color: #fff;
 }
 
@@ -186,39 +200,39 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
  * Grid outlines
  */
 
-.grid--demo.grid {
+.o-grid--demo.o-grid {
 	border: 2px solid #ff69b4;
 }
 
-.grid-key {
+.o-grid-key {
 	font-weight: bold;
 }
 
-.grid-key--grid {
+.o-grid-key--grid {
 	color: #ff69b4;
 }
 
-.grid-key--grid-cell {
+.o-grid-key--grid-cell {
 	color: #00bfff;
 }
 
-.grid-key--padding {
+.o-grid-key--padding {
 	color: #66bb6a;
 }
 
-.grid--demo .grid__cell {
+.o-grid--demo .o-grid__cell {
 	border: 2px solid #00bfff;
 	background-color: #b2f5b5;
 }
 
-.grid-text {
+.o-grid-text {
 	background-color: #fff;
 }
 
 /*
  * Buttons demo
  */
-.button-demo .button {
+.button-demo .c-button {
 	margin: 5px 0;
 }
 
@@ -233,6 +247,12 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 
 .toast-demo {
 	position: relative;
+	height: 400px;
+	overflow: hidden;
+	border: 1px solid #eee;
+}
+
+.alignment-demo {
 	height: 400px;
 	overflow: hidden;
 	border: 1px solid #eee;

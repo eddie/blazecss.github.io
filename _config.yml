@@ -5,8 +5,8 @@ description: Blaze is designed to give you structure and a good starting point f
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blazecss.com" # the base hostname & protocol for your site
 twitter_username: blazecss
-version: '1.2.1'
-size: '6.5Kb'
+version: '2.0.0'
+size: '6.3Kb'
 
 # Build settings
 markdown: kramdown
@@ -19,10 +19,24 @@ navigation-getting-started:
 - text: Custom build
   url: /getting-started/custombuild/
 
+- text: About
+  url: /getting-started/about/
 
-navigation-community:
-- text: Contributing
-  url: /community/contributing/
+
+navigation-generics:
+- text: Global
+  url: /generics/global/
+
+
+navigation-objects:
+- text: Containers
+  url: /objects/containers/
+
+- text: Grid
+  url: /objects/grid/
+
+- text: Images
+  url: /objects/images/
 
 
 navigation-components:
@@ -47,20 +61,11 @@ navigation-components:
 - text: Cards
   url: /components/cards/
 
-- text: Containers
-  url: /components/containers/
-
 - text: Drawers
   url: /components/drawers/
 
-- text: Grid
-  url: /components/grid/
-
 - text: Headings
   url: /components/headings/
-
-- text: Images
-  url: /components/images/
 
 - text: Inputs
   url: /components/inputs/
@@ -86,23 +91,28 @@ navigation-components:
 - text: Tables
   url: /components/tables/
 
-- text: Typography
-  url: /components/typography/
-
 - text: Tabs
   url: /components/tabs/
 
 - text: Tags
   url: /components/tags/
 
-- text: Toggles
-  url: /components/toggles/
-
 - text: Toasts
   url: /components/toasts/
+
+- text: Toggles
+  url: /components/toggles/
 
 - text: Trees
   url: /components/trees/
 
-- text: Base
-  url: /components/base/
+- text: Typography
+  url: /components/typography/
+
+
+navigation-utilities:
+- text: Alignment
+  url: /utilities/alignment/
+
+- text: Boxing
+  url: /utilities/boxing/
