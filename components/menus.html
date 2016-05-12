@@ -101,3 +101,53 @@ title: Menus
   &lt;/label>
 &lt;/div></code></pre></div>
 </div>
+
+<h2 class="c-heading c-heading--medium">Animation</h2>
+
+<div class="o-grid o-grid--small-full letter-box--large o-grid--no-gutter">
+	<div class="o-grid__cell o-grid__cell--width-50">
+		<ul class="c-menu c-menu--high a-menu a-menu--top" id="animate">
+			<li class="c-menu__item">Menu 1</li>
+			<li class="c-menu__item">Menu 2</li>
+			<li class="c-menu__item c-menu__item--divider">Divider</li>
+			<li class="c-menu__item">Menu 3</li>
+			<li class="c-menu__item">Menu 4</li>
+			<li class="c-menu__item c-menu__item--disabled">Menu item disabled</li>
+			<li class="c-menu__item c-menu__item--active">c-menu item active</li>
+			<li class="c-menu__item">Menu 5</li>
+			<li class="c-menu__item">Menu 6</li>
+			<li class="c-menu__item">Menu 7</li>
+			<li class="c-menu__item">Menu 8</li>
+			<li class="c-menu__item">Menu 9</li>
+			<li class="c-menu__item">Menu 10</li>
+		</ul>
+	</div>
+</div>
+<div class="u-letter-box--medium">
+	<button class="c-button c-button--ghost-secondary" type="button" onclick="demo()">Animate</button>
+</div>
+
+<script>
+	function demo() {
+		document.getElementById('animate').classList.remove('a-menu');
+		setTimeout(function () {
+			document.getElementById('animate').classList.add('a-menu')
+		}, 50);
+	}
+</script>
+
+<h3 class="c-heading c-heading--small c-text--mono">.a-menu</h3>
+<p class="c-paragraph">
+	Apply the <code class="c-code">.a-menu</code> class to enable animation on a menu.
+</p>
+
+<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
+<p class="c-paragraph">
+	Every animation comes with slow and fast modifiers.
+</p>
+
+<h3 class="c-heading c-heading--small c-text--mono">--top, --bottom, --left, --right</h3>
+<p class="c-paragraph">
+	Add one of these modifiers to change the origin of the animation. Top will make the animations appear to start from
+	the top of the menu and so on. Default is from the center of the element.
+</p>

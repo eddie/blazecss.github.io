@@ -44,3 +44,35 @@ title: Overlays
 	You can make overlays cover the entire page by adding the <code class="c-code">.c-overlay--fullpage</code> modifier. The overlay will
 	remain in a fixed position behind the content you want to promote.
 </p>
+
+
+<h2 class="c-heading c-heading--medium">Animation</h2>
+
+<div class="o-grid o-grid--small-full">
+	<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small modal-demo">
+		<div class="c-overlay c-overlay--dismissable a-overlay a-overlay--slow" id="animate"></div>
+	</div>
+</div>
+
+<div class="u-letter-box--medium">
+	<button class="c-button c-button--ghost-secondary" type="button" onclick="demo()">Animate</button>
+</div>
+
+<script>
+	function demo() {
+		document.getElementById('animate').classList.remove('a-overlay');
+		setTimeout(function () {
+			document.getElementById('animate').classList.add('a-overlay')
+		}, 50);
+	}
+</script>
+
+<h3 class="c-heading c-heading--small c-text--mono">.a-overlay</h3>
+<p class="c-paragraph">
+	Apply the <code class="c-code">.a-overlay</code> class to enable animation on the overlay.
+</p>
+
+<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
+<p class="c-paragraph">
+	Every animation comes with slow and fast modifiers.
+</p>

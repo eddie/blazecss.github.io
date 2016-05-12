@@ -61,3 +61,35 @@ title: Tabs
 		<div class="c-tab-heading">Default</div>
 	</div>
 </div>
+
+
+<h2 class="c-heading c-heading--medium">Animation</h2>
+
+<div class="c-tabs c-tabs--primary a-tabs a-tabs--slow" id="animate">
+	<div class="c-tabs__headings">
+		<div class="c-tab-heading c-tab-heading--active js-tab-one">Tab one</div>
+		<div class="c-tab-heading js-tab-two">Tab two</div>
+	</div>
+</div>
+
+<div class="u-letter-box--medium">
+	<button class="c-button c-button--ghost-secondary" type="button" onclick="demo()">Animate</button>
+</div>
+
+<script>
+	function demo() {
+		document.querySelector('.js-tab-one').classList.toggle('c-tab-heading--active');
+		document.querySelector('.js-tab-two').classList.toggle('c-tab-heading--active');
+	}
+</script>
+
+<h3 class="c-heading c-heading--small c-text--mono">.a-tabs</h3>
+<p class="c-paragraph">
+	Apply the <code class="c-code">.a-tabs</code> class to the <code class="c-code">.c-tabs</code> block
+	to enable animation on the tab headings elements.
+</p>
+
+<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
+<p class="c-paragraph">
+	Every animation comes with slow and fast modifiers.
+</p>

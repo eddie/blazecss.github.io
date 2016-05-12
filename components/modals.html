@@ -175,3 +175,53 @@ title: Modals
 &lt;/div></code></pre></div>
 </div>
 
+<h2 class="c-heading c-heading--medium">Animation</h2>
+
+<div class="o-grid o-grid--small-full">
+	<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small modal-demo">
+		<div class="c-overlay"></div>
+		<div class="c-modal c-modal--highest a-modal a-modal" id="animate">
+			<header class="c-modal__header">
+				<button type="button" class="c-button c-button--close">&times;</button>
+				<h3 class="c-heading c-heading--small">Modal heading</h3>
+			</header>
+
+			<div class="c-modal__body">
+				This is the modal body
+			</div>
+
+			<footer class="c-modal__footer">
+				<button type="button" class="c-button c-button--primary">Close</button>
+			</footer>
+		</div>
+	</div>
+</div>
+
+<div class="u-letter-box--medium">
+	<button class="c-button c-button--ghost-secondary" type="button" onclick="demo()">Animate</button>
+</div>
+
+<script>
+	function demo() {
+		document.getElementById('animate').classList.remove('a-modal');
+		setTimeout(function () {
+			document.getElementById('animate').classList.add('a-modal')
+		}, 50);
+	}
+</script>
+
+<h3 class="c-heading c-heading--small c-text--mono">.a-modal</h3>
+<p class="c-paragraph">
+	Apply the <code class="c-code">.a-modal</code> class to enable animation on the modal popup.
+</p>
+
+<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
+<p class="c-paragraph">
+	Every animation comes with slow and fast modifiers.
+</p>
+
+<h3 class="c-heading c-heading--small c-text--mono">--top, --bottom, --left, --right</h3>
+<p class="c-paragraph">
+	Add one of these modifiers to change the origin of the animation. Top will make the animations appear to start from
+	the top of the modal and so on. Default is from the center of the element.
+</p>

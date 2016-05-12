@@ -4,12 +4,13 @@ title: Drawers
 ---
 
 <p class="c-paragraph">
-	Slide in c-menus, but "<a class="c-link" href="/components/c-menus/">c-menus</a>" was already taken so welcome to drawers.
+	Slide in menus, but "<a class="c-link" href="/components/c-menus/">menus</a>" was already taken so welcome to
+	drawers.
 </p>
 <h2 class="c-heading c-heading--medium">Basic Drawer</h2>
 <p class="c-paragraph">
 	Your basic drawer will appear from the bottom of the container. The container should have
-	<code class="c-code">overflow:hidden</code> or you'll	see the drawer sliding around.
+	<code class="c-code">overflow:hidden</code> or you'll see the drawer sliding around.
 </p>
 <p class="c-paragraph">
 	To make the drawer appear and disappear toggle the <code class="c-code">.drawer--visible</code> modifier.
@@ -46,7 +47,8 @@ title: Drawers
   &lt;div class="c-drawer__body">
     Drawer body
   &lt;/div>
-&lt;/div></code></pre></div>
+&lt;/div></code></pre>
+	</div>
 </div>
 
 <h2 class="c-heading c-heading--medium">Positions</h2>
@@ -87,7 +89,8 @@ title: Drawers
   &lt;div class="c-drawer__body">
     Drawer body
   &lt;/div>
-&lt;/div></code></pre></div>
+&lt;/div></code></pre>
+	</div>
 </div>
 
 <h3 class="c-heading c-heading--small mono">.c-drawer--top</h3>
@@ -123,7 +126,8 @@ title: Drawers
   &lt;div class="c-drawer__body">
     Drawer body
   &lt;/div>
-&lt;/div></code></pre></div>
+&lt;/div></code></pre>
+	</div>
 </div>
 
 <h3 class="c-heading c-heading--small mono">.c-drawer--right</h3>
@@ -159,5 +163,49 @@ title: Drawers
   &lt;div class="c-drawer__body">
     Drawer body
   &lt;/div>
-&lt;/div></code></pre></div>
+&lt;/div></code></pre>
+	</div>
 </div>
+
+<h2 class="c-heading c-heading--medium">Animation</h2>
+
+<div class="o-grid o-grid--small-full">
+	<div class="o-grid__cell u-letter-box--small modal-demo">
+		<div class="c-overlay a-overlay" id="animate-overlay"></div>
+		<div class="c-drawer c-drawer--bottom c-drawer--visible a-drawer" id="animate-drawer">
+			<h4 class="c-heading c-heading--xsmall">Drawer header</h4>
+
+			<ul class="c-menu">
+				<li class="c-menu__item">Drawer c-menu</li>
+				<li class="c-menu__item">Item two</li>
+				<li class="c-menu__item">Item three</li>
+				<li class="c-menu__item">Item four</li>
+			</ul>
+
+			<div class="c-drawer__body">
+				Drawer body
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="u-window-box--medium"></div>
+<button class="c-button c-button--ghost-secondary" type="button" onclick="demo()">Animate</button>
+
+<script>
+	function demo() {
+		document.getElementById('animate-drawer').classList.toggle('c-drawer--visible');
+	}
+</script>
+
+<h3 class="c-heading c-heading--small c-text--mono">.a-drawer</h3>
+<p class="c-paragraph">
+	Apply the <code class="c-code">.a-drawer</code> class to enable animation on a drawer. To hide and show the drawer
+	toggle the
+	<code class="c-code">.c-drawer--visible</code> modifier and it will slide in and out.
+</p>
+
+<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
+<p class="c-paragraph">
+	Every animation comes with slow and fast modifiers.
+</p>

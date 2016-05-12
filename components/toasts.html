@@ -57,3 +57,39 @@ title: Toasts
 		<div class="c-toast">Default</div>
 	</div>
 </div>
+
+<h2 class="c-heading c-heading--medium">Animation</h2>
+
+<div class="toast-demo">
+	<div class="c-toasts c-toasts--bottomleft">
+		<div class="c-toast c-toast--success a-toast" id="animate">Hey look at me!</div>
+	</div>
+</div>
+
+<div class="u-letter-box--medium">
+	<button class="c-button c-button--ghost-secondary" type="button" onclick="demo()">Animate</button>
+</div>
+
+<script>
+	function demo() {
+		document.getElementById('animate').classList.remove('a-toast');
+		setTimeout(function () {
+			document.getElementById('animate').classList.add('a-toast')
+		}, 50);
+	}
+</script>
+
+<h3 class="c-heading c-heading--small c-text--mono">.a-toasts</h3>
+<p class="c-paragraph">
+	Apply the <code class="c-code">.a-toasts</code> class to enable animation on all toasts within the block.
+</p>
+
+<h3 class="c-heading c-heading--small c-text--mono">.a-toast</h3>
+<p class="c-paragraph">
+	Will turn on animation per toast.
+</p>
+
+<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
+<p class="c-paragraph">
+	Every animation comes with slow and fast modifiers.
+</p>
