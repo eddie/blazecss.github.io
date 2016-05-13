@@ -24,6 +24,11 @@ navigation-getting-started:
   url: /getting-started/about/
 
 
+navigation-community:
+- text: Forum
+  url: /community/forum/
+
+
 navigation-generics:
 - text: Global
   url: /generics/global/
