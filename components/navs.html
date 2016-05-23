@@ -1,0 +1,86 @@
+---
+layout: page
+title: Navs
+---
+
+<h2 class="c-heading c-heading--medium">Basic</h2>
+<p class="c-paragraph">
+	With a basic nav you will probably want to apply a custom width to the <code class="c-code">.c-nav</code>
+	element, otherwise it will appear with 100% width.
+</p>
+<div class="u-letter-box--medium">
+	<ul class="c-nav" style="width: 280px;">
+		<li class="c-nav__item"><i class="fa fa-home"></i> Home</li>
+		<li class="c-nav__item"><i class="fa fa-star"></i> News</li>
+		<li class="c-nav__item"><i class="fa fa-user"></i> Contact</li>
+	</ul>
+</div>
+<div class="u-letter-box--medium">
+	<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;ul class="c-nav">
+  &lt;li class="c-nav__item">Home&lt;/li>
+  &lt;li class="c-nav__item">News&lt;/li>
+  &lt;li class="c-nav__item">Contact&lt;/li>
+&lt;/ul></code></pre>
+</div>
+
+<h2 class="c-heading c-heading--medium">Inline nav (with right aligned item)</h2>
+<div class="u-letter-box--medium">
+	<ul class="c-nav c-nav--inline">
+		<li class="c-nav__item"><i class="fa fa-home"></i> Home</li>
+		<li class="c-nav__item"><i class="fa fa-star"></i> News</li>
+		<li class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Contact</li>
+	</ul>
+	</div>
+<div class="u-letter-box--medium">
+	<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;ul class="c-nav c-nav--inline">
+  &lt;li class="c-nav__item">Home&lt;/li>
+  &lt;li class="c-nav__item">News&lt;/li>
+  &lt;li class="c-nav__item c-nav__item--right">Contact&lt;/li>
+&lt;/ul></code></pre>
+</div>
+
+<h2 class="c-heading c-heading--medium">Fixed positions</h2>
+<h3 class="c-heading c-heading--small"><span class="c-text--mono">.c-nav--top</span> or <span class="c-text--mono">.c-nav--bottom</span></h3>
+<p class="c-paragraph">
+	Fix the nav to the top or bottom respectively, best used with <code class="c-code">.c-nav--inline</code>.
+</p>
+
+<h3 class="c-heading c-heading--small"><span class="c-text--mono">.c-nav--left</span> or <span class="c-text--mono">.c-nav--right</span></h3>
+<p class="c-paragraph">
+	Fix the nav to the left or right respectively, you must apply a width otherwise it will consume the entire page!
+</p>
+
+<h2 class="c-heading c-heading--medium">Shadows</h2>
+<h3 class="c-heading c-heading--small">
+	<span class="c-text--mono">.c-nav--high</span>,
+	<span class="c-text--mono">.c-nav--higher</span> and
+	<span class="c-text--mono">.c-nav--highest</span>
+</h3>
+<p class="c-paragraph">
+	Add these modifiers will give the nav the appearance that it is hovering above the page.
+</p>
+<div class="u-letter-box--medium">
+	<ul class="c-nav c-nav--inline c-nav--highest">
+		<li class="c-nav__item"><i class="fa fa-home"></i> Home</li>
+		<li class="c-nav__item"><i class="fa fa-star"></i> News</li>
+		<li class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Contact</li>
+	</ul>
+</div>
+
+<h2 class="c-heading c-heading--medium">Animation</h2>
+<p class="c-paragraph">
+	Apply the <code class="c-code">.a-nav</code> class to the <code class="c-code">.c-nav</code> block
+	to enable animation on the nav item elements.
+</p>
+<div class="u-letter-box--medium">
+	<ul class="c-nav c-nav--inline a-nav">
+		<li class="c-nav__item"><i class="fa fa-home"></i> Home</li>
+		<li class="c-nav__item"><i class="fa fa-star"></i> News</li>
+		<li class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Contact</li>
+	</ul>
+</div>
+
+<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
+<p class="c-paragraph">
+	Every animation comes with slow and fast modifiers.
+</p>

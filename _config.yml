@@ -5,9 +5,9 @@ description: Blaze is designed to give you structure and a good starting point f
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blazecss.com" # the base hostname & protocol for your site
 twitter_username: blazecss
-version: '2.1.1'
-size: '6.6Kb'
-size_animations: '1.2kb'
+version: '2.2.0'
+size: '6.8Kb'
+size_animations: '1.3kb'
 
 # Build settings
 markdown: kramdown
@@ -84,6 +84,9 @@ navigation-components:
 
 - text: Modals
   url: /components/modals/
+
+- text: Navs
+  url: /components/navs/
 
 - text: Overlays
   url: /components/overlays/
