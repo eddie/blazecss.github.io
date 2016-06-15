@@ -5,8 +5,8 @@ description: Blaze is designed to give you structure and a good starting point f
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://blazecss.com" # the base hostname & protocol for your site
 twitter_username: blazecss
-version: '2.3.0'
-size: '6.8Kb'
+version: '2.4.0'
+size: '8Kb'
 size_animations: '1.3kb'
 
 # Build settings

@@ -241,6 +241,38 @@ title: Grid
 	cells will adjust to fit the available space. Try it out, either resize your browser or rotate your phone into landscape.
 </p>
 
+<h2 class="c-heading c-heading--medium">Responsive Suffixes</h2>
+<p class="c-paragraph">
+	As well as grid level responsiveness you also have control over the cells within a grid.
+</p>
+<p class="c-paragraph">
+	Individual cells can change width at specific break points by using
+	<a href="http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/#responsive-suffixes" class="c-link">
+		responsive suffixes
+	</a>.
+</p>
+<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;div class="o-grid o-grid--wrap o-grid--demo">
+  &lt;div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@small">first&lt;/div>
+  &lt;div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@medium">second&lt;/div>
+  &lt;div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large">third&lt;/div>
+&lt;/div></code></pre>
+<div class="u-letter-box--small">
+	<div class="o-grid o-grid--wrap o-grid--demo">
+		<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@small"><div class="o-grid-text">small</div></div>
+		<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@medium"><div class="o-grid-text">medium</div></div>
+		<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large"><div class="o-grid-text">large</div></div>
+	</div>
+</div>
+<p class="c-paragraph">
+	As the viewport increases in size the cells go from 100% wide to 33% wide one after another, rather than all at once.
+</p>
+<p class="c-paragraph">
+	The suffixes apply to the screen sizes <em class="c-text--loud">and up</em>, in a mobile first manner. In other words:
+</p>
+<p class="paragraph c-text--mono">
+	Set cell width to 33% when screen width is greater than or equal to xsmall | small | medium | large | xlarge | super
+</p>
+
 <h2 class="c-heading c-heading--medium">Gutters</h2>
 <p class="c-paragraph">
 	Blaze's grid comes with a gutter around each grid cell; some padding either side.
@@ -277,5 +309,24 @@ title: Grid
 		<div class="o-grid__cell"><div class="o-grid-text">first</div></div>
 		<div class="o-grid__cell"><div class="o-grid-text">second</div></div>
 		<div class="o-grid__cell o-grid__cell--no-gutter"><div class="o-grid-text">third</div></div>
+	</div>
+</div>
+
+<h2 class="c-heading c-heading--medium">Fixed widths</h2>
+<p class="c-paragraph">
+	Usually cells in a grid will be <em class="c-text--loud">fluid and responsive</em>. If however you want to set a cell
+	to a fixed with add the <code class="c-code">.o-grid__cell--width-fixed</code> modifier and give it a specific width.
+</p>
+
+<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;div class="o-grid">
+  &lt;div class="o-grid__cell">first&lt;/div>
+  &lt;div class="o-grid__cell o-grid__cell--width-fixed">second&lt;/div>
+  &lt;div class="o-grid__cell">third&lt;/div>
+&lt;/div></code></pre>
+<div class="u-letter-box--small">
+	<div class="o-grid o-grid--demo">
+		<div class="o-grid__cell"><div class="o-grid-text">first</div></div>
+		<div class="o-grid__cell o-grid__cell--width-fixed" style="width: 250px"><div class="o-grid-text">static width of 250px</div></div>
+		<div class="o-grid__cell"><div class="o-grid-text">third</div></div>
 	</div>
 </div>
