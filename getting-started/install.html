@@ -13,15 +13,14 @@ title: Install
 	The easiest way to use the framework is via CDN.
 </p>
 <p class="c-paragraph">
-	<a class="c-link" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.min.css">blaze.min.css</a> and
-	<a class="c-link" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.animations.min.css">blaze.animations.min.css</a> <span class="c-text--loud">contain everything you need</span>.
-	Link to them by adding the following to your <code class="c-code">&lt;head>&lt;/head></code>.
+	<a class="c-link" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.min.css">blaze.min.css</a>
+	<span class="c-text--loud">contains everything you need</span>.
+	Link to it by adding the following to your <code class="c-code">&lt;head>&lt;/head></code>.
 </p>
 
-<pre class="c-pre"><code class="c-code c-code--multiline">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.min.css"&gt;
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.animations.min.css"&gt;
-</code></pre>
+<pre class="c-pre"><code class="c-code c-code--multiline">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.min.css"&gt;</code></pre>
 
+<h4 class="c-heading c-heading--small">Modules</h4>
 <p class="c-paragraph">
 	Each module is also available via CDN in-case you only want bits and pieces of Blaze and not the whole framework.
 </p>
@@ -29,11 +28,18 @@ title: Install
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/objects.grid.css"&gt;
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/components.typography.css"&gt;
 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/components.buttons.css"&gt;
-...</code></pre>
+...etc...</code></pre>
 
 <p class="c-paragraph">
 	<a href="http://www.jsdelivr.com/projects/blazecss" class="c-link">See all modules available on the CDN</a>
 </p>
+
+<h4 class="c-heading c-heading--small">Animations</h4>
+<p class="c-paragraph">
+	If you'd like to use our animations then simply link to
+	<a class="c-link" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.animations.min.css">blaze.animations.min.css</a>.
+</p>
+<pre class="c-pre"><code class="c-code c-code--multiline">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.animations.min.css"&gt;</code></pre>
 
 <div class="o-grid o-grid--no-gutter o-grid--small-full">
 	<div class="o-grid__cell o-grid__cell--width-45">
@@ -59,3 +65,31 @@ title: Install
 		</p>
 	</div>
 </div>
+
+<h3 class="c-heading c-heading--medium">Applying Styles</h3>
+
+<p class="c-paragraph">
+	We've designed the framework not to interfere with other frameworks
+	or your own styles, hence Blaze won't automatically do anything to your site.
+</p>
+<p class="c-paragraph">
+	The following won't change by simply linking to blaze.min.css like it would with other frameworks such as
+	Bootstrap or Foundation:
+</p>
+<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;button type="button">Button</button></code></pre>
+<p class="c-paragraph">
+	<button type="button">Button</button>
+</p>
+<p class="c-paragraph">
+	You need to apply our button classes:
+</p>
+<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;button class="c-button" type="button">Button</button></code></pre>
+<p class="c-paragraph">
+	<button class="c-button" type="button">Button</button>
+</p>
+
+<p class="c-paragraph">
+	This means you have to add classes to each part of your site where you want Blaze to apply. Take a
+	look at the documentation for our objects, components, typography etc. and you'll see how intuitive it is
+	to use.
+</p>
