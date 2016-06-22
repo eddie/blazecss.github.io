@@ -259,6 +259,7 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 }
 
 .alignment-demo {
+	position: relative;
 	height: 400px;
 	overflow: hidden;
 	border: 1px solid #eee;
