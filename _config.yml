@@ -24,6 +24,11 @@ navigation-getting-started:
   url: /getting-started/about/
 
 
+navigation-templates:
+- text: Blog
+  url: /templates/blog/
+
+
 navigation-community:
 - text: Forum
   url: /community/forum/
