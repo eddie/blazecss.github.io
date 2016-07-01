@@ -27,6 +27,8 @@ navigation-getting-started:
 navigation-templates:
 - text: Blog
   url: /templates/blog/
+- text: Login
+  url: /templates/login/
 
 
 navigation-community:
