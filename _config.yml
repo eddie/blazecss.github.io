@@ -29,6 +29,8 @@ navigation-templates:
   url: /templates/blog/
 - text: Login
   url: /templates/login/
+- text: Editor
+  url: /templates/editor/
 
 
 navigation-community:

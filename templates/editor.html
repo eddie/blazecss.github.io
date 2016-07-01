@@ -1,0 +1,79 @@
+---
+layout: template
+title: Editor Template
+---
+<style>
+	.c-editor {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	.c-editor__panel {
+		height: calc(100% - 56px);
+	}
+
+	textarea.c-editor__input {
+		font-family: monospace;
+	}
+</style>
+<main class="o-grid o-grid--wrap o-grid--medium-full c-editor">
+	<textarea class="c-field c-field--large o-grid__cell o-grid__cell--width-50 o-editor__panel c-editor__input">
+An h1 header
+============
+
+Paragraphs are separated by a blank line.
+
+2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
+look like:
+
+  * this one
+  * that one
+  * the other one
+
+If you want to quote someone this is how you do it:
+
+> Block quotes are
+> written like so.
+>
+> They can span multiple paragraphs,
+> if you like.
+	</textarea>
+	<div class="o-grid__cell o-grid__cell--width-50 c-editor__panel">
+		<h1 class="c-heading c-heading--large">An h1 header</h1>
+		<p class="c-paragraph">
+			Paragraphs are separated by a blank line.
+		</p>
+		<p class="c-paragraph">
+			2nd paragraph. <em>Italic</em>, <strong class="c-text--loud">blod</strong>, and <code class="c-text--mono">monospace</code>.
+			Itemized lists look like:
+		</p>
+		<ul class="c-list">
+			<li class="c-list__item">this one</li>
+			<li class="c-list__item">that one</li>
+			<li class="c-list__item">the other one</li>
+		</ul>
+		<p class="c-paragraph">
+			If you want to quote someone this is how you do it:
+		</p>
+		<blockquote class="c-blockquote">
+			<div class="c-blockquote__body">
+				Block quotes are written like so.
+			</div>
+			<div class="c-blockquote__body">
+				They can span multiple paragraphs, if you like.
+			</div>
+		</blockquote>
+	</div>
+	<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--no-gutter">
+		<nav class="c-nav c-nav--inline">
+			<span class="c-nav__item">Save</span>
+			<span class="c-nav__item">Fork</span>
+			<span class="c-nav__item c-nav__item--right"><i class="fa fa-underline"></i></span>
+			<span class="c-nav__item c-nav__item--right"><i class="fa fa-italic"></i></span>
+			<span class="c-nav__item c-nav__item--right"><i class="fa fa-bold"></i></span>
+		</nav>
+	</div>
+</main>
