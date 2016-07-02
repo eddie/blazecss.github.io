@@ -3,24 +3,32 @@ layout: template
 title: Editor Template
 ---
 <style>
-	.c-editor {
+	.o-editor__panel {
 		position: absolute;
-		top: 0;
+		top: 56px;
 		right: 0;
-		bottom: 0;
+		bottom: 56px; /* height of nav bar */
 		left: 0;
 	}
 
-	.c-editor__panel {
-		height: calc(100% - 56px);
+	.o-editor__toolbar {
+		position: absolute;
+		bottom: 0;
 	}
 
-	textarea.c-editor__input {
+	.c-editor {
 		font-family: monospace;
+		border: 0;
 	}
 </style>
-<main class="o-grid o-grid--wrap o-grid--medium-full c-editor">
-	<textarea class="c-field c-field--large o-grid__cell o-grid__cell--width-50 o-editor__panel c-editor__input">
+<main class="o-editor">
+	<div class="c-tabs c-tabs--primary a-tabs">
+		<div class="c-tabs__headings">
+			<div class="c-tab-heading c-tab-heading--active">Editor</div>
+			<div class="c-tab-heading">Output</div>
+		</div>
+		<div class="c-tabs__tab c-tabs__tab--active">
+	<textarea class="c-field c-field--large o-editor__panel c-editor">
 An h1 header
 ============
 
@@ -41,39 +49,49 @@ If you want to quote someone this is how you do it:
 > They can span multiple paragraphs,
 > if you like.
 	</textarea>
-	<div class="o-grid__cell o-grid__cell--width-50 c-editor__panel">
-		<h1 class="c-heading c-heading--large">An h1 header</h1>
-		<p class="c-paragraph">
-			Paragraphs are separated by a blank line.
-		</p>
-		<p class="c-paragraph">
-			2nd paragraph. <em>Italic</em>, <strong class="c-text--loud">blod</strong>, and <code class="c-text--mono">monospace</code>.
-			Itemized lists look like:
-		</p>
-		<ul class="c-list">
-			<li class="c-list__item">this one</li>
-			<li class="c-list__item">that one</li>
-			<li class="c-list__item">the other one</li>
-		</ul>
-		<p class="c-paragraph">
-			If you want to quote someone this is how you do it:
-		</p>
-		<blockquote class="c-blockquote">
-			<div class="c-blockquote__body">
-				Block quotes are written like so.
-			</div>
-			<div class="c-blockquote__body">
-				They can span multiple paragraphs, if you like.
-			</div>
-		</blockquote>
+		</div>
+		<div class="c-tabs__tab">
+			<h1 class="c-heading c-heading--large">An h1 header</h1>
+			<p class="c-paragraph">
+				Paragraphs are separated by a blank line.
+			</p>
+			<p class="c-paragraph">
+				2nd paragraph. <em>Italic</em>, <strong class="c-text--loud">blod</strong>, and <code class="c-text--mono">monospace</code>.
+				Itemized lists look like:
+			</p>
+			<ul class="c-list">
+				<li class="c-list__item">this one</li>
+				<li class="c-list__item">that one</li>
+				<li class="c-list__item">the other one</li>
+			</ul>
+			<p class="c-paragraph">
+				If you want to quote someone this is how you do it:
+			</p>
+			<blockquote class="c-blockquote">
+				<div class="c-blockquote__body">
+					Block quotes are written like so.
+				</div>
+				<div class="c-blockquote__body">
+					They can span multiple paragraphs, if you like.
+				</div>
+			</blockquote>
+		</div>
 	</div>
-	<div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--no-gutter">
-		<nav class="c-nav c-nav--inline">
-			<span class="c-nav__item">Save</span>
-			<span class="c-nav__item">Fork</span>
-			<span class="c-nav__item c-nav__item--right"><i class="fa fa-underline"></i></span>
-			<span class="c-nav__item c-nav__item--right"><i class="fa fa-italic"></i></span>
-			<span class="c-nav__item c-nav__item--right"><i class="fa fa-bold"></i></span>
-		</nav>
-	</div>
+	<nav class="c-nav c-nav--inline o-editor__toolbar">
+		<span class="c-nav__item"><i class="fa fa-save"></i></span>
+		<span class="c-nav__item"><i class="fa fa-code-fork"></i></span>
+		<span class="c-nav__item c-nav__item--right"><i class="fa fa-underline"></i></span>
+		<span class="c-nav__item c-nav__item--right"><i class="fa fa-italic"></i></span>
+		<span class="c-nav__item c-nav__item--right"><i class="fa fa-bold"></i></span>
+	</nav>
 </main>
+<script>
+	setInterval(function() {
+		for (var i = 0, heading; heading = document.querySelectorAll('.c-tab-heading')[i]; i++) {
+			heading.classList.toggle('c-tab-heading--active')
+		}
+		for (var i = 0, tab; tab = document.querySelectorAll('.c-tabs__tab')[i]; i++) {
+			tab.classList.toggle('c-tabs__tab--active')
+		}
+	}, 3000)
+</script>
