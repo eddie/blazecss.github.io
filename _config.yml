@@ -27,10 +27,12 @@ navigation-getting-started:
 navigation-templates:
 - text: Blog
   url: /templates/blog/
-- text: Login
-  url: /templates/login/
+- text: Dashboard
+  url: /templates/dashboard/
 - text: Editor
   url: /templates/editor/
+- text: Login
+  url: /templates/login/
 
 
 navigation-community:

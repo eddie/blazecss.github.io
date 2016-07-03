@@ -1,0 +1,175 @@
+---
+layout: template
+title: Dashboard
+---
+<style>
+	.c-nav.t-demo {
+		background-color: #f2f2ea;
+	}
+
+	.c-nav.t-demo .c-nav__item {
+		color: #444;
+	}
+
+	.c-highlight {
+		color: #4783ab;
+		text-align: center;
+		font-size: 2em;
+	}
+
+	.o-secondary {
+		margin-top: 2em;
+		border-top: #e2e2da;
+		background-color: #eaeae2;
+	}
+
+	.c-card.t-demo {
+		background-color: #fff;
+		border-left: 3px solid #66bb6a;
+	}
+</style>
+<header>
+	<nav class="c-nav c-nav--inline">
+		<span class="c-nav__item">Dashboard</span>
+		<span class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Account</span>
+		<span class="c-nav__item c-nav__item--right"><i class="fa fa-life-ring"></i> Help/Support</span>
+		<span class="c-nav__item c-nav__item--right"><i class="fa fa-sliders"></i> Settings</span>
+	</nav>
+</header>
+<main class="o-grid">
+	<nav class="c-nav t-demo o-grid__cell o-grid__cell--width-15">
+		<div class="c-nav__item">Reports</div>
+		<div class="c-nav__item">Analytics</div>
+		<div class="c-nav__item">Data Gathering</div>
+	</nav>
+	<div class="o-grid__cell o-grid__cell--width-85 o-grid__cell--no-gutter">
+		<div class="u-pillar-box--large">
+			<h1 class="c-heading c-heading--large">
+				Total number of items per group
+			</h1>
+			<div class="o-grid o-grid--wrap">
+				<div class="o-grid__cell o-grid__cell--width-60">
+					<canvas id="barChart"></canvas>
+				</div>
+				<div class="o-grid__cell o-grid__cell--width-40">
+					<canvas id="doughnutChart"></canvas>
+					<h2 class="u-text--loud c-highlight"><i class="fa fa-trophy"></i> 4,239</h2>
+					<div class="c-toggle c-toggle--secondary a-toggle">
+						<label class="c-toggle__wrapper">
+							<input type="checkbox" checked="">
+							<div class="c-toggle__track">
+								<div class="c-toggle__handle"></div>
+							</div><span>Include future items</span>
+
+						</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="o-grid o-grid--wrap o-secondary u-pillar-box--large">
+			<div class="o-grid__cell o-grid__cell--width-33">
+				<h3 class="c-heading c-heading--small">Next Goals</h3>
+				<div class="c-card t-demo">
+					<div class="c-card__content">
+						<p class="c-paragraph c-text--loud">Gain more items and add them to the total</p>
+						<p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+					</div>
+				</div>
+				<div class="c-card t-demo">
+					<div class="c-card__content">
+						<p class="c-paragraph c-text--loud">Max out the number of items</p>
+						<p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+					</div>
+				</div>
+			</div>
+			<div class="o-grid__cell o-grid__cell--width-66">
+				<h3 class="c-heading c-heading--small">Notifications</h3>
+				<div class="c-alerts a-alerts">
+					<div class="c-alerts__alert c-alerts__alert--secondary">
+						<button class="c-button c-button--close">×</button>
+						Not all data available for <strong class="u-text--loud">4th June 2016</strong>
+					</div>
+					<div class="c-alerts__alert c-alerts__alert--success">
+						<button class="c-button c-button--close">×</button>
+						New user added - (dexter@another.com)
+					</div>
+					<div class="c-alerts__alert c-alerts__alert--primary">
+						<button class="c-button c-button--close">×</button>
+						Goal reached on 28th May 2016!
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+<script>
+	new Chart(document.getElementById("barChart"), {
+		type: 'bar',
+		data: {
+			labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+			datasets: [{
+				data: [12, 19, 3, 5, 2, 3],
+				backgroundColor: [
+					'rgba(255, 99, 132, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+				],
+				borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+				],
+				borderWidth: 1
+			}]
+		},
+		options: {
+			scales: {
+				yAxes: [{
+					ticks: {
+						beginAtZero: true
+					}
+				}]
+			},
+			legend: {
+				display: false
+			}
+		}
+	});
+	new Chart(document.getElementById('doughnutChart'), {
+		type: 'doughnut',
+		data: {
+			labels: [
+				"Red",
+				"Blue",
+				"Yellow",
+				"Green",
+				"Purple",
+				"Orange"
+			],
+			datasets: [
+				{
+					data: [12, 19, 3, 5, 2, 3],
+					backgroundColor: [
+						'rgba(255, 99, 132, 0.8)',
+						'rgba(54, 162, 235, 0.8)',
+						'rgba(255, 206, 86, 0.8)',
+						'rgba(75, 192, 192, 0.8)',
+						'rgba(153, 102, 255, 0.8)',
+						'rgba(255, 159, 64, 0.8)'
+					]
+				}]
+		},
+		options: {
+			legend: {
+				display: false
+			}
+		}
+	});
+</script>
