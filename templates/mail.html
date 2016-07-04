@@ -1,0 +1,192 @@
+---
+layout: template
+title: Dashboard
+---
+<style>
+	.c-nav.t-demo {
+		background-color: #f2f2ea;
+	}
+
+	.o-app-container {
+		position: relative;
+	}
+
+	.o-app {
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		overflow: auto;
+		position: absolute;
+	}
+
+	.o-app--nav-top {
+		top: 3.5em;
+	}
+
+	.c-nav.t-demo .c-nav__item {
+		color: #444;
+	}
+
+	.c-nav.t-demo .c-nav__item:hover {
+		color: #fff;
+	}
+
+	.c-nav.t-demo .c-nav__item.t-new-message {
+		background-color: #66bb6a;
+		color: #fff;
+	}
+
+	.c-card.t-demo {
+		cursor: pointer;
+		border-radius: 0;
+		box-shadow: none;
+		background-color: #f9f9f9;
+	}
+
+	.c-card.t-demo .c-card__item {
+		border-right: 1px solid #eee;
+	}
+
+	.c-card.t-demo .c-card--is-active {
+		background-color: #fff;
+		border-right: 0;
+	}
+</style>
+<main class="o-grid o-grid--no-gutter o-app">
+	<div class="o-grid__cell--width-15 o-app-container">
+		<nav class="c-nav t-demo o-app">
+			<div class="c-nav__item t-new-message"><i class="fa fa-plus"></i> New Message</div>
+			<div class="c-nav__item">Inbox <span class="c-badge">28</span></div>
+			<div class="c-nav__item">Sent</div>
+			<div class="c-nav__item">Draft</div>
+			<div class="c-nav__item">Junk</div>
+			<div class="c-nav__item">Trash</div>
+			<div class="c-nav__item">Reminder <span class="c-badge">2</span></div>
+			<div class="c-nav__item"><span class="c-badge c-badge--primary">Personal</span></div>
+			<div class="c-nav__item"><span class="c-badge c-badge--secondary">Work</span></div>
+			<div class="c-nav__item"><span class="c-badge c-badge--success">Done</span></div>
+			<div class="c-nav__item"><span class="c-badge c-badge--error">In Progress</span></div>
+		</nav>
+	</div>
+	<div class="o-grid__cell--width-30 o-app-container">
+		<nav class="c-nav c-nav--inline t-demo">
+				<span class="c-nav__item">Sort by <span class="c-text--loud">Date <i
+					class="fa fa-chevron-down"></i></span></span>
+		</nav>
+		<div class="o-app o-app--nav-top">
+			<div class="c-card t-demo">
+				<div class="c-card__item u-window-box--large">
+					<div class="c-text--loud">
+						Dustin Clark
+					</div>
+					Re: Start-up goals for this year
+					<div class="c-text--quiet">
+						I can't wait to get started! 2017 is going to be super awesome! Good bye 2016..
+					</div>
+				</div>
+				<div class="c-card__item u-window-box--large">
+					<div class="c-text--loud">
+						Nichole Ramirez
+					</div>
+					HR Continuous Improvement
+					<div class="c-text--quiet">
+						We need to discuss how we can ensure the company is continuously improving...
+					</div>
+				</div>
+				<div class="c-card__item u-window-box--large c-card--is-active">
+					<div class="c-text--loud">
+						Katie Bryan
+					</div>
+					Start-up goals for this year
+					<div class="c-text--quiet">
+						Hello everyone, I am happy to share with you our goals for a successful year...
+					</div>
+				</div>
+				<div class="c-card__item u-window-box--large">
+					<div class="c-text--loud">
+						Andy Miles
+					</div>
+					Re: Holiday Request
+					<div class="c-text--quiet">
+						You're so lucky! I've taken all mine already!
+					</div>
+				</div>
+				<div class="c-card__item u-window-box--large">
+					<div class="c-text--loud">
+						Nancy Matthews
+					</div>
+					Holiday Request
+					<div class="c-text--quiet">
+						I'm planning on taking the whole of next month off. Yay! I'll bring back some...
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="o-grid__cell--width-55 o-app-container">
+		<nav class="c-nav c-nav--inline t-demo">
+			<span class="c-nav__item"><i class="fa fa-trash"></i></span>
+			<span class="c-nav__item"><i class="fa fa-reply"></i></span>
+			<span class="c-nav__item"><i class="fa fa-reply-all"></i></span>
+			<span class="c-nav__item"><i class="fa fa-arrow-right"></i></span>
+			<span class="c-nav__item c-nav__item--right"><i class="fa fa-ellipsis-h"></i></span>
+		</nav>
+		<div class="o-app o-app--nav-top u-window-box--super">
+			<h1 class="c-heading c-heading--large u-window-box--none">Start-up goals for this year</h1>
+			<div class="c-text--quiet">14 January 2016 09:35</div>
+			<div class="u-letter-box--large">
+				<p class="c-paragraph">
+					Hello everyone,
+				</p>
+				<p class="c-paragraph">
+					I am happy to share with you our goals for a successful year...
+				</p>
+				<p class="c-paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque leo mauris, laoreet vel accumsan ac, luctus
+					nec lorem. Sed aliquam, ante non facilisis volutpat, metus sem laoreet urna, vitae finibus dolor libero ut
+					felis. Aliquam eleifend sem quis venenatis elementum. Sed mollis sem at mattis malesuada. Aliquam id ex
+					scelerisque, sollicitudin nisi non, pellentesque tellus. Mauris ex sem, mattis ut laoreet nec, commodo eu
+					quam. Ut vitae purus suscipit, semper eros nec, posuere risus. In hac habitasse platea dictumst.
+				</p>
+				<p class="c-paragraph">
+					Nullam vel aliquet lorem. Integer sodales dapibus commodo. Duis varius mollis dolor, finibus congue odio
+					efficitur quis. Nam in felis eu nunc cursus aliquet eget eu urna. Praesent in tortor quis ante volutpat
+					vehicula. In sollicitudin tortor dui. Duis maximus nisi eu euismod pulvinar. Curabitur urna lorem, luctus non
+					ipsum non, blandit viverra tortor. Curabitur ullamcorper ligula nisl, sit amet ullamcorper magna faucibus id.
+					Aenean eu efficitur augue. Maecenas blandit orci sit amet ex ornare, eu eleifend augue posuere. Aenean nec
+					vestibulum augue.
+				</p>
+				<p class="c-paragraph">
+					Fusce vehicula tincidunt augue vitae porta. Aenean pellentesque lacinia magna non vestibulum. Quisque placerat
+					volutpat mi eu tempus. Donec nec ligula ac massa scelerisque porta vitae non lorem. In sem erat, venenatis
+					vitae sem vitae, maximus bibendum enim. Mauris finibus ornare metus, vel rhoncus arcu. Nam malesuada mollis
+					euismod. Nam et sapien quis lectus semper pretium non eget urna. Donec posuere, nibh quis ultricies
+					vestibulum, erat dolor fringilla sapien, eu maximus tortor nulla in arcu. Phasellus ac eleifend dolor. In id
+					turpis vitae metus condimentum luctus ac et lectus. Morbi varius, urna quis faucibus consequat, lorem eros
+					dignissim enim, in lacinia erat urna vel orci. In congue, nibh nec consectetur commodo, sem felis varius erat,
+					vel efficitur turpis nulla ut metus. In hac habitasse platea dictumst. Donec non enim eget sem condimentum
+					pharetra nec in erat. In tempor scelerisque libero non aliquet.
+				</p>
+				<p class="c-paragraph">
+					Morbi consequat est sit amet sapien vehicula, ac auctor dolor congue. Vivamus faucibus mi ac risus ultricies
+					venenatis. Integer convallis dui et elit dignissim, nec rutrum enim vestibulum. Nunc bibendum nibh eu
+					facilisis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+					Fusce sollicitudin mi neque, non rhoncus turpis vehicula id. Fusce non diam nec justo dapibus iaculis eget nec
+					nulla. Vivamus ligula justo, volutpat ac nunc eget, convallis laoreet dui. Suspendisse sit amet nisl sed
+					libero pulvinar aliquet. Vivamus sed magna elit. Ut id ultricies libero. Suspendisse sit amet suscipit arcu.
+				</p>
+				<p class="c-paragraph">
+					Nullam interdum urna ut mauris maximus porttitor. Cum sociis natoque penatibus et magnis dis parturient
+					montes, nascetur ridiculus mus. Nullam scelerisque lacus metus, ut fringilla lacus aliquam vel. Cras volutpat
+					diam id egestas pellentesque. Mauris est nunc, cursus nec lobortis pretium, maximus ultricies dui. Sed
+					volutpat condimentum risus et vehicula. Vivamus ornare porttitor ligula vitae laoreet. Etiam euismod velit in
+					turpis ultrices porttitor. Suspendisse posuere tristique metus, eget hendrerit nisi accumsan malesuada.
+					Phasellus feugiat odio sit amet tincidunt laoreet. Mauris ultricies diam ut lorem lacinia, vel sollicitudin mi
+					malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec metus id justo dignissim
+					venenatis in a quam.
+				</p>
+			</div>
+		</div>
+	</div>
+</main>

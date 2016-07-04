@@ -33,6 +33,8 @@ navigation-templates:
   url: /templates/editor/
 - text: Login
   url: /templates/login/
+- text: Mail
+  url: /templates/mail/
 
 
 navigation-community:
