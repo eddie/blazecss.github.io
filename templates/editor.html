@@ -1,35 +1,21 @@
 ---
 layout: template
-title: Editor Template
+title: Editor
 ---
 <style>
-	.o-editor__panel {
-		position: absolute;
-		top: 3.5em; /* height of tabs */
-		right: 0;
-		bottom: 3.5em; /* height of nav bar */
-		left: 0;
-		overflow: auto;
-	}
-
-	.o-editor__toolbar {
-		position: absolute;
-		bottom: 0;
-	}
-
 	.c-editor {
 		font-family: monospace;
 		border: 0;
 	}
 </style>
-<main class="o-editor">
+<main>
 	<div class="c-tabs c-tabs--primary a-tabs">
 		<div class="c-tabs__headings">
 			<div class="c-tab-heading c-tab-heading--active" onclick="toggleTabs()">Editor</div>
 			<div class="c-tab-heading" onclick="toggleTabs()">Output</div>
 		</div>
-		<div class="c-tabs__tab c-tabs__tab--active">
-	<textarea class="c-field c-field--large o-editor__panel c-editor">
+		<div class="c-tabs__tab c-tabs__tab--active o-panel o-panel--nav-top o-panel--nav-bottom">
+	<textarea class="c-field c-field--large c-editor">
 An h1 header
 ============
 
@@ -51,7 +37,7 @@ If you want to quote someone this is how you do it:
 > if you like.
 	</textarea>
 		</div>
-		<div class="c-tabs__tab o-editor__panel">
+		<div class="c-tabs__tab o-panel o-panel--nav-top o-panel--nav-bottom">
 			<h1 class="c-heading c-heading--large">An h1 header</h1>
 			<p class="c-paragraph">
 				Paragraphs are separated by a blank line.

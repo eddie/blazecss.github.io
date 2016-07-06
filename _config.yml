@@ -54,6 +54,9 @@ navigation-objects:
 - text: Grid
   url: /objects/grid/
 
+- text: Panels
+  url: /objects/panels/
+
 - text: Images
   url: /objects/images/
 

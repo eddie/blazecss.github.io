@@ -1,42 +1,8 @@
 ---
 layout: template
-title: Dashboard
+title: Mail
 ---
 <style>
-	.c-nav.t-demo {
-		background-color: #f2f2ea;
-	}
-
-	.o-app-container {
-		position: relative;
-	}
-
-	.o-app {
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		overflow: auto;
-		position: absolute;
-	}
-
-	.o-app--nav-top {
-		top: 3.5em;
-	}
-
-	.c-nav.t-demo .c-nav__item {
-		color: #444;
-	}
-
-	.c-nav.t-demo .c-nav__item:hover {
-		color: #fff;
-	}
-
-	.c-nav.t-demo .c-nav__item.t-new-message {
-		background-color: #66bb6a;
-		color: #fff;
-	}
-
 	.c-card.t-demo {
 		cursor: pointer;
 		border-radius: 0;
@@ -53,28 +19,28 @@ title: Dashboard
 		border-right: 0;
 	}
 </style>
-<main class="o-grid o-grid--no-gutter o-app">
-	<div class="o-grid__cell--width-15 o-app-container">
-		<nav class="c-nav t-demo o-app">
-			<div class="c-nav__item t-new-message"><i class="fa fa-plus"></i> New Message</div>
+<main class="o-grid o-grid--no-gutter o-panel">
+	<div class="o-grid__cell--width-15 o-panel-container">
+		<nav class="c-nav c-nav--light o-panel">
+			<div class="c-nav__item c-nav__item--success c-nav__item--active"><i class="fa fa-plus"></i> New Message</div>
 			<div class="c-nav__item">Inbox <span class="c-badge">28</span></div>
 			<div class="c-nav__item">Sent</div>
 			<div class="c-nav__item">Draft</div>
 			<div class="c-nav__item">Junk</div>
 			<div class="c-nav__item">Trash</div>
 			<div class="c-nav__item">Reminder <span class="c-badge">2</span></div>
-			<div class="c-nav__item"><span class="c-badge c-badge--primary">Personal</span></div>
-			<div class="c-nav__item"><span class="c-badge c-badge--secondary">Work</span></div>
-			<div class="c-nav__item"><span class="c-badge c-badge--success">Done</span></div>
-			<div class="c-nav__item"><span class="c-badge c-badge--error">In Progress</span></div>
+			<div class="c-nav__item c-nav__item--primary"><span class="c-badge c-badge--primary">Personal</span></div>
+			<div class="c-nav__item c-nav__item--secondary"><span class="c-badge c-badge--secondary">Work</span></div>
+			<div class="c-nav__item c-nav__item--success"><span class="c-badge c-badge--success">Done</span></div>
+			<div class="c-nav__item c-nav__item--error"><span class="c-badge c-badge--error">In Progress</span></div>
 		</nav>
 	</div>
-	<div class="o-grid__cell--width-30 o-app-container">
-		<nav class="c-nav c-nav--inline t-demo">
+	<div class="o-grid__cell--width-30 o-panel-container">
+		<nav class="c-nav c-nav--inline c-nav--light">
 				<span class="c-nav__item">Sort by <span class="c-text--loud">Date <i
 					class="fa fa-chevron-down"></i></span></span>
 		</nav>
-		<div class="o-app o-app--nav-top">
+		<div class="o-panel o-panel--nav-top">
 			<div class="c-card t-demo">
 				<div class="c-card__item u-window-box--large">
 					<div class="c-text--loud">
@@ -124,15 +90,15 @@ title: Dashboard
 			</div>
 		</div>
 	</div>
-	<div class="o-grid__cell--width-55 o-app-container">
-		<nav class="c-nav c-nav--inline t-demo">
+	<div class="o-grid__cell--width-55 o-panel-container">
+		<nav class="c-nav c-nav--inline c-nav--light">
 			<span class="c-nav__item"><i class="fa fa-trash"></i></span>
 			<span class="c-nav__item"><i class="fa fa-reply"></i></span>
 			<span class="c-nav__item"><i class="fa fa-reply-all"></i></span>
 			<span class="c-nav__item"><i class="fa fa-arrow-right"></i></span>
 			<span class="c-nav__item c-nav__item--right"><i class="fa fa-ellipsis-h"></i></span>
 		</nav>
-		<div class="o-app o-app--nav-top u-window-box--super">
+		<div class="o-panel o-panel--nav-top u-window-box--super">
 			<h1 class="c-heading c-heading--large u-window-box--none">Start-up goals for this year</h1>
 			<div class="c-text--quiet">14 January 2016 09:35</div>
 			<div class="u-letter-box--large">
