@@ -401,7 +401,7 @@ title: Inputs
 	</div>
 </div>
 
-<h2 class="c-heading c-heading--medium">fieldsets and Legends</h2>
+<h2 class="c-heading c-heading--medium">Fieldsets and Legends</h2>
 <p class="c-paragraph">
 	Use <code class="c-code">.fieldset</code> and <code class="c-code">.fieldset__legend</code> classes to apply Blaze's styles to ensure
 	consistent fieldset behaviours.
@@ -496,6 +496,30 @@ title: Inputs
 	</div>
 </div>
 
+<h2 class="c-heading c-heading--medium">Hints</h2>
+<p class="c-paragraph">
+	If you want to help your users fill in your forms a placeholder is a useful way of providing help.
+</p>
+<p class="c-paragraph">
+	Problem with placeholders is that they disappear as soon as you enter text into the input, increasing the user's
+	cognitive load. This is where hints come in, a hint will appear below a text input and stay there as you enter text.
+</p>
+<div class="o-grid o-grid--small-full">
+	<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+		<label class="c-label">
+			Username:
+			<input class="c-label__field">
+			<div class="c-hint a-hint">Make up a username or use your email address</div>
+		</label>
+	</div>
+	<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;label class="c-label">
+  Username:
+  &lt;input class="c-label__field">
+  &lt;div class="c-hint a-hint">Make up a username or use your email address&lt;/div>
+&lt;/label></code></pre>
+	</div>
+</div>
+
 <h2 class="c-heading c-heading--medium">Forms</h2>
 <p class="c-paragraph">
 	Blaze has no classes for forms, rather it relies on styling the child blocks of forms;
@@ -513,7 +537,7 @@ title: Inputs
 				Postcode:
 				<input class="c-label__field" placeholder="e.g. AB12 3CD">
 			</label>
-			<label class="c-label c-choice">
+			<label class="c-label c-choice c-form-element">
 				<input type="checkbox">
 				Send me spam
 			</label>
@@ -542,7 +566,7 @@ title: Inputs
     Postcode:
     &lt;input class="c-label__field" placeholder="e.g. AB12 3CD">
   &lt;/label>
-  &lt;label class="c-label c-choice">
+  &lt;label class="c-label c-choice c-form-element">
     &lt;input type="checkbox">
     Send me spam
   &lt;/label>
