@@ -25,6 +25,8 @@ navigation-getting-started:
 
 
 navigation-templates:
+- text: App
+  url: /templates/app/
 - text: Blog
   url: /templates/blog/
 - text: Dashboard
