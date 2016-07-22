@@ -1,0 +1,89 @@
+---
+layout: page
+title: Build your own theme
+---
+
+<p class="c-paragraph">
+	Rolling your own theme is easy!
+</p>
+
+<h3 class="c-heading c-heading--small">Custom build</h3>
+<p class="c-paragraph">
+	Once you have a <a class="c-link" href="/getting-started/custombuild">custom build</a> on your machine you are ready
+	to begin.
+</p>
+
+<h2 class="c-heading c-heading--medium">Creating themes</h2>
+<p class="c-paragraph">
+	Don't change any of the source code; all your theme code will be new and will live under the
+	<span class="c-code">/scss/themes</span> folder.
+</p>
+
+<div class="o-grid u-letter-box--medium">
+	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
+		Step 1
+		<div class="c-heading c-heading__sub">Create file</div>
+	</h4>
+
+	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
+		Create a new file e.g. <code class="scss c-code">/scss/themes/blaze.your-theme-name-here.scss</code>
+	</div>
+</div>
+<div class="o-grid u-letter-box--medium">
+	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
+		Step 2
+		<div class="c-heading c-heading__sub">Variables</div>
+	</h4>
+
+	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
+		Copy the following into your newly created file:
+		<pre class="c-pre scss"><code class="c-code c-code--multiline">@import "../mixins/settings.global";
+
+$border-radius: 0;
+/* ... add more variables here ... */
+
+.t-your-theme-name-here {
+  @import "../blaze";
+
+  /* ... add class overrides here ... */
+}</code></pre>
+	</div>
+</div>
+<div class="o-grid u-letter-box--medium">
+	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
+		Step 3
+		<div class="c-heading c-heading__sub">Build theme</div>
+	</h4>
+
+	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
+		From your command line <code class="c-code">npm run build</code><br>
+		Once complete your new themed version of Blaze will appear in the <code class="c-code">/dist/themes</code> folder,
+		as well as inside the demo folder.
+	</div>
+</div>
+<div class="o-grid u-letter-box--medium">
+	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
+		Step 4
+		<div class="c-heading c-heading__sub">Test it out</div>
+	</h4>
+
+	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
+		Edit <code class="c-code">/demo/themes/index.html</code> and replace the default Blaze stylesheet link yours, and
+		add your theme class to the HTML element <code class="c-code">&lt;html
+		class="c-your-theme-name">...&lt;/html></code>.
+		<br>
+		<br>
+		Now open in your browser and see your new theme!
+	</div>
+</div>
+
+<h2 class="c-heading c-heading--medium">Submitting your themes</h2>
+<p class="c-paragraph">
+	If you would like to share your theme with others please submit a Pull Request.
+</p>
+<p class="c-paragraph">
+	Fork Blaze, make your theme and <span class="c-text--loud">submit a Pull Request to our dev branch for review</span>.
+</p>
+<p class="c-paragraph">
+	If it is successfully submitted we will add it to our <a class="c-link" href="/themes/">Showcase</a>!
+</p>

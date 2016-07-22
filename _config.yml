@@ -5,7 +5,7 @@ description: Blaze is designed to give you structure and a good starting point f
 baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'http://blazecss.com' # the base hostname & protocol for your site
 twitter_username: blazecss
-version: '2.8.0'
+version: '2.9.0'
 size: '8Kb'
 size_animations: '0.9kb'
 
@@ -25,6 +25,8 @@ navigation-getting-started:
 
 
 navigation-templates:
+- text: Showcase
+  url: /templates/
 - text: App
   url: /templates/app/
 - text: Blog
@@ -37,6 +39,13 @@ navigation-templates:
   url: /templates/login/
 - text: Mail
   url: /templates/mail/
+
+
+navigation-themes:
+- text: Showcase
+  url: /themes/
+- text: Build your own
+  url: /themes/custom/
 
 
 navigation-community:
