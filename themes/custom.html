@@ -16,64 +16,53 @@ title: Build your own theme
 <h2 class="c-heading c-heading--medium">Creating themes</h2>
 <p class="c-paragraph">
 	Don't change any of the source code; all your theme code will be new and will live under the
-	<span class="c-code">/scss/themes</span> folder.
+	<span class="c-text--loud">/scss/themes</span> folder.
 </p>
 
 <div class="o-grid u-letter-box--medium">
 	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
 		Step 1
-		<div class="c-heading c-heading__sub">Create file</div>
+		<div class="c-heading c-heading__sub">Create</div>
 	</h4>
 
 	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
-		Create a new file e.g. <code class="scss c-code">/scss/themes/blaze.your-theme-name-here.scss</code>
+		The following command will create a new theme file<br>
+		<code class="c-code">gulp theme --name &lt;your-theme-name></code>
 	</div>
 </div>
 <div class="o-grid u-letter-box--medium">
 	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
 		Step 2
-		<div class="c-heading c-heading__sub">Variables</div>
+		<div class="c-heading c-heading__sub">Change</div>
 	</h4>
 
 	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
-		Copy the following into your newly created file:
-		<pre class="c-pre scss"><code class="c-code c-code--multiline">@import "../mixins/settings.global";
-
-$border-radius: 0;
-/* ... add more variables here ... */
-
-.t-your-theme-name-here {
-  @import "../blaze";
-
-  /* ... add class overrides here ... */
-}</code></pre>
+		Open the file, add any variables you want to override plus any additional code your theme needs.
 	</div>
 </div>
 <div class="o-grid u-letter-box--medium">
 	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
 		Step 3
-		<div class="c-heading c-heading__sub">Build theme</div>
+		<div class="c-heading c-heading__sub">Build</div>
 	</h4>
 
 	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
-		From your command line <code class="c-code">npm run build</code><br>
-		Once complete your new themed version of Blaze will appear in the <code class="c-code">/dist/themes</code> folder,
-		as well as inside the demo folder.
+		Build your new theme, the output will go into <span class="c-text--loud">/dist/themes</span> and
+		<span class="c-text--loud">/demo/themes</span><br>
+		<code class="c-code">gulp</code>
 	</div>
 </div>
 <div class="o-grid u-letter-box--medium">
 	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
 		Step 4
-		<div class="c-heading c-heading__sub">Test it out</div>
+		<div class="c-heading c-heading__sub">Test</div>
 	</h4>
 
 	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
-		Edit <code class="c-code">/demo/themes/index.html</code> and replace the default Blaze stylesheet link yours, and
-		add your theme class to the HTML element <code class="c-code">&lt;html
-		class="c-your-theme-name">...&lt;/html></code>.
-		<br>
-		<br>
-		Now open in your browser and see your new theme!
+		Edit <span class="c-text--loud">/demo/index.html</span> and replace the default Blaze stylesheet link
+		with yours.
+		<pre class="c-pre html"><code class="c-code">&lt;link rel="stylesheet" href="themes/blaze.&lt;your-theme-name>.min.css"></code></pre>
+		Open it in your browser and see your new theme!
 	</div>
 </div>
 
