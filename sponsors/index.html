@@ -1,0 +1,65 @@
+---
+layout: page
+title: Sponsors
+
+sponsors-10:
+
+sponsors-50:
+
+sponsors-100:
+
+sponsors-200:
+
+sponsors-500:
+
+---
+
+<p class="c-paragraph">
+	The following have invested in Blaze's continuous development. <em class="c-text--loud">Thank you!</em>
+</p>
+
+<h2 class="c-heading c-heading--medium">Special thanks to</h2>
+
+<div class="u-centered">
+	<a class="c-link" href="{{ sponsor.link }}"><img src="/sponsors/2000/logos/{{sponsor.logo}}"></a>
+</div>
+
+<div class="o-grid o-grid--wrap">
+	{% for sponsor in page.sponsors-500 %}
+	<div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-25@small o-grid__cell--width-20@large u-centered">
+		<a class="c-link" href="{{ sponsor.link }}"><img src="/sponsors/500/logos/{{sponsor.logo}}"></a>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="o-grid o-grid--wrap">
+	{% for sponsor in page.sponsors-200 %}
+	<div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-25@small o-grid__cell--width-20@large u-centered">
+		<a class="c-link" href="{{ sponsor.link }}"><img src="/sponsors/200/logos/{{sponsor.logo}}"></a>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="o-grid o-grid--wrap">
+	{% for sponsor in page.sponsors-100 %}
+	<div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-25@small o-grid__cell--width-20@large u-centered">
+		<a class="c-link" href="{{ sponsor.link }}"><img src="/sponsors/100/logos/{{sponsor.logo}}"></a>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="o-grid o-grid--wrap">
+	{% for sponsor in page.sponsors-50 %}
+	<div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-25@small o-grid__cell--width-20@large u-centered">
+		<a class="c-link" href="{{ sponsor.link }}">{{ sponsor.name }}</a>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="o-grid o-grid--wrap">
+	{% for sponsor in page.sponsors-10 %}
+	<div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-25@small o-grid__cell--width-20@large u-centered">
+		{{ sponsor.name }}
+	</div>
+	{% endfor %}
+</div>
