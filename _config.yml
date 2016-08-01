@@ -139,6 +139,9 @@ navigation-components:
 - text: Toggles
   url: /components/toggles/
 
+- text: Tooltips
+  url: /components/tooltips/
+
 - text: Trees
   url: /components/trees/
 

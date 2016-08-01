@@ -1,0 +1,29 @@
+---
+layout: page
+title: Tooltips
+---
+
+<p class="c-paragraph">
+	These tooltips are like <a class="c-link" href="/components/bubbles/">bubbles</a> but are a pure CSS solution. Hover over the below
+	version badge.
+</p>
+
+<div class="u-letter-box--medium o-grid o-grid--small-full">
+	<div class="o-grid__cell o-grid__cell--width-20">
+		<div class="u-letter-box--small">
+			<span class="c-badge c-badge--primary c-tooltip c-tooltip--right" aria-label="This is the current version of Blaze">v{{ site.version }}</span>
+		</div>
+	</div>
+	<div class="u-letter-box--small o-grid__cell o-grid__cell--width-80">
+		<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;span class="c-badge c-tooltip c-tooltip--right" aria-label="This is the current version of Blaze">v{{ site.version }}&lt;/span></code></pre>
+	</div>
+</div>
+
+<p class="c-paragraph">
+	Add <code class="c-code">c-tooltip</code> and <code class="c-code">--top</code>, <code class="c-code">--right</code>,
+	<code class="c-code">--left</code> or	<code class="c-code">--bottom</code> modifiers to position the tooltip.
+</p>
+
+<p class="c-paragraph">
+	Use the <code class="c-code">aira-label</code> attribute for the text of the tooltip.
+</p>
