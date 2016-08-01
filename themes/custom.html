@@ -9,37 +9,41 @@ variables:
 ---
 
 <p class="c-paragraph">
-	Rolling your own theme is easy!
-</p>
-<p class="c-paragraph">
-	Variables control how Blaze looks. Use the below form to set which variables you want to override.
+	New theme builder coming soon!
 </p>
 
-<h2 class="c-heading c-heading--medium">Base Variables</h2>
-<form action="https://2r2m0ny1i4.execute-api.us-east-1.amazonaws.com/dev/build" method="post">
-	<fieldset class="c-fieldset">
-		<div class="o-grid o-grid--wrap">
-			{% for variable in page.variables %}
-			<div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@medium">
-				<label class="c-label">
-					{{ variable.name }}:
-					<input class="c-label__field" name="{{ variable.name }}" placeholder="{{ variable.value }}">
-					<div class="c-hint a-hint">{{ variable.hint }}</div>
-				</label>
-			</div>
-			{% endfor %}
-		</div>
-	</fieldset>
-	<div class="o-container o-container--small u-letter-box--xlarge">
-		<button class="c-button c-button--primary c-button--block">Download Theme</button>
-	</div>
-</form>
+<!--<p class="c-paragraph">-->
+	<!--Rolling your own theme is easy!-->
+<!--</p>-->
+<!--<p class="c-paragraph">-->
+	<!--Variables control how Blaze looks. Use the below form to set which variables you want to override.-->
+<!--</p>-->
 
-<h2 class="c-heading c-heading--medium">Submitting your themes</h2>
-<p class="c-paragraph">
-	If you would like to share your theme with others submit a Pull Request to the
-	<a class="c-link"	href="">Blaze<span class="c-text--loud">_Themes</span></a> repo.
-</p>
-<p class="c-paragraph">
-	If it is successfully submitted we will add it to our <a class="c-link" href="/themes/">Showcase</a>!
-</p>
+<!--<h2 class="c-heading c-heading&#45;&#45;medium">Base Variables</h2>-->
+<!--<form action="https://2r2m0ny1i4.execute-api.us-east-1.amazonaws.com/dev/build" method="post">-->
+	<!--<fieldset class="c-fieldset">-->
+		<!--<div class="o-grid o-grid&#45;&#45;wrap">-->
+			<!--{% for variable in page.variables %}-->
+			<!--<div class="o-grid__cell o-grid__cell&#45;&#45;width-50 o-grid__cell&#45;&#45;width-33@medium">-->
+				<!--<label class="c-label">-->
+					<!--{{ variable.name }}:-->
+					<!--<input class="c-label__field" name="{{ variable.name }}" placeholder="{{ variable.value }}">-->
+					<!--<div class="c-hint a-hint">{{ variable.hint }}</div>-->
+				<!--</label>-->
+			<!--</div>-->
+			<!--{% endfor %}-->
+		<!--</div>-->
+	<!--</fieldset>-->
+	<!--<div class="o-container o-container&#45;&#45;small u-letter-box&#45;&#45;xlarge">-->
+		<!--<button class="c-button c-button&#45;&#45;primary c-button&#45;&#45;block">Download Theme</button>-->
+	<!--</div>-->
+<!--</form>-->
+
+<!--<h2 class="c-heading c-heading&#45;&#45;medium">Submitting your themes</h2>-->
+<!--<p class="c-paragraph">-->
+	<!--If you would like to share your theme with others submit a Pull Request to the-->
+	<!--<a class="c-link"	href="">Blaze<span class="c-text&#45;&#45;loud">_Themes</span></a> repo.-->
+<!--</p>-->
+<!--<p class="c-paragraph">-->
+	<!--If it is successfully submitted we will add it to our <a class="c-link" href="/themes/">Showcase</a>!-->
+<!--</p>-->
