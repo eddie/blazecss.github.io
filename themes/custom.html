@@ -1,77 +1,44 @@
 ---
 layout: page
 title: Build your own theme
+
+variables:
+- name: '$border-radius'
+  value: '4px'
+
 ---
 
 <p class="c-paragraph">
 	Rolling your own theme is easy!
 </p>
-
-<h3 class="c-heading c-heading--small">Custom build</h3>
 <p class="c-paragraph">
-	Once you have a <a class="c-link" href="/getting-started/custombuild">custom build</a> on your machine you are ready
-	to begin.
+	Variables control how Blaze looks. Use the below form to set which variables you want to override.
 </p>
 
-<h2 class="c-heading c-heading--medium">Creating themes</h2>
-<p class="c-paragraph">
-	Don't change any of the source code; all your theme code will be new and will live under the
-	<span class="c-text--loud">/scss/themes</span> folder.
-</p>
-
-<div class="o-grid u-letter-box--medium">
-	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
-		Step 1
-		<div class="c-heading c-heading__sub">Create</div>
-	</h4>
-
-	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
-		The following command will create a new theme file<br>
-		<code class="c-code c-code--multiline">gulp theme --name &lt;your-theme-name></code>
+<h2 class="c-heading c-heading--medium">Base Variables</h2>
+<form action="https://2r2m0ny1i4.execute-api.us-east-1.amazonaws.com/dev/build" method="post">
+	<fieldset class="c-fieldset">
+		<div class="o-grid o-grid--wrap">
+			{% for variable in page.variables %}
+			<div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@medium">
+				<label class="c-label">
+					{{ variable.name }}:
+					<input class="c-label__field" name="{{ variable.name }}" placeholder="{{ variable.value }}">
+					<div class="c-hint a-hint">{{ variable.hint }}</div>
+				</label>
+			</div>
+			{% endfor %}
+		</div>
+	</fieldset>
+	<div class="o-container o-container--small u-letter-box--xlarge">
+		<button class="c-button c-button--primary c-button--block">Download Theme</button>
 	</div>
-</div>
-<div class="o-grid u-letter-box--medium">
-	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
-		Step 2
-		<div class="c-heading c-heading__sub">Change</div>
-	</h4>
-
-	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
-		Open the file, add any variables you want to override plus any additional code your theme needs.
-	</div>
-</div>
-<div class="o-grid u-letter-box--medium">
-	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
-		Step 3
-		<div class="c-heading c-heading__sub">Build</div>
-	</h4>
-
-	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
-		Build your new theme, the output will go into <span class="c-text--loud">/dist/themes</span> and
-		<span class="c-text--loud">/demo/themes</span><br>
-		<code class="c-code c-code--multiline">gulp</code>
-	</div>
-</div>
-<div class="o-grid u-letter-box--medium">
-	<h4 class="c-heading c-heading--small u-window-box--none o-grid__cell o-grid__cell--width-30">
-		Step 4
-		<div class="c-heading c-heading__sub">Test</div>
-	</h4>
-
-	<div class="u-window-box--none o-grid__cell o-grid__cell--width-70">
-		Edit <span class="c-text--loud">/demo/index.html</span> and replace the default Blaze stylesheet link
-		with yours.
-		<pre class="c-pre html"><code class="c-code c-code--multiline">&lt;link rel="stylesheet" href="themes/blaze.&lt;your-theme-name>.min.css"></code></pre>
-		Open it in your browser and see your new theme!
-	</div>
-</div>
+</form>
 
 <h2 class="c-heading c-heading--medium">Submitting your themes</h2>
 <p class="c-paragraph">
-	If you would like to share your theme with others please submit a Pull Request.
-</p>
-<p class="c-paragraph">
-	Fork Blaze, make your theme and <span class="c-text--loud">submit a Pull Request to our dev branch for review</span>.
+	If you would like to share your theme with others submit a Pull Request to the
+	<a class="c-link"	href="">Blaze<span class="c-text--loud">_Themes</span></a> repo.
 </p>
 <p class="c-paragraph">
 	If it is successfully submitted we will add it to our <a class="c-link" href="/themes/">Showcase</a>!
