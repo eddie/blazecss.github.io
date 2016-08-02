@@ -2,49 +2,1176 @@
 layout: page
 title: Build your own theme
 
-variables:
+screen-variables:
+  $screen-limit-xsmall: 20em
+  $screen-limit-small: 30em
+  $screen-limit-medium: 48em
+  $screen-limit-large: 64em
+  $screen-limit-xlarge: 78em
+  $screen-limit-super: 116em
 
-- name: '$border-radius'
-  value: '4px'
+spacing-variables:
+  $spacing-tiny: .1em
+  $spacing-xsmall: .3em
+  $spacing-small: .5em
+  $spacing-medium: 1em
+  $spacing-large: 1.5em
+  $spacing-xlarge: 2em
+  $spacing-super: 3em
+
+grid-variables:
+  $grid-gutter: 1em
+
+color-variables:
+  $color-black: '#111111'
+  $color-white: '#FFFFFF'
+  $color-beige: '#F2F2EA'
+  $color-red: '#EF4F52'
+  $color-pink: '#EC65C3'
+  $color-purple: '#AB47BC'
+  $color-blue: '#42A5F5'
+  $color-green: '#66BB6A'
+  $color-yellow: '#F6ED30'
+  $color-orange: '#FF7043'
+  $color-brown: '#8D6E63'
+  $color-grey: lighten($color-black, 70)
+  $color-tint: 9
+  $color-dark-grey: darken($color-grey, $color-tint)
+  $color-dark-red: darken($color-red, $color-tint)
+  $color-dark-pink: darken($color-pink, $color-tint)
+  $color-dark-purple: darken($color-purple, $color-tint)
+  $color-dark-blue: darken($color-blue, $color-tint)
+  $color-dark-green: darken($color-green, $color-tint)
+  $color-dark-yellow: darken($color-yellow, $color-tint)
+  $color-dark-orange: darken($color-orange, $color-tint)
+  $color-dark-brown: darken($color-brown, $color-tint)
+  $color-darker-grey: darken($color-dark-grey, $color-tint)
+  $color-darker-red: darken($color-dark-red, $color-tint)
+  $color-darker-pink: darken($color-dark-pink, $color-tint)
+  $color-darker-purple: darken($color-dark-purple, $color-tint)
+  $color-darker-blue: darken($color-dark-blue, $color-tint)
+  $color-darker-green: darken($color-dark-green, $color-tint)
+  $color-darker-yellow: darken($color-dark-yellow, $color-tint)
+  $color-darker-orange: darken($color-dark-orange, $color-tint)
+  $color-darker-brown: darken($color-dark-brown, $color-tint)
+  $color-light-grey: lighten($color-grey, $color-tint)
+  $color-light-red: lighten($color-red, $color-tint)
+  $color-light-pink: lighten($color-pink, $color-tint)
+  $color-light-purple: lighten($color-purple, $color-tint)
+  $color-light-blue: lighten($color-blue, $color-tint)
+  $color-light-green: lighten($color-green, $color-tint)
+  $color-light-yellow: lighten($color-yellow, $color-tint)
+  $color-light-orange: lighten($color-orange, $color-tint)
+  $color-light-brown: lighten($color-brown, $color-tint)
+  $color-lighter-grey: lighten($color-light-grey, $color-tint)
+  $color-lighter-red: lighten($color-light-red, $color-tint)
+  $color-lighter-pink: lighten($color-light-pink, $color-tint)
+  $color-lighter-purple: lighten($color-light-purple, $color-tint)
+  $color-lighter-blue: lighten($color-light-blue, $color-tint)
+  $color-lighter-green: lighten($color-light-green, $color-tint)
+  $color-lighter-yellow: lighten($color-light-yellow, $color-tint)
+  $color-lighter-orange: lighten($color-light-orange, $color-tint)
+  $color-lighter-brown: lighten($color-light-brown, $color-tint)
+  $color-default: $color-dark-grey
+  $color-primary: $color-blue
+  $color-secondary: $color-orange
+  $color-success: $color-green
+  $color-error: $color-red
+  $color-dark-primary: darken($color-primary, $color-tint)
+  $color-darker-primary: darken($color-dark-primary, $color-tint)
+  $color-light-primary: lighten($color-primary, $color-tint)
+  $color-lighter-primary: lighten($color-light-primary, $color-tint)
+  $color-dark-secondary: darken($color-secondary, $color-tint)
+  $color-darker-secondary: darken($color-dark-secondary, $color-tint)
+  $color-light-secondary: lighten($color-secondary, $color-tint)
+  $color-lighter-secondary: lighten($color-light-secondary, $color-tint)
+  $color-dark-success: darken($color-success, $color-tint)
+  $color-darker-success: darken($color-dark-success, $color-tint)
+  $color-light-success: lighten($color-success, $color-tint)
+  $color-lighter-success: lighten($color-light-success, $color-tint)
+  $color-dark-error: darken($color-error, $color-tint)
+  $color-darker-error: darken($color-dark-error, $color-tint)
+  $color-light-error: lighten($color-error, $color-tint)
+  $color-lighter-error: lighten($color-light-error, $color-tint)
+  $color-disabled: $color-dark-grey
+  $color-quiet: $color-dark-grey
+
+border-variables:
+  $border-width: 1px
+  $border-style: solid
+  $border-color: $color-dark-grey
+
+border-radius-variables:
+  $border-radius: 4px
+  $border-radius-rounded: 30em
+
+box-shadow-variables:
+  $box-shadow: 0 0 1px transparentize($color-black, .7)
+  $box-shadow-high: 0 0 1px transparentize($color-black, .7), 0 5px 10px -3px transparentize($color-black, .8)
+  $box-shadow-higher: 0 0 1px transparentize($color-black, .7), 0 10px 25px -4px transparentize($color-black, .8)
+  $box-shadow-highest: 0 0 1px transparentize($color-black, .7), 0 20px 55px -8px transparentize($color-black, .8)
+  $box-shadow-solid: 0 0 1px transparentize($color-black, .3)
+  $box-shadow-solid-high: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2)
+  $box-shadow-solid-higher: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2)
+  $box-shadow-solid-highest: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2)
+
+focus-variables:
+  $border-color-focus: $color-blue
+  $box-shadow-focus: inset 0 0 0 2px lighten($border-color-focus, $color-tint)
+
+z-index-variables:
+  $z-over-content: 100
+  $z-over-control: 200
+  $z-over-page: 300
+  $z-over-screen: 400
+  $z-over-everything: 500
+
+typography-variables:
+  $text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif
+  $text-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif
+  $text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace
+  $text-font-size-super: 3em
+  $text-font-size-xlarge: 2em
+  $text-font-size-large: 1.5em
+  $text-font-size-medium: 1em
+  $text-font-size-small: 0.9em
+  $text-font-size-xsmall: 0.7em
+  $text-font-weight: normal
+  $text-font-weight-heavy: bold
+  $text-line-height: 1.55
+  $text-color: $color-black
+  $highlight-padding: $spacing-xsmall $spacing-xsmall $spacing-tiny
+  $highlight-margin: 0 -$spacing-tiny
+  $highlight-color: $color-black
+  $highlight-background-color: $color-yellow
+  $help-border: $border-width dashed $color-dark-grey
+  $paragraph-padding: $spacing-small 0
+  $paragraph-margin: 0
+  $paragraph-font-style: normal
+  $code-color: $text-color
+  $code-background-color: $color-lighter-grey
+  $code-font-family: $text-font-family-mono
+  $code-font-weight: $text-font-weight
+  $code-multiline-padding: $spacing-small $spacing-medium
+  $code-multiline-border-radius: $border-radius
+  $keyboard-color: $color-white
+  $keyboard-background-color: $color-primary
+  $keyboard-border-width: 2px
+  $keyboard-border-style: $border-style
+  $keyboard-border-color: $color-darker-primary
+  $keyboard-border: $keyboard-border-width $keyboard-border-style $keyboard-border-color
+  $keyboard-border-radius: $border-radius
+  $quotation-padding: $spacing-medium $spacing-large
+  $quotation-margin: 0
+  $quotation-color: $color-quiet
+  $quotation-font-size: $text-font-size-large
+  $quotation-font-family: $text-font-family-serif
+  $quotation-border-width: 5px
+  $quotation-border-style: $border-style
+  $quotation-border-color: $color-default
+  $quotation-primary-border-color: $color-primary
+  $quotation-secondary-border-color: $color-secondary
+  $quotation-success-border-color: $color-success
+  $quotation-error-border-color: $color-error
+  $quotation-footer-color: $color-quiet
+  $quotation-footer-font-style: italic
+
+address-variables:
+  $address-font-style: normal
+  $address-heading-font-weight: $text-font-weight-heavy
+
+alert-variables:
+  $alert-margin: 0 0 $spacing-medium 0
+  $alert-padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium
+  $alert-background-color: $color-default
+  $alert-primary-background-color: $color-primary
+  $alert-secondary-background-color: $color-secondary
+  $alert-error-background-color: $color-error
+  $alert-success-background-color: $color-success
+  $alert-color: $color-white
+  $alert-border-radius: $border-radius
+
+badge-variables:
+  $badge-padding: $spacing-xsmall $spacing-small
+  $badge-margin: 0
+  $badge-background-color: $color-default
+  $badge-color: $color-white
+  $badge-primary-background-color: $color-primary
+  $badge-primary-color: $color-white
+  $badge-secondary-background-color: $color-secondary
+  $badge-secondary-color: $color-white
+  $badge-success-background-color: $color-success
+  $badge-success-color: $color-white
+  $badge-error-background-color: $color-error
+  $badge-error-color: $color-white
+  $badge-font-size: 0.8em
+  $badge-font-weight: $text-font-weight-heavy
+  $badge-border-radius: $border-radius
+  $badge-border-radius-rounded: $border-radius-rounded
+
+bubble-variables:
+  $bubble-padding: $spacing-medium
+  $bubble-background-color: $color-black
+  $bubble-color: $color-white
+  $bubble-text-align: center
+  $bubble-border-radius: $border-radius
+  $bubble-arrow-width: 10px
+
+button-variables:
+  $button-padding: $spacing-small
+  $button-margin: 0
+  $button-color: $color-white
+  $button-background-color: $color-default
+  $button-primary-color: $color-white
+  $button-primary-background-color: $color-primary
+  $button-secondary-color: $color-white
+  $button-secondary-background-color: $color-secondary
+  $button-success-color: $color-white
+  $button-success-background-color: $color-success
+  $button-error-color: $color-white
+  $button-error-background-color: $color-error
+  $button-disabled-color: $color-disabled
+  $button-disabled-background-color: $color-lighter-grey
+  $button-disabled-border-color: $color-default
+  $button-font-family: inherit
+  $button-font-size: 1em
+  $button-text-align: center
+  $button-text-transform: uppercase
+  $button-font-style-disabled: italic
+  $button-border-width: $border-width
+  $button-border-style: $border-style
+  $button-border-color: transparent
+  $button-border: $button-border-width $button-border-style $button-border-color
+  $button-border-radius: $border-radius
+  $button-focus-border-color: $border-color-focus
+  $button-focus-box-shadow: $box-shadow-focus
+  $button-ghost-color: $border-color
+  $button-ghost-hover-color: $color-white
+  $button-ghost-primary-color: $color-primary
+  $button-ghost-primary-hover-color: $color-white
+  $button-ghost-secondary-color: $color-secondary
+  $button-ghost-secondary-hover-color: $color-white
+  $button-ghost-success-color: $color-success
+  $button-ghost-success-hover-color: $color-white
+  $button-ghost-error-color: $color-error
+  $button-ghost-error-hover-color: $color-white
+  $button-ghost-border-width: $button-border-width
+  $button-ghost-border-style: $button-border-style
+  $button-rounded-border-radius: $border-radius-rounded
+  $button-close-font-weight: $text-font-weight-heavy
+  $button-close-font-size: 1.4em
+  $button-icon-left-padding: $spacing-small
+  $button-icon-right-padding: $spacing-small
+  $button-super-font-size: $text-font-size-super
+  $button-xlarge-font-size: $text-font-size-xlarge
+  $button-large-font-size: $text-font-size-large
+  $button-medium-font-size: $text-font-size-medium
+  $button-small-font-size: $text-font-size-small
+  $button-xsmall-font-size: $text-font-size-xsmall
+
+calendar-variables:
+  $calendar-padding: $spacing-xsmall
+  $calendar-max-width: 400px
+  $calendar-background-color: $color-white
+  $calendar-color: $color-black
+  $calendar-text-align: center
+  $calendar-border-width: $border-width
+  $calendar-border-style: $border-style
+  $calendar-border-color: $border-color
+  $calendar-border: $calendar-border-width $calendar-border-style $calendar-border-color
+  $calendar-border-radius: $border-radius
+  $calendar-control-padding: $spacing-medium $spacing-small
+  $calendar-control-background-color: $color-white
+  $calendar-control-color: $color-default
+  $calendar-control-date-in-month-color: $color-black
+  $calendar-control-font-size: $text-font-size-medium
+  $calendar-control-border-width: $border-width
+  $calendar-control-border-style: $border-style
+  $calendar-control-border-color: $border-color
+  $calendar-control-border: $calendar-control-border-width $calendar-control-border-style $calendar-control-border-color
+  $calendar-control-border-hover: $calendar-control-border
+  $calendar-control-border-radius: $border-radius
+  $calendar-control-selected-background-color: $color-primary
+  $calendar-control-selected-color: $color-white
+  $calendar-control-selected-border-color: $color-primary
+  $calendar-header-padding: $spacing-small 0
+  $calendar-day-font-weight: $text-font-weight-heavy
+  $calendar-day-padding: $spacing-small 0
+  $calendar-today-border-color: $color-light-grey
+
+card-variables:
+  $card-margin: $spacing-medium 0 0 0
+  $card-box-shadow: $box-shadow
+  $card-border-radius: $border-radius
+  $card-divider-background-color: $color-dark-grey
+  $card-divider-color: $color-white
+  $card-primary-divider-background-color: $color-primary
+  $card-primary-divider-color: $color-white
+  $card-primary-divider-border-bottom-color: $color-lighter-primary
+  $card-secondary-divider-background-color: $color-secondary
+  $card-secondary-divider-color: $color-white
+  $card-secondary-divider-border-bottom-color: $color-lighter-secondary
+  $card-success-divider-background-color: $color-success
+  $card-success-divider-color: $color-white
+  $card-success-divider-border-bottom-color: $color-lighter-success
+  $card-error-divider-background-color: $color-error
+  $card-error-divider-color: $color-white
+  $card-error-divider-border-bottom-color: $color-lighter-error
+  $card-divider-font-weight: $text-font-weight-heavy
+  $card-item-border-width: $border-width
+  $card-item-border-style: $border-style
+  $card-item-border-color: $color-light-grey
+  $card-item-border-bottom: $card-item-border-width $card-item-border-style $card-item-border-color
+  $card-item-active-background-color: $card-item-border-color
+  $card-item-padding: $spacing-small
+
+drawer-variables:
+  $drawer-width-horizontal: 80%
+  $drawer-width-vertical: 260px
+  $drawer-background-color: $color-white
+  $drawer-color: $color-black
+  $drawer-border-radius: $border-radius
+  $drawer-z-index: $z-over-everything
+  $drawer-heading-padding: $spacing-medium
+  $drawer-body-padding: $spacing-small
+  $drawer-footer-padding: $spacing-small
+  $drawer-footer-block-padding: 0
+  $drawer-footer-block-button-border-radius: 0
+
+heading-variables:
+  $heading-margin: 0
+  $heading-padding: $spacing-medium 0 $spacing-small
+  $heading-font-weight: $text-font-weight
+  $heading-font-size: $text-font-size-medium
+  $heading-font-size-super: $text-font-size-medium * 4
+  $heading-font-size-xlarge: $text-font-size-medium * 3
+  $heading-font-size-large: $text-font-size-medium * 2
+  $heading-font-size-medium: $text-font-size-medium * 1.5
+  $heading-font-size-small: $text-font-size-medium * 1.25
+  $heading-font-size-xsmall: $text-font-size-medium * 1.05
+  $heading-subheading-padding: $spacing-small 0
+  $heading-subheading-color: $color-quiet
+  $heading-subheading-font-size: $text-font-size-medium * 0.8
+
+hint-variables:
+  $hint-padding: 0 $spacing-small
+  $hint-color: $color-darker-grey
+  $hint-font-size: $text-font-size-medium
+
+input-variables:
+  $label-padding: $spacing-medium 0
+  $label-field-margin: $spacing-small 0 0 0
+  $field-padding: $spacing-small
+  $field-margin: 0
+  $field-color: inherit
+  $field-background-color: $color-white
+  $field-font-size-super: $text-font-size-super
+  $field-font-size-xlarge: $text-font-size-xlarge
+  $field-font-size-large: $text-font-size-large
+  $field-font-size-medium: $text-font-size-medium
+  $field-font-size-small: $text-font-size-small
+  $field-font-size-xsmall: $text-font-size-xsmall
+  $field-font-weight: $text-font-weight
+  $field-border-width: $border-width
+  $field-border-style: $border-style
+  $field-border-color: $border-color
+  $field-border: $field-border-width $field-border-style $field-border-color
+  $field-border-radius: $border-radius
+  $field-focus-border-color: $border-color-focus
+  $field-focus-box-shadow: $box-shadow-focus
+  $field-disabled-background-color: $color-lighter-grey
+  $field-disabled-border-color: $border-color
+  $field-disabled-color: $color-disabled
+  $field-error-border-color: $color-error
+  $field-error-color: $color-error
+  $field-success-border-color: $color-success
+  $field-success-color: $field-color
+  $choice-padding: $spacing-small 0
+  $choice-margin: 0
+  $choice-font-size-super: $text-font-size-super
+  $choice-font-size-xlarge: $text-font-size-xlarge
+  $choice-font-size-large: $text-font-size-large
+  $choice-font-size-medium: $text-font-size-medium
+  $choice-font-size-small: $text-font-size-small
+  $choice-font-size-xsmall: $text-font-size-xsmall
+  $choice-error-color: $color-error
+  $choice-success-color: $color-success
+  $checkbox-margin: $spacing-tiny
+  $checkbox-font-size: $text-font-size-medium
+  $fieldset-padding: 0
+  $fieldset-margin: $spacing-small 0
+  $fieldset-width: 100%
+  $fieldset-border: 0
+  $legend-padding: $spacing-xsmall 0
+  $form-element-padding: $spacing-medium 0
+  $form-element-label-padding: 0 0 $spacing-small 0
+
+link-variables:
+  $link-color: $color-dark-primary
+  $link-primary-color: $color-primary
+  $link-secondary-color: $color-secondary
+  $link-success-color: $color-success
+  $link-error-color: $color-error
+  $link-text-decoration: none
+  $link-hover-text-decoration: underline
+
+list-variables:
+  $list-margin: 0
+  $list-padding: 0 0 0 $spacing-medium
+  $list-unstyled-padding: 0
+  $list-unstyled-list-style: none
+  $list-nested-padding: $list-padding
+  $list-item-padding: 0
+  $list-item-unstyled-list-style: none
+  $list-ordered-item-padding: 0 $spacing-small 0 0
+  $list-inline-padding: 0
+  $list-inline-item-padding-right: $spacing-medium
+  $list-inline-item-bullet-content: '\2022'
+  $list-inline-item-bullet-padding: 0 $spacing-small 0 0
+
+menu-variables:
+  $menu-width: 100%
+  $menu-max-height: 280px
+  $menu-margin: $spacing-xsmall 0 0 0
+  $menu-background-color: $color-white
+  $menu-border-radius: $border-radius
+  $menu-z-index: $z-over-content
+  $menu-item-divider-color: $color-quiet
+  $menu-item-divider-font-weight: $text-font-weight-heavy
+  $menu-item-hover-background-color: $color-lighter-grey
+  $menu-item-active-background-color: $color-lighter-grey
+  $menu-item-active-font-weight: $text-font-weight-heavy
+  $menu-item-disabled-color: $color-disabled
+
+modal-variables:
+  $modal-width: 80%
+  $modal-background-color: $color-white
+  $modal-border-width: 0
+  $modal-border-style: $border-style
+  $modal-border-color: $border-color
+  $modal-border: $modal-border-width $modal-border-style $modal-border-color
+  $modal-border-radius: $border-radius
+  $modal-z-index: $z-over-everything
+  $modal-header-text-align: center
+  $modal-body-padding: $spacing-medium
+  $modal-footer-padding: $spacing-medium
+  $modal-footer-block-padding: $spacing-large 0 0 0
+  $modal-footer-block-button-border-radius: 0
+  $modal-ghost-background-color: transparent
+  $modal-ghost-color: $color-white
+  $modal-ghost-heading-color: $color-white
+
+nav-variables:
+  $nav-width: 100%
+  $nav-padding: 0
+  $nav-margin: 0
+  $nav-background-color: $color-black
+  $nav-color: $color-white
+  $nav-z-index: $z-over-page
+  $nav-light-background-color: $color-beige
+  $nav-light-color: $color-darker-brown
+  $nav-item-padding: $spacing-medium
+  $nav-item-letter-spacing: 1px
+  $nav-item-hover-background-color: $color-darker-grey
+  $nav-item-hover-color: $color-white
+  $nav-item-primary-hover-background-color: $color-primary
+  $nav-item-primary-hover-color: $color-white
+  $nav-item-secondary-hover-background-color: $color-secondary
+  $nav-item-secondary-hover-color: $color-white
+  $nav-item-success-hover-background-color: $color-success
+  $nav-item-success-hover-color: $color-white
+  $nav-item-error-hover-background-color: $color-error
+  $nav-item-error-hover-color: $color-white
+  $nav-item-active-background-color: $color-darker-grey
+  $nav-item-active-color: $color-white
+  $nav-item-primary-active-background-color: $color-primary
+  $nav-item-primary-active-color: $color-white
+  $nav-item-secondary-active-background-color: $color-secondary
+  $nav-item-secondary-active-color: $color-white
+  $nav-item-success-active-background-color: $color-success
+  $nav-item-success-active-color: $color-white
+  $nav-item-error-active-background-color: $color-error
+  $nav-item-error-active-color: $color-white
+
+overlay-variables:
+  $overlay-background-color: $color-black
+  $overlay-z-index: $z-over-screen
+  $overlay-transparent-background-color: transparent
+
+pagination-variables:
+  $pagination-padding: $spacing-medium
+  $pagination-width: 100%
+  $pagination-font-size: $text-font-size-small
+  $pagination-control-color: $color-primary
+  $pagination-page-color: $color-primary
+  $pagination-page-current-background-color: $color-primary
+  $pagination-page-current-color: $color-white
+  $pagination-ellipsis-padding: 0 $spacing-medium
+
+range-variables:
+  $range-width: 100%
+  $range-height: 10px
+  $range-padding: $spacing-small 0
+  $range-background-color: $color-default
+  $range-primary-background-color: $color-primary
+  $range-secondary-background-color: $color-secondary
+  $range-success-background-color: $color-success
+  $range-error-background-color: $color-error
+  $range-border-width: $border-width
+  $range-border-style: $border-style
+  $range-border-color: transparent
+  $range-border: 0
+  $range-border-radius: $border-radius-rounded
+  $range-box-shadow: none
+  $range-disabled-background-color: $color-lighter-grey
+  $range-thumb-height: 20px
+  $range-thumb-width: 20px
+  $range-thumb-margin: -5px 0 0 0
+  $range-thumb-background-color: $color-white
+  $range-thumb-border-width: $border-width
+  $range-thumb-border-style: $border-style
+  $range-thumb-border-color: transparent
+  $range-thumb-border: 0
+  $range-thumb-border-radius: $border-radius-rounded
+  $range-thumb-box-shadow: 0 1px 4px -1px $color-black
+  $range-thumb-focus-border-color: $border-color-focus
+  $range-thumb-focus-box-shadow: $box-shadow-focus
+
+table-variables:
+  $table-width: 100%
+  $table-margin: 0
+  $table-padding: 0
+  $table-border-width: $border-width
+  $table-border-style: $border-style
+  $table-border-color: $border-color
+  $table-border: 0
+  $table-caption-padding: $spacing-small 0
+  $table-caption-color: $color-quiet
+  $table-caption-max-width: 100%
+  $table-caption-font-size: $text-font-size-small
+  $table-caption-text-align: left
+  $table-cell-padding: $spacing-small
+  $table-cell-text-align: left
+  $table-heading-background-color: $color-light-grey
+  $table-heading-color: initial
+  $table-heading-border-width: $border-width
+  $table-heading-border-style: $border-style
+  $table-heading-border-color: $color-grey
+  $table-heading-border: $table-heading-border-width $table-heading-border-style $table-heading-border-color
+  $table-heading-font-weight: $text-font-weight-heavy
+  $table-heading-striped-color: initial
+  $table-heading-striped-background-color: $color-white
+  $table-row-striped-color: initial
+  $table-row-striped-background-color: $color-lighter-grey
+  $table-row-clickable-color: $color-primary
+  $table-row-clickable-background-color: initial
+  $table-row-inactive-color: $color-disabled
+  $table-row-inactive-background-color: initial
+  $table-condensed-font-size: $text-font-size-small
+  $table-condensed-cell-padding: $spacing-xsmall
+
+tab-variables:
+  $tab-headings-text-align: center
+  $tab-heading-padding: $spacing-medium
+  $tab-heading-margin: 0
+  $tab-heading-box-shadow-color: $color-lighter-grey
+  $tab-heading-active-box-shadow-color: $color-default
+  $tab-heading-primary-active-box-shadow-color: $color-primary
+  $tab-heading-secondary-active-box-shadow-color: $color-secondary
+  $tab-heading-success-active-box-shadow-color: $color-success
+  $tab-heading-error-active-box-shadow-color: $color-error
+  $tab-heading-disabled-color: $color-disabled
+  $tab-heading-disabled-background-color: initial
+  $tab-padding: $spacing-medium
+
+tag-variables:
+  $tags-width: 100%
+  $tags-text-align: left
+  $tag-padding: $spacing-small $spacing-large $spacing-small $spacing-small
+  $tag-margin: $spacing-tiny
+  $tag-close-color: $color-light-grey
+  $tags-container-width: 70%
+  $tags-field-container-margin: $spacing-tiny
+  $tags-field-container-width: 30%
+
+toast-variables:
+  $toasts-width: 250px
+  $toasts-background-color: transparent
+  $toasts-z-index: $z-over-page
+  $toast-padding: $spacing-medium
+  $toast-margin: $spacing-small
+  $toast-background-color: $color-default
+  $toast-color: $color-white
+  $toast-primary-background-color: $color-primary
+  $toast-primary-color: $color-white
+  $toast-secondary-background-color: $color-secondary
+  $toast-secondary-color: $color-white
+  $toast-success-background-color: $color-success
+  $toast-success-color: $color-white
+  $toast-error-background-color: $color-error
+  $toast-error-color: $color-white
+  $toast-border-radius: $border-radius
+
+toggle-variables:
+  $toggle-margin: 0 0.5em
+  $toggle-track-background-color: $color-default
+  $toggle-track-primary-background-color: $color-primary
+  $toggle-track-secondary-background-color: $color-secondary
+  $toggle-track-success-background-color: $color-success
+  $toggle-track-error-background-color: $color-error
+  $toggle-track-border-radius: $border-radius-rounded
+  $toggle-track-unchecked-background-color: $color-lighter-grey
+  $toggle-track-disabled-background-color: $color-lighter-grey
+  $toggle-handle-background-color: $color-white
+  $toggle-handle-border-radius: $border-radius-rounded
+  $toggle-handle-box-shadow: 0 1px 4px -1px $color-black
+  $toggle-handle-disabled-background-color: $color-lighter-grey
+
+tooltip-variables:
+  $tooltip-z-index: $z-over-page
+  $tooltip-arrow-width: 0.6em
+  $tooltip-body-padding: $spacing-small $spacing-medium
+  $tooltip-body-background-color: $color-black
+  $tooltip-body-color: $color-white
+  $tooltip-body-border-width: 1px
+  $tooltip-body-border-style: solid
+  $tooltip-body-border-color: $tooltip-body-background-color
+  $tooltip-body-border-radius: $border-radius
+
+tree-variables:
+  $tree-padding: 0
+  $tree-margin: 0
+  $tree-nested-padding: 0 0 0 $spacing-medium
+  $tree-item-padding: 0
+  $tree-item-indicator-padding: 0 $spacing-small 0 0
+  $tree-item-indicator-color: $color-light-grey
+  $tree-item-expandable-indicator-color: $color-grey
+  $tree-item-expanded-indicator-color: $color-darker-grey
 
 ---
 
 <p class="c-paragraph">
-	Custom theme tool coming soon!
+	Rolling your own theme is easy!
+</p>
+<p class="c-paragraph">
+	Variables control how Blaze looks. Use the below form to set which variables you want to override.
 </p>
 
-<!--<p class="c-paragraph">-->
-	<!--Rolling your own theme is easy!-->
-<!--</p>-->
-<!--<p class="c-paragraph">-->
-	<!--Variables control how Blaze looks. Use the below form to set which variables you want to override.-->
-<!--</p>-->
+<form action="https://blaze-theme-builder.herokuapp.com/" method="post">
+  <h2 class="c-heading c-heading--medium">Screen</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.screen-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
 
-<!--<h2 class="c-heading c-heading&#45;&#45;medium">Base Variables</h2>-->
-<!--<form action="https://2r2m0ny1i4.execute-api.us-east-1.amazonaws.com/dev/build" method="post">-->
-	<!--<fieldset class="c-fieldset">-->
-		<!--<div class="o-grid o-grid&#45;&#45;wrap">-->
-			<!--{% for variable in page.variables %}-->
-			<!--<div class="o-grid__cell o-grid__cell&#45;&#45;width-50 o-grid__cell&#45;&#45;width-33@medium">-->
-				<!--<label class="c-label">-->
-					<!--{{ variable.name }}:-->
-					<!--<input class="c-label__field" name="{{ variable.name }}" placeholder="{{ variable.value }}">-->
-					<!--<div class="c-hint a-hint">{{ variable.hint }}</div>-->
-				<!--</label>-->
-			<!--</div>-->
-			<!--{% endfor %}-->
-		<!--</div>-->
-	<!--</fieldset>-->
-	<!--<div class="o-container o-container&#45;&#45;small u-letter-box&#45;&#45;xlarge">-->
-		<!--<button class="c-button c-button&#45;&#45;primary c-button&#45;&#45;block">Download Theme</button>-->
-	<!--</div>-->
-<!--</form>-->
+  <h2 class="c-heading c-heading--medium">Spacing</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.spacing-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
 
-<!--<h2 class="c-heading c-heading&#45;&#45;medium">Submitting your themes</h2>-->
-<!--<p class="c-paragraph">-->
-	<!--If you would like to share your theme with others submit a Pull Request to the-->
-	<!--<a class="c-link"	href="">Blaze<span class="c-text&#45;&#45;loud">_Themes</span></a> repo.-->
-<!--</p>-->
-<!--<p class="c-paragraph">-->
-	<!--If it is successfully submitted we will add it to our <a class="c-link" href="/themes/">Showcase</a>!-->
-<!--</p>-->
+  <h2 class="c-heading c-heading--medium">Grid</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.grid-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Colours</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.color-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Borders</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.border-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Border Radius</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.border-radius-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Box Shadows</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.box-shadow-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Focus</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.focus-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Z-Indexs</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.z-index-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Typography</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.typography-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Addresses</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.address-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Alerts</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.alert-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Badges</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.badge-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Bubbles</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.bubble-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Buttons</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.button-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Calendars</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.calendar-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Cards</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.card-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Drawers</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.drawer-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Headings</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.heading-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Hints</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.hint-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Inputs</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.input-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Links</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.link-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Lists</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.list-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Menus</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.menu-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Modals</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.modal-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Navs</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.nav-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Overlays</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.overlay-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Pagination</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.pagination-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Ranges</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.range-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Tables</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.table-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Tabs</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.tab-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Tags</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.tag-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Toasts</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.toast-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Toggles</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.toggle-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Tooltips</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.tooltip-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 class="c-heading c-heading--medium">Tree</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.tree-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <div class="o-container o-container--small u-letter-box--xlarge">
+		<button class="c-button c-button--primary c-button--block">Download Theme</button>
+	</div>
+</form>
+
+<h2 class="c-heading c-heading--medium">Submitting your themes</h2>
+<p class="c-paragraph">
+	If you would like to share your theme with others submit a Pull Request to the
+	<a class="c-link"	href="">Blaze<span class="c-text--loud">_Themes</span></a> repo.
+</p>
+<p class="c-paragraph">
+	If it is successfully submitted we will add it to our <a class="c-link" href="/themes/">Showcase</a>!
+</p>
