@@ -657,6 +657,34 @@ tree-variables:
 </p>
 
 <form action="https://blaze-theme-builder.herokuapp.com/" method="post">
+  <h2 id="base-colours" class="c-heading c-heading--medium">Base Colours</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.color-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field jscolor {hash:true}" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <h2 id="computed-colours" class="c-heading c-heading--medium">Computed Colours</h2>
+  <fieldset class="c-fieldset">
+    <div class="o-grid o-grid--wrap">
+      {% for variable in page.computed-color-variables %}
+      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
+        <label class="c-label">
+          {{ variable[0] }}:
+          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
+        </label>
+      </div>
+      {% endfor %}
+    </div>
+  </fieldset>
+
   <h2 id="screen"  class="c-heading c-heading--medium">Screen</h2>
   <fieldset class="c-fieldset">
     <div class="o-grid o-grid--wrap">
@@ -689,34 +717,6 @@ tree-variables:
   <fieldset class="c-fieldset">
     <div class="o-grid o-grid--wrap">
       {% for variable in page.grid-variables %}
-      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
-        <label class="c-label">
-          {{ variable[0] }}:
-          <input class="c-label__field" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
-        </label>
-      </div>
-      {% endfor %}
-    </div>
-  </fieldset>
-
-  <h2 id="base-colours" class="c-heading c-heading--medium">Base Colours</h2>
-  <fieldset class="c-fieldset">
-    <div class="o-grid o-grid--wrap">
-      {% for variable in page.color-variables %}
-      <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
-        <label class="c-label">
-          {{ variable[0] }}:
-          <input class="c-label__field jscolor {hash:true}" name="{{ variable[0] }}" placeholder="{{ variable[1] }}" value="{{ variable[1] }}">
-        </label>
-      </div>
-      {% endfor %}
-    </div>
-  </fieldset>
-
-  <h2 id="computed-colours" class="c-heading c-heading--medium">Computed Colours</h2>
-  <fieldset class="c-fieldset">
-    <div class="o-grid o-grid--wrap">
-      {% for variable in page.computed-color-variables %}
       <div class="o-grid__cell o-grid__cell--width-50 o-grid__cell--width-33@xlarge">
         <label class="c-label">
           {{ variable[0] }}:
