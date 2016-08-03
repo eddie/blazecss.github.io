@@ -290,3 +290,12 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	background-image: url(https://unsplash.it/1024/963?random);
 	background-size: cover;
 }
+
+.download-theme {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	border-top: 1px solid #f2f2ea;
+}
