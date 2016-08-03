@@ -3,13 +3,23 @@ body {
 }
 
 .c-text {
-	font-family: "Source Sans Pro",-apple-system,".SFNSText-Regular","San Francisco",Roboto,"Segoe UI","Helvetica Neue","Lucida Grande",sans-serif;
+	font-family: "Source Sans Pro", -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 	color: #2c3e50;
 }
 
 .c-code {
-	font-family: Roboto Mono,Consolas,Andale Mono WT,Andale Mono,Lucida Console,Lucida Sans Typewriter,DejaVu Sans Mono,Bitstream Vera Sans Mono,Liberation Mono,Nimbus Mono L,Monaco,Courier New,Courier,monospace;
+	font-family: Roboto Mono, Consolas, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Monaco, Courier New, Courier, monospace;
 	font-size: .8em;
+}
+
+.c-heading[id] a {
+	visibility: hidden;
+	font-size: 0.6em;
+	vertical-align: middle;
+}
+
+.c-heading[id]:hover a {
+	visibility: visible;
 }
 
 @media (min-width: 42em) {
@@ -57,11 +67,11 @@ section {
 
 a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	position: absolute;
-  top: 2rem;
-  right: 1rem;
-  text-decoration: none;
-  padding: 2px;
-  font-size: 0.9rem;
+	top: 2rem;
+	right: 1rem;
+	text-decoration: none;
+	padding: 2px;
+	font-size: 0.9rem;
 	color: #2c3e50;
 }
 
@@ -70,7 +80,6 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 		display: none;
 	}
 }
-
 
 /*
  * Page Header
