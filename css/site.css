@@ -13,13 +13,8 @@ body {
 }
 
 .c-heading[id] a {
-	visibility: hidden;
 	font-size: 0.6em;
 	vertical-align: middle;
-}
-
-.c-heading[id]:hover a {
-	visibility: visible;
 }
 
 @media (min-width: 42em) {
