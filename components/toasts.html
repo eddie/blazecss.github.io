@@ -4,25 +4,29 @@ title: Toasts
 ---
 
 <p class="c-paragraph">
-	Toasts or growls usually appear in one of the corners of your page to draw your attention to something that has happened.
+	Toasts or growls are covered by special modifiers on <a href="/alerts" class="c-link">Alerts</a> and usually appear in one of the
+	corners of your page to draw your attention to something that has happened.
 </p>
 
 <div class="o-grid o-grid--small-full">
 	<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small toast-demo">
-		<div class="c-toasts c-toasts--topleft">
-			<div class="c-toast">Default</div>
-			<div class="c-toast c-toast--primary">Primary</div>
-			<div class="c-toast c-toast--secondary">Secondary</div>
-			<div class="c-toast c-toast--success">Success</div>
-			<div class="c-toast c-toast--error">Error</div>
+		<div class="c-alerts c-alerts--topleft">
+			<div class="c-alert">Default</div>
+			<div class="c-alert c-alert--brand">Brand</div>
+			<div class="c-alert c-alert--info">Info</div>
+			<div class="c-alert c-alert--warning">Warning</div>
+			<div class="c-alert c-alert--success">Success</div>
+			<div class="c-alert c-alert--error">Error</div>
 		</div>
 	</div>
-	<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;div class="c-toasts c-toasts--topleft">
-  &lt;div class="c-toast">Default&lt;/div>
-  &lt;div class="c-toast c-toast--primary">Primary&lt;/div>
-  &lt;div class="c-toast c-toast--secondary">Secondary&lt;/div>
-  &lt;div class="c-toast c-toast--success">Success&lt;/div>
-  &lt;div class="c-toast c-toast--error">Error&lt;/div>
+	<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;div class="c-alerts c-alerts--topleft">
+  &lt;div class="c-alert">Default&lt;/div>
+  &lt;div class="c-alert c-alert--brand">Brand&lt;/div>
+  &lt;div class="c-alert c-alert--info">Info&lt;/div>
+  &lt;div class="c-alert c-alert--warning">Warning&lt;/div>
+  &lt;div class="c-alert c-alert--secondary">Secondary&lt;/div>
+  &lt;div class="c-alert c-alert--success">Success&lt;/div>
+  &lt;div class="c-alert c-alert--error">Error&lt;/div>
 &lt;/div></code></pre></div>
 </div>
 
@@ -30,66 +34,30 @@ title: Toasts
 <p class="c-paragraph">
 	Toasts can appear in either of the corners of the page
 </p>
-<h3 class="c-heading c-heading--small c-text--mono">.c-toasts--topleft</h3>
+<h3 class="c-heading c-heading--small c-text--mono">.c-alerts--topleft</h3>
 <div class="toast-demo">
-	<div class="c-toasts c-toasts--topleft">
-		<div class="c-toast">Default</div>
+	<div class="c-alerts c-alerts--topleft">
+		<div class="c-alert">Default</div>
 	</div>
 </div>
 
-<h3 class="c-heading c-heading--small c-text--mono">.c-toasts--topright</h3>
+<h3 class="c-heading c-heading--small c-text--mono">.c-alerts--topright</h3>
 <div class="toast-demo">
-	<div class="c-toasts c-toasts--topright">
-		<div class="c-toast">Default</div>
+	<div class="c-alerts c-alerts--topright">
+		<div class="c-alert">Default</div>
 	</div>
 </div>
 
-<h3 class="c-heading c-heading--small c-text--mono">.c-toasts--bottomright</h3>
+<h3 class="c-heading c-heading--small c-text--mono">.c-alerts--bottomright</h3>
 <div class="toast-demo">
-	<div class="c-toasts c-toasts--bottomright">
-		<div class="c-toast">Default</div>
+	<div class="c-alerts c-alerts--bottomright">
+		<div class="c-alert">Default</div>
 	</div>
 </div>
 
-<h3 class="c-heading c-heading--small c-text--mono">.c-toasts--bottomleft</h3>
+<h3 class="c-heading c-heading--small c-text--mono">.c-alerts--bottomleft</h3>
 <div class="toast-demo">
-	<div class="c-toasts c-toasts--bottomleft">
-		<div class="c-toast">Default</div>
+	<div class="c-alerts c-alerts--bottomleft">
+		<div class="c-alert">Default</div>
 	</div>
 </div>
-
-<h2 id="animation" class="c-heading c-heading--medium">Animation</h2>
-
-<div class="toast-demo">
-	<div class="c-toasts c-toasts--bottomleft">
-		<div class="c-toast c-toast--success a-toast" id="animate">Hey look at me!</div>
-	</div>
-</div>
-
-<div class="u-letter-box--medium">
-	<button class="c-button c-button--ghost-secondary" type="button" onclick="demo()">Animate</button>
-</div>
-
-<script>
-	function demo() {
-		document.getElementById('animate').classList.remove('a-toast');
-		setTimeout(function () {
-			document.getElementById('animate').classList.add('a-toast')
-		}, 50);
-	}
-</script>
-
-<h3 class="c-heading c-heading--small c-text--mono">.a-toasts</h3>
-<p class="c-paragraph">
-	Apply the <code class="c-code">.a-toasts</code> class to enable animation on all toasts within the block.
-</p>
-
-<h3 class="c-heading c-heading--small c-text--mono">.a-toast</h3>
-<p class="c-paragraph">
-	Will turn on animation per toast.
-</p>
-
-<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
-<p class="c-paragraph">
-	Every animation comes with slow and fast modifiers.
-</p>

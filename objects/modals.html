@@ -1,0 +1,264 @@
+---
+layout: page
+title: Modals
+---
+
+<p class="c-paragraph">
+    Modal popups, with great power comes great responsibility. Please use modals wisely.
+</p>
+
+<h2 class="c-heading">Basic Modal</h2>
+<p class="c-paragraph">
+    Your basic modal has a variety of elements to it. <code class="c-code">.c-overlay</code> will expand to fill the
+    current
+    space, more information on <a class="c-link" href="/components/overlays">overlays</a> is available.
+</p>
+<p class="c-paragraph">
+    The modal body it self consists of <a class="c-link" href="/components/cards">cards</a>, providing you with a
+    consistent
+    way of building structured content. Please familiarise yourself with what is possible with cards to make full use of
+    modals.
+</p>
+<div class="o-grid o-grid--small-full">
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small modal-demo">
+        <div class="c-overlay"></div>
+        <div class="o-modal">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <button type="button" class="c-button c-button--close">&times;</button>
+                    <h2 class="c-heading">Modal heading</h2>
+                </header>
+                <div class="c-card__body">
+                    This is the modal body
+                </div>
+                <footer class="c-card__footer">
+                    <button type="button" class="c-button c-button--brand">Close</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+            class="c-code c-code--multiline">&lt;div class="c-overlay">&lt;/div>
+&lt;div class="o-modal">
+  &lt;div class="c-card">
+    &lt;header class="c-card__header">
+      &lt;button type="button" class="c-button c-button--close">&times;&lt;/button>
+      &lt;h2 class="c-heading">Modal heading&lt;/h2>
+    &lt;/header>
+    &lt;div class="c-card__body">
+      This is the modal body
+    &lt;/div>
+    &lt;footer class="c-card__footer">
+      &lt;button type="button" class="c-button c-button--brand">Close&lt;/button>
+    &lt;/footer>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+</div>
+
+<h2 id="ghost" class="c-heading">Ghost Modal</h2>
+<p class="c-paragraph">
+    This modal has no body, hence "ghost". Lol.
+</p>
+<p class="c-paragraph">
+    To make a ghost modal simply add the <code class="c-code">.o-modal--ghost</code> modifier.
+</p>
+<div class="o-grid o-grid--small-full">
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small modal-demo">
+        <div class="c-overlay"></div>
+        <div class="o-modal o-modal--ghost">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <button type="button" class="c-button c-button--close">&times;</button>
+                    <h2 class="c-heading">Modal heading</h2>
+                </header>
+                <div class="c-card__body">
+                    This is the modal body
+                </div>
+                <footer class="c-card__footer">
+                    <button type="button" class="c-button c-button--info">Close</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+            class="c-code c-code--multiline">&lt;div class="c-overlay">&lt;/div>
+&lt;div class="o-modal o-modal--ghost">
+  &lt;div class="c-card">
+    &lt;header class="c-card__header">
+      &lt;button type="button" class="c-button c-button--close">&times;&lt;/button>
+      &lt;h2 class="c-heading">Modal heading&lt;/h2>
+    &lt;/header>
+    &lt;div class="c-card__body">
+      This is the modal body
+    &lt;/div>
+    &lt;footer class="c-card__footer">
+      &lt;button type="button" class="c-button c-button--brand">Close&lt;/button>
+    &lt;/footer>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+</div>
+
+<h2 id="full" class="c-heading">Full screen modal</h2>
+<p class="c-paragraph">
+    To make a full screen modal simply add the <code class="c-code">.o-modal--full</code> modifier.
+</p>
+<div class="o-grid o-grid--small-full">
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small modal-demo">
+        <div class="c-overlay"></div>
+        <div class="o-modal o-modal--full">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <button type="button" class="c-button c-button--close">&times;</button>
+                    <h2 class="c-heading">Modal heading</h2>
+                </header>
+                <div class="c-card__body">
+                    This is the modal body
+                </div>
+                <footer class="c-card__footer">
+                    <button type="button" class="c-button c-button--brand">Close</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+            class="c-code c-code--multiline">&lt;div class="c-overlay">&lt;/div>
+&lt;div class="o-modal o-modal--full">
+  &lt;div class="c-card">
+    &lt;header class="c-card__header">
+      &lt;button type="button" class="c-button c-button--close">&times;&lt;/button>
+      &lt;h2 class="c-heading">Modal heading&lt;/h2>
+    &lt;/header>
+    &lt;div class="c-card__body">
+      This is the modal body
+    &lt;/div>
+    &lt;footer class="c-card__footer">
+      &lt;button type="button" class="c-button c-button--brand">Close&lt;/button>
+    &lt;/footer>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+</div>
+
+<h2 id="modal-shadow" class="c-heading">Modal Shadow</h2>
+<p class="c-paragraph">
+    To give your modal some perspective add the <code class="c-code">.u-high</code>, <code
+        class="c-code">.u-higher</code> or
+    <code class="c-code">.u-highest</code> modifiers. The effectiveness will depend on the colour of the background
+    though.
+</p>
+<div class="o-grid o-grid--small-full">
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small modal-demo">
+        <div class="c-overlay"></div>
+        <div class="o-modal u-highest">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <button type="button" class="c-button c-button--close">&times;</button>
+                    <h2 class="c-heading">Modal heading</h2>
+                </header>
+                <div class="c-card__body">
+                    This is the modal body
+                </div>
+                <footer class="c-card__footer">
+                    <button type="button" class="c-button c-button--brand">Close</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+            class="c-code c-code--multiline">&lt;div class="c-overlay">&lt;/div>
+&lt;div class="o-modal u-highest">
+  &lt;div class="c-card">
+    &lt;header class="c-card__header">
+      &lt;button type="button" class="c-button c-button--close">&times;&lt;/button>
+      &lt;h2 class="c-heading">Modal heading&lt;/h2>
+    &lt;/header>
+    &lt;div class="c-card__body">
+      This is the modal body
+    &lt;/div>
+    &lt;footer class="c-card__footer">
+      &lt;button type="button" class="c-button c-button--brand">Close&lt;/button>
+    &lt;/footer>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+</div>
+
+<h2 class="c-heading">Variations</h2>
+<p class="c-paragraph">
+    Since modals simply display <a class="c-link" href="/components/cards">cards</a> differently you can use all the
+    variations cards give you as the different content types of modals.
+</p>
+<div class="o-grid o-grid--small-full modal-demo--noimg">
+    <div class="o-grid__cell o-grid__cell--width-33 u-letter-box--small modal-demo">
+        <div class="c-overlay"></div>
+        <div class="o-modal u-highest">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <h2 class="c-heading">
+                        Heading
+                        <div class="c-heading__sub">Sub-heading</div>
+                    </h2>
+                </header>
+                <div class="c-card__body">
+                    <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam
+                        sea et.</p>
+                </div>
+                <footer class="c-card__footer">
+                    <div class="c-input-group">
+                        <button class="c-button c-button--block c-button--brand">Button</button>
+                        <button class="c-button c-button--block c-button--info">Button</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-33 u-letter-box--small modal-demo">
+        <div class="c-overlay"></div>
+        <div class="o-modal u-highest">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <h2 class="c-heading">
+                        Heading
+                        <div class="c-heading__sub">Sub-heading</div>
+                    </h2>
+                </header>
+                <div class="c-card__body">
+                    <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam
+                        sea et.</p>
+                </div>
+                <footer class="c-card__footer c-card__footer--block">
+                    <div class="c-input-group">
+                        <button class="c-button c-button--block c-button--brand">Button</button>
+                        <button class="c-button c-button--block c-button--info">Button</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-33 u-letter-box--small modal-demo">
+        <div class="c-overlay"></div>
+        <div class="o-modal u-highest">
+            <div class="c-card">
+                <img class="o-image" src="https://unsplash.it/1024/500?random">
+                <header class="c-card__header">
+                    <h2 class="c-heading">
+                        Heading
+                        <div class="c-heading__sub">Sub-heading</div>
+                    </h2>
+                </header>
+                <div class="c-card__body">
+                    <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam
+                        sea et.</p>
+                </div>
+                <footer class="c-card__footer c-card__footer--block">
+                    <div class="c-input-group">
+                        <button class="c-button c-button--block c-button--brand">Button</button>
+                        <button class="c-button c-button--block c-button--info">Button</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>

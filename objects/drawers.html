@@ -1,0 +1,215 @@
+---
+layout: page
+title: Drawers
+---
+
+<p class="c-paragraph">
+    Slide in menus. Drawers provide a special layout for cards.
+</p>
+<h2 class="c-heading c-heading--medium">Basic Drawer</h2>
+<p class="c-paragraph">
+    Your basic drawer will appear from the bottom of the container. The container should have
+    <code class="c-code">overflow:hidden</code> or you'll see the drawer sliding around.
+</p>
+<p class="c-paragraph">
+    To make the drawer appear and disappear toggle the <code class="c-code">.o-drawer--visible</code> modifier.
+</p>
+<div class="o-grid o-grid--small-full">
+    <div class="o-grid__cell u-letter-box--small modal-demo">
+        <div class="c-overlay c-overlay--dismissable"></div>
+        <div class="o-drawer u-highest o-drawer--top o-drawer--visible">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <h2 class="c-heading">
+                        Heading
+                        <div class="c-heading__sub">Sub-heading</div>
+                    </h2>
+                </header>
+                <div class="c-card__body">
+                    This is a drawer
+                </div>
+                <footer class="c-card__footer">
+                    <div class="c-input-group">
+                        <button class="c-button c-button--block">Buy</button>
+                        <button class="c-button c-button--block">Buy</button>
+                        <button class="c-button c-button--block">Buy</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;div class="c-overlay c-overlay--dismissable">&lt;/div>
+&lt;div class="o-drawer u-highest o-drawer--top o-drawer--visible">
+  &lt;div class="c-card">
+    &lt;header class="c-card__header">
+      &lt;h2 class="c-heading">
+        Heading
+        &lt;div class="c-heading__sub">Sub-heading&lt;/div>
+      &lt;/h2>
+    &lt;/header>
+    &lt;div class="c-card__body">
+      This is a drawer
+    &lt;/div>
+    &lt;footer class="c-card__footer">
+      &lt;div class="c-input-group">
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+      &lt;/div>
+    &lt;/footer>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+</div>
+
+<h2 id="positions" class="c-heading c-heading--medium">Positions</h2>
+<p class="c-paragraph">
+    <code class="c-code">.c-drawer--top</code>, <code class="c-code">.c-drawer--right</code>, <code class="c-code">.c-drawer--left</code>
+    and <code class="c-code">.c-drawer--bottom</code> modifiers are all available.
+</p>
+<h3 id="positions-left" class="c-heading c-heading--small mono">.o-drawer--left</h3>
+<div class="o-grid o-grid--small-full">
+    <div class="o-grid__cell u-letter-box--small modal-demo">
+        <div class="c-overlay c-overlay--dismissable"></div>
+        <div class="o-drawer u-highest o-drawer--left o-drawer--visible">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <h2 class="c-heading">
+                        Heading
+                        <div class="c-heading__sub">Sub-heading</div>
+                    </h2>
+                </header>
+                <div class="c-card__body">
+                    This is a drawer
+                </div>
+                <footer class="c-card__footer">
+                    <div class="c-input-group">
+                        <button class="c-button c-button--block">Buy</button>
+                        <button class="c-button c-button--block">Buy</button>
+                        <button class="c-button c-button--block">Buy</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;div class="c-overlay c-overlay--dismissable">&lt;/div>
+&lt;div class="o-drawer u-highest o-drawer--left o-drawer--visible">
+  &lt;div class="c-card">
+    &lt;header class="c-card__header">
+      &lt;h2 class="c-heading">
+        Heading
+        &lt;div class="c-heading__sub">Sub-heading&lt;/div>
+      &lt;/h2>
+    &lt;/header>
+    &lt;div class="c-card__body">
+      This is a drawer
+    &lt;/div>
+    &lt;footer class="c-card__footer">
+      &lt;div class="c-input-group">
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+      &lt;/div>
+    &lt;/footer>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+</div>
+
+<h3 id="positions-bottom" class="c-heading c-heading--small mono">.o-drawer--bottom</h3>
+<div class="o-grid o-grid--small-full">
+    <div class="o-grid__cell u-letter-box--small modal-demo">
+        <div class="c-overlay c-overlay--dismissable"></div>
+        <div class="o-drawer u-highest o-drawer--bottom o-drawer--visible">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <h2 class="c-heading">
+                        Heading
+                        <div class="c-heading__sub">Sub-heading</div>
+                    </h2>
+                </header>
+                <div class="c-card__body">
+                    This is a drawer
+                </div>
+                <footer class="c-card__footer">
+                    <div class="c-input-group">
+                        <button class="c-button c-button--block">Buy</button>
+                        <button class="c-button c-button--block">Buy</button>
+                        <button class="c-button c-button--block">Buy</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;div class="c-overlay c-overlay--dismissable">&lt;/div>
+&lt;div class="o-drawer u-highest o-drawer--bottom o-drawer--visible">
+  &lt;div class="c-card">
+    &lt;header class="c-card__header">
+      &lt;h2 class="c-heading">
+        Heading
+        &lt;div class="c-heading__sub">Sub-heading&lt;/div>
+      &lt;/h2>
+    &lt;/header>
+    &lt;div class="c-card__body">
+      This is a drawer
+    &lt;/div>
+    &lt;footer class="c-card__footer">
+      &lt;div class="c-input-group">
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+      &lt;/div>
+    &lt;/footer>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+</div>
+
+<h3 id="positions-right" class="c-heading c-heading--small mono">.o-drawer--right</h3>
+<div class="o-grid o-grid--small-full">
+    <div class="o-grid__cell u-letter-box--small modal-demo">
+        <div class="c-overlay c-overlay--dismissable"></div>
+        <div class="o-drawer u-highest o-drawer--right o-drawer--visible">
+            <div class="c-card">
+                <header class="c-card__header">
+                    <h2 class="c-heading">
+                        Heading
+                        <div class="c-heading__sub">Sub-heading</div>
+                    </h2>
+                </header>
+                <div class="c-card__body">
+                    This is a drawer
+                </div>
+                <footer class="c-card__footer">
+                    <div class="c-input-group">
+                        <button class="c-button c-button--block">Buy</button>
+                        <button class="c-button c-button--block">Buy</button>
+                        <button class="c-button c-button--block">Buy</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="o-grid__cell u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;div class="c-overlay c-overlay--dismissable">&lt;/div>
+&lt;div class="o-drawer u-highest o-drawer--right o-drawer--visible">
+  &lt;div class="c-card">
+    &lt;header class="c-card__header">
+      &lt;h2 class="c-heading">
+        Heading
+        &lt;div class="c-heading__sub">Sub-heading&lt;/div>
+      &lt;/h2>
+    &lt;/header>
+    &lt;div class="c-card__body">
+      This is a drawer
+    &lt;/div>
+    &lt;footer class="c-card__footer">
+      &lt;div class="c-input-group">
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+        &lt;button class="c-button c-button--block">Buy&lt;/button>
+      &lt;/div>
+    &lt;/footer>
+  &lt;/div>
+&lt;/div></code></pre>
+    </div>
+</div>

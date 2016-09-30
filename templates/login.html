@@ -3,30 +3,35 @@ layout: template
 title: Login
 ---
 <style>
-	body {
-		background-color: #f7f7f7;
-	}
-	main {
-		height: 480px;
-	}
+    body {
+        background-color: #f7f7f7;
+    }
+
+    main {
+        height: 480px;
+    }
 </style>
 <main class="u-center-block">
-	<div class="u-center-block__content">
-		<h1 class="c-heading c-heading--medium">Please login</h1>
-		<form action="#">
-			<div class="c-form-element">
-				<div class="c-field-group">
-					<input class="c-field" placeholder="Email address">
-					<input class="c-field" placeholder="Password" type="password">
-				</div>
-			</div>
-			<label class="c-form-element c-label c-choice">
-				<input type="checkbox">
-				Remember me
-			</label>
-			<div class="c-form-element">
-				<button class="c-button c-button--primary c-button--block" type="submit">Login</button>
-			</div>
-		</form>
-	</div>
+    <div class="u-center-block__content">
+        <h1 class="c-heading">Please login</h1>
+        <form action="#">
+            <div class="o-form-element">
+                <div class="c-input-group c-input-group--stacked">
+                    <div class="o-field">
+                        <input class="c-field" placeholder="Email address">
+                    </div>
+                    <div class="o-field">
+                        <input class="c-field" placeholder="Password" type="password">
+                    </div>
+                </div>
+            </div>
+            <label class="o-form-element c-label">
+                <input type="checkbox">
+                Remember me
+            </label>
+            <div class="o-form-element">
+                <button class="c-button c-button--brand c-button--block" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
 </main>

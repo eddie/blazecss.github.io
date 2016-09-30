@@ -32,34 +32,3 @@ title: Bubbles
 <p class="c-paragraph">
 	<span class="c-bubble c-bubble--bottom c-text--mono">.c-bubble--bottom</span>
 </p>
-
-<h2 id="animation" class="c-heading c-heading--medium">Animation</h2>
-
-<div class="c-bubble c-bubble--top a-bubble--top" id="animate">This bubble moves!</div>
-<d class="u-window-box--medium">
-	<button class="c-button c-button--ghost-secondary" type="button" onclick="demo()">Animate</button>
-</d>
-
-<script>
-	function demo() {
-		document.getElementById('animate').classList.remove('a-bubble');
-		setTimeout(function () {
-			document.getElementById('animate').classList.add('a-bubble')
-		}, 50);
-	}
-</script>
-
-<h3 class="c-heading c-heading--small c-text--mono">.a-bubble</h3>
-<p class="c-paragraph">
-	Apply the <code class="c-code">.a-bubble</code> class to enable animation on each bubble.
-</p>
-
-<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
-<p class="c-paragraph">
-	Every animation comes with slow and fast modifiers.
-</p>
-
-<h3 class="c-heading c-heading--small c-text--mono">--top, --bottom, --left, --right</h3>
-<p class="c-paragraph">
-	Add one of these modifiers to change the origin of the animation. Default is from the center of the element.
-</p>

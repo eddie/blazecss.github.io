@@ -3,155 +3,279 @@ layout: page
 title: Buttons
 ---
 <div class="button-demo">
-	<p class="c-paragraph">
-		Probably the first thing people look at when choosing a CSS framework. The common button!
-	</p>
+    <p class="c-paragraph">
+        Probably the first thing people look at when choosing a CSS framework. The common button!
+    </p>
 
-	<h2 class="c-heading c-heading--medium">Basic Button</h2>
-	<p class="c-paragraph">To make a button a Blaze button add the <code class="c-code">.c-button</code> class to buttons, inputs or links.</p>
-	<div class="o-grid o-grid--small-full">
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
-			<button type="button" class="c-button">Button</button>
-			<input type="button" class="c-button" value="Input">
-			<a class="c-button">Link</a>
-			<button type="button" class="c-button" disabled>Button</button>
-		</div>
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;button class="c-button">Button&lt;/button>
+    <h2 class="c-heading c-heading--medium">Basic Button</h2>
+    <p class="c-paragraph">To make a button a Blaze button add the <code class="c-code">.c-button</code> class to
+        buttons, inputs or links.</p>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+            <button type="button" class="c-button">Button</button>
+            <input type="button" class="c-button" value="Input">
+            <a class="c-button">Link</a>
+            <button type="button" class="c-button" disabled>Button</button>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;button class="c-button">Button&lt;/button>
 &lt;input type="button" class="c-button" value="Input">
 &lt;a class="c-button">Link&lt;/a>
-&lt;button class="c-button" disabled>Button&lt;/button></code></pre></div>
-	</div>
+&lt;button class="c-button" disabled>Button&lt;/button></code></pre>
+        </div>
+    </div>
 
-	<h2 id="colours" class="c-heading c-heading--medium">Button Colours</h2>
-	<p class="c-paragraph">
-		There are four button colour modifiers <code class="c-code">.c-button--primary</code>,  <code class="c-code">.c-button--secondary</code>,
-		<code class="c-code">.c-button--success</code> and <code class="c-code">.c-button--error</code>.
-	</p>
-	<div class="o-grid o-grid--small-full">
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
-			<button type="button" class="c-button">Button</button>
-			<button type="button" class="c-button c-button--primary">Button</button>
-			<button type="button" class="c-button c-button--secondary">Button</button>
-			<button type="button" class="c-button c-button--success">Button</button>
-			<button type="button" class="c-button c-button--error">Button</button>
-		</div>
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;button class="c-button">Button&lt;/button>
-&lt;button class="c-button c-button--primary">Button&lt;/button>
+    <h2 id="colours" class="c-heading c-heading--medium">Button Colours</h2>
+    <p class="c-paragraph">
+        There are four button colour modifiers <code class="c-code">.c-button--primary</code>, <code class="c-code">.c-button--secondary</code>,
+        <code class="c-code">.c-button--success</code> and <code class="c-code">.c-button--error</code>.
+    </p>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+            <button type="button" class="c-button">Button</button>
+            <button type="button" class="c-button c-button--brand">Button</button>
+            <button type="button" class="c-button c-button--info">Button</button>
+            <button type="button" class="c-button c-button--warning">Button</button>
+            <button type="button" class="c-button c-button--success">Button</button>
+            <button type="button" class="c-button c-button--error">Button</button>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;button class="c-button">Button&lt;/button>
+&lt;button class="c-button c-button--brand">Button&lt;/button>
+&lt;button class="c-button c-button--info">Button&lt;/button>
+&lt;button class="c-button c-button--warning">Button&lt;/button>
 &lt;button class="c-button c-button--success">Button&lt;/button>
-&lt;button class="c-button c-button--error">Button&lt;/button></code></pre></div>
-	</div>
+&lt;button class="c-button c-button--error">Button&lt;/button></code></pre>
+        </div>
+    </div>
 
-	<h2 id="groups" class="c-heading c-heading--medium">Button Groups</h2>
-	<p class="c-paragraph">
-		To group related buttons together you can use the <code class="c-code">.c-button-group</code> wrapping element. This will bunch the buttons
-		together and remove the spacing between them.
-	</p>
-	<div class="o-grid o-grid--small-full">
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
-			<span class="c-button-group">
-				<button type="button" class="c-button c-button--primary">Button</button>
-				<button type="button" class="c-button c-button--secondary">Button</button>
+    <h2 id="groups" class="c-heading c-heading--medium">Button Groups</h2>
+    <p class="c-paragraph">
+        To group related buttons together you can use the <code class="c-code">.c-input-group</code> wrapping element.
+        This will bunch the buttons
+        together and remove the spacing between them.
+    </p>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+			<span class="c-input-group">
+				<button type="button" class="c-button c-button--brand">Button</button>
+				<button type="button" class="c-button">Button</button>
 			</span>
-		</div>
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;span class="c-button-group">
-  &lt;button class="c-button c-button--primary">Button&lt;/button>
-  &lt;button class="c-button c-button--secondary">Button&lt;/button>
-&lt;/span></code></pre></div>
-	</div>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;span class="c-input-group">
+  &lt;button class="c-button c-button--brand">Button&lt;/button>
+  &lt;button class="c-button">Button&lt;/button>
+&lt;/span></code></pre>
+        </div>
+    </div>
 
-	<p class="c-paragraph">
-		Adding the <code class="c-code">.c-button-group--rounded</code> modifier will make the first and last buttons rounded.
-	</p>
-	<div class="o-grid o-grid--small-full">
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
-			<span class="c-button-group c-button-group--rounded">
-				<button type="button" class="c-button c-button--primary">Button</button>
-				<button type="button" class="c-button c-button--secondary">Button</button>
+    <p class="c-paragraph">
+        Adding the <code class="c-code">.c-input-group--rounded</code> modifier will make the first and last buttons
+        rounded.
+    </p>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+			<span class="c-input-group c-input-group--rounded">
+				<button type="button" class="c-button c-button--brand">Button</button>
+				<button type="button" class="c-button">Button</button>
+				<button type="button" class="c-button c-button--info">Button</button>
 			</span>
-		</div>
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;span class="c-button-group c-button-group--rounded">
-  &lt;button class="c-button c-button--primary">Button&lt;/button>
-  &lt;button class="c-button c-button--secondary">Button&lt;/button>
-&lt;/span></code></pre></div>
-	</div>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;span class="c-input-group c-button-group--rounded">
+  &lt;button class="c-button c-button--brand">Button&lt;/button>
+  &lt;button class="c-button">Button&lt;/button>
+  &lt;button class="c-button c-button--info">Button&lt;/button>
+&lt;/span></code></pre>
+        </div>
+    </div>
 
-	<h2 id="sizes" class="c-heading c-heading--medium">Button Sizes</h2>
-	<div class="o-grid o-grid--small-full">
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
-			<button type="button" class="c-button c-button--xsmall">Button</button>
-			<button type="button" class="c-button c-button--small">Button</button>
-			<button type="button" class="c-button c-button--medium">Button</button>
-			<button type="button" class="c-button c-button--large">Button</button>
-			<button type="button" class="c-button c-button--super">Button</button>
-		</div>
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;button class="c-button c-button--xsmall">Button&lt;/button>
-&lt;button class="c-button c-button--small">Button&lt;/button>
-&lt;button class="c-button c-button--medium">Button&lt;/button>
-&lt;button class="c-button c-button--large">Button&lt;/button>
-&lt;button class="c-button c-button--super">Button&lt;/button></code></pre></div>
-	</div>
+    <h2 id="sizes" class="c-heading c-heading--medium">Button Sizes</h2>
+    <p class="c-paragraph">
+        Adding a size utility class will change the size of the button.
+    </p>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+            <button type="button" class="c-button u-xsmall">.u-xsmall</button>
+            <button type="button" class="c-button u-small">.u-small</button>
+            <button type="button" class="c-button u-medium">.u-medium</button>
+            <button type="button" class="c-button u-large">.u-large</button>
+            <button type="button" class="c-button u-xlarge">.u-xlarge</button>
+            <button type="button" class="c-button u-super">.u-super</button>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;button class="c-button u-xsmall">Button&lt;/button>
+&lt;button class="c-button u-small">Button&lt;/button>
+&lt;button class="c-button u-medium">Button&lt;/button>
+&lt;button class="c-button u-large">Button&lt;/button>
+&lt;button class="c-button u-xlarge">Button&lt;/button>
+&lt;button class="c-button u-super">Button&lt;/button></code></pre>
+        </div>
+    </div>
 
-	<h2 id="full-width" class="c-heading c-heading--medium">Full Width Buttons</h2>
-	<div class="o-grid o-grid--small-full">
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
-			<button type="button" class="c-button c-button--block c-button--xsmall">Button</button>
-			<button type="button" class="c-button c-button--block c-button--small">Button</button>
-			<button type="button" class="c-button c-button--block c-button--medium">Button</button>
-			<button type="button" class="c-button c-button--block c-button--large">Button</button>
-			<button type="button" class="c-button c-button--block c-button--super">Button</button>
-		</div>
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;button class="c-button c-button--block c-button--xsmall">Button&lt;/button>
-&lt;button class="c-button c-button--block c-button--small">Button&lt;/button>
-&lt;button class="c-button c-button--block c-button--medium">Button&lt;/button>
-&lt;button class="c-button c-button--block c-button--large">Button&lt;/button>
-&lt;button class="c-button c-button--block c-button--super">Button&lt;/button></code></pre></div>
-	</div>
+    <h2 id="full-width" class="c-heading c-heading--medium">Full Width Buttons</h2>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+            <button type="button" class="c-button c-button--block u-xsmall">Button</button>
+            <button type="button" class="c-button c-button--block u-small">Button</button>
+            <button type="button" class="c-button c-button--block u-medium">Button</button>
+            <button type="button" class="c-button c-button--block u-large">Button</button>
+            <button type="button" class="c-button c-button--block u-xlarge">Button</button>
+            <button type="button" class="c-button c-button--block u-super">Button</button>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;button class="c-button c-button--block u-xsmall">Button&lt;/button>
+&lt;button class="c-button c-button--block u-small">Button&lt;/button>
+&lt;button class="c-button c-button--block u-medium">Button&lt;/button>
+&lt;button class="c-button c-button--block u-large">Button&lt;/button>
+&lt;button class="c-button c-button--block u-xlarge">Button&lt;/button>
+&lt;button class="c-button c-button--block u-super">Button&lt;/button></code></pre>
+        </div>
+    </div>
 
-	<h2 id="ghost" class="c-heading c-heading--medium">Ghost Buttons</h2>
-	<div class="o-grid o-grid--small-full">
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
-			<button type="button" class="c-button c-button--ghost c-button--xsmall">Button</button>
-			<button type="button" class="c-button c-button--ghost c-button--small">Button</button>
-			<button type="button" class="c-button c-button--ghost c-button--medium">Button</button>
-			<button type="button" class="c-button c-button--ghost c-button--large">Button</button>
-			<button type="button" class="c-button c-button--ghost c-button--super">Button</button>
-		</div>
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;button class="c-button c-button--ghost c-button--xsmall">Button&lt;/button>
-&lt;button class="c-button c-button--ghost c-button--small">Button&lt;/button>
-&lt;button class="c-button c-button--ghost c-button--medium">Button&lt;/button>
-&lt;button class="c-button c-button--ghost c-button--large">Button&lt;/button>
-&lt;button class="c-button c-button--ghost c-button--super">Button&lt;/button></code></pre></div>
-	</div>
+    <h2 id="ghost" class="c-heading c-heading--medium">Ghost Buttons</h2>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+            <button type="button" class="c-button c-button--ghost u-xsmall">Button</button>
+            <button type="button" class="c-button c-button--ghost u-small">Button</button>
+            <button type="button" class="c-button c-button--ghost u-medium">Button</button>
+            <button type="button" class="c-button c-button--ghost u-large">Button</button>
+            <button type="button" class="c-button c-button--ghost u-xlarge">Button</button>
+            <button type="button" class="c-button c-button--ghost u-super">Button</button>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;button class="c-button c-button--ghost u-xsmall">Button&lt;/button>
+&lt;button class="c-button c-button--ghost u-small">Button&lt;/button>
+&lt;button class="c-button c-button--ghost u-medium">Button&lt;/button>
+&lt;button class="c-button c-button--ghost u-large">Button&lt;/button>
+&lt;button class="c-button c-button--ghost u-xlarge">Button&lt;/button>
+&lt;button class="c-button c-button--ghost u-super">Button&lt;/button></code></pre>
+        </div>
+    </div>
 
-	<h2 id="ghost-colours" class="c-heading c-heading--medium">Ghost Colours</h2>
-	<div class="o-grid o-grid--small-full">
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
-			<button type="button" class="c-button c-button--ghost c-button--xsmall">Button</button>
-			<button type="button" class="c-button c-button--ghost-primary c-button--small">Button</button>
-			<button type="button" class="c-button c-button--ghost-secondary c-button--medium">Button</button>
-			<button type="button" class="c-button c-button--ghost-success c-button--large">Button</button>
-			<button type="button" class="c-button c-button--ghost-error c-button--super">Button</button>
-		</div>
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;button class="c-button c-button--ghost c-button--xsmall">Button&lt;/button>
-&lt;button class="c-button c-button--ghost-primary c-button--small">Button&lt;/button>
-&lt;button class="c-button c-button--ghost-secondary c-button--medium">Button&lt;/button>
-&lt;button class="c-button c-button--ghost-success c-button--large">Button&lt;/button>
-&lt;button class="c-button c-button--ghost-error c-button--super">Button&lt;/button></code></pre></div>
-	</div>
+    <h2 id="ghost-colours" class="c-heading c-heading--medium">Ghost Colours</h2>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+            <button type="button" class="c-button c-button--ghost">Button</button>
+            <button type="button" class="c-button c-button--ghost-brand">Button</button>
+            <button type="button" class="c-button c-button--ghost-info">Button</button>
+            <button type="button" class="c-button c-button--ghost-warning">Button</button>
+            <button type="button" class="c-button c-button--ghost-success">Button</button>
+            <button type="button" class="c-button c-button--ghost-error">Button</button>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;button class="c-button c-button--ghost">Button&lt;/button>
+&lt;button class="c-button c-button--ghost-brand">Button&lt;/button>
+&lt;button class="c-button c-button--ghost-info">Button&lt;/button>
+&lt;button class="c-button c-button--ghost-warning">Button&lt;/button>
+&lt;button class="c-button c-button--ghost-success">Button&lt;/button>
+&lt;button class="c-button c-button--ghost-error">Button&lt;/button></code></pre>
+        </div>
+    </div>
 
-	<h2 id="rounded" class="c-heading c-heading--medium">Rounded Buttons</h2>
-	<div class="o-grid o-grid--small-full">
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
-			<button type="button" class="c-button c-button--rounded c-button--ghost c-button--xsmall">Button</button>
-			<button type="button" class="c-button c-button--rounded c-button--ghost-primary c-button--small">Button</button>
-			<button type="button" class="c-button c-button--rounded c-button--ghost-secondary c-button--medium">Button</button>
-			<button type="button" class="c-button c-button--rounded c-button--ghost-success c-button--large">Button</button>
-			<button type="button" class="c-button c-button--rounded c-button--ghost-error c-button--super">Button</button>
-		</div>
-		<div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code class="c-code c-code--multiline">&lt;button class="c-button c-button--rounded c-button--ghost c-button--xsmall">Button&lt;/button>
-&lt;button class="c-button c-button--rounded c-button--ghost-primary c-button--small">Button&lt;/button>
-&lt;button class="c-button c-button--rounded c-button--ghost-secondary c-button--medium">Button&lt;/button>
-&lt;button class="c-button c-button--rounded c-button--ghost-success c-button--large">Button&lt;/button>
-&lt;button class="c-button c-button--rounded c-button--ghost-error c-button--super">Button&lt;/button></code></pre></div>
-	</div>
+    <h2 id="rounded" class="c-heading c-heading--medium">Rounded Buttons</h2>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+            <button type="button" class="c-button c-button--rounded c-button--ghost">Button</button>
+            <button type="button" class="c-button c-button--rounded c-button--ghost-brand">Button</button>
+            <button type="button" class="c-button c-button--rounded c-button--ghost-info">Button</button>
+            <button type="button" class="c-button c-button--rounded c-button--ghost-warning">Button</button>
+            <button type="button" class="c-button c-button--rounded c-button--ghost-success">Button</button>
+            <button type="button" class="c-button c-button--rounded c-button--ghost-error">Button</button>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;button class="c-button c-button--rounded c-button--ghost">Button&lt;/button>
+&lt;button class="c-button c-button--rounded c-button--ghost-brand">Button&lt;/button>
+&lt;button class="c-button c-button--rounded c-button--ghost-info">Button&lt;/button>
+&lt;button class="c-button c-button--rounded c-button--ghost-warning">Button&lt;/button>
+&lt;button class="c-button c-button--rounded c-button--ghost-success">Button&lt;/button>
+&lt;button class="c-button c-button--rounded c-button--ghost-error">Button&lt;/button></code></pre>
+        </div>
+    </div>
+
+    <h2 id="states" class="c-heading c-heading--medium">Active state</h2>
+    <div class="o-grid o-grid--small-full">
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--info" type="button">Button 1</button>
+                <button class="c-button c-button--info" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--warning" type="button">Button 1</button>
+                <button class="c-button c-button--warning" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active" type="button">Button 1</button>
+                <button class="c-button" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--success" type="button">Button 1</button>
+                <button class="c-button c-button--success" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--error" type="button">Button 1</button>
+                <button class="c-button c-button--error" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--brand" type="button">Button 1</button>
+                <button class="c-button c-button--brand" type="button">Button 2</button>
+                </span>
+            </div>
+
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--ghost-info" type="button">Button 1</button>
+                <button class="c-button c-button--ghost-info" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--ghost-warning" type="button">Button 1</button>
+                <button class="c-button c-button--ghost-warning" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--ghost c-button--active" type="button">Button 1</button>
+                <button class="c-button c-button--ghost" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--ghost-success" type="button">Button 1</button>
+                <button class="c-button c-button--ghost-success" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--ghost-error" type="button">Button 1</button>
+                <button class="c-button c-button--ghost-error" type="button">Button 2</button>
+                </span>
+            </div>
+            <div class="u-letter-box--small">
+                <span class="c-input-group">
+                <button class="c-button c-button--active c-button--ghost-brand" type="button">Button 1</button>
+                <button class="c-button c-button--ghost-brand" type="button">Button 2</button>
+                </span>
+            </div>
+        </div>
+        <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+                class="c-code c-code--multiline">&lt;span class="c-input-group">
+  &lt;button class="c-button c-button--active c-button--info" type="button">Button 1&lt;/button>
+  &lt;button class="c-button c-button--info" type="button">Button 2&lt;/button>
+&lt;/span></code></pre>
+        </div>
+    </div>
 </div>

@@ -11,143 +11,149 @@ title: Menus
 <h2 id="single-selection" class="c-heading c-heading--medium">Single Selection</h2>
 <div class="o-grid o-grid--small-full letter-box--large">
 	<div class="o-grid__cell o-grid__cell--width-50">
-		<ul class="c-menu c-menu--high">
-			<li class="c-menu__item">Menu 1</li>
-			<li class="c-menu__item">Menu 2</li>
-			<li class="c-menu__item c-menu__item--divider">Divider</li>
-			<li class="c-menu__item">Menu 3</li>
-			<li class="c-menu__item">Menu 4</li>
-			<li class="c-menu__item c-menu__item--disabled">Menu item disabled</li>
-			<li class="c-menu__item c-menu__item--active">c-menu item active</li>
-			<li class="c-menu__item">Menu 5</li>
-			<li class="c-menu__item">Menu 6</li>
-			<li class="c-menu__item">Menu 7</li>
-			<li class="c-menu__item">Menu 8</li>
-			<li class="c-menu__item">Menu 9</li>
-			<li class="c-menu__item">Menu 10</li>
+		<ul class="c-card c-card--menu u-high">
+			<li class="c-card__item">Menu 1</li>
+			<li class="c-card__item">Menu 2</li>
+			<li class="c-card__item c-card__item--divider">Divider</li>
+			<li class="c-card__item">Menu 3</li>
+			<li class="c-card__item">Menu 4</li>
+			<li class="c-card__item c-card__item--disabled">Menu item disabled</li>
+			<li class="c-card__item c-card__item--active">Menu item active</li>
+			<li class="c-card__item">Menu 5</li>
+			<li class="c-card__item">Menu 6</li>
+			<li class="c-card__item">Menu 7</li>
+			<li class="c-card__item">Menu 8</li>
+			<li class="c-card__item">Menu 9</li>
+			<li class="c-card__item">Menu 10</li>
 		</ul>
 	</div>
-	<div class="o-grid__cell o-grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="c-code c-code--multiline">&lt;ul class="c-menu c-menu--high">
-  &lt;li class="c-menu__item">Menu 1&lt;/li>
-  &lt;li class="c-menu__item">Menu 2&lt;/li>
-  &lt;li class="c-menu__item c-menu__item--divider">Divider&lt;/li>
-  &lt;li class="c-menu__item">Menu 3&lt;/li>
-  &lt;li class="c-menu__item">Menu 4&lt;/li>
-  &lt;li class="c-menu__item c-menu__item--disabled">Menu item disabled&lt;/li>
-  &lt;li class="c-menu__item c-menu__item--active">Menu item active&lt;/li>
-  &lt;li class="c-menu__item">Menu 5&lt;/li>
-  &lt;li class="c-menu__item">Menu 6&lt;/li>
-  &lt;li class="c-menu__item">Menu 7&lt;/li>
-  &lt;li class="c-menu__item">Menu 8&lt;/li>
-  &lt;li class="c-menu__item">Menu 9&lt;/li>
-  &lt;li class="c-menu__item">Menu 10&lt;/li>
+	<div class="o-grid__cell o-grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="c-code c-code--multiline">&lt;ul class="c-card c-card--menu u-high">
+  &lt;li class="c-card__item">Menu 1&lt;/li>
+  &lt;li class="c-card__item">Menu 2&lt;/li>
+  &lt;li class="c-card__item c-card__item--divider">Divider&lt;/li>
+  &lt;li class="c-card__item">Menu 3&lt;/li>
+  &lt;li class="c-card__item">Menu 4&lt;/li>
+  &lt;li class="c-card__item c-card__item--disabled">Menu item disabled&lt;/li>
+  &lt;li class="c-card__item c-card__item--active">Menu item active&lt;/li>
+  &lt;li class="c-card__item">Menu 5&lt;/li>
+  &lt;li class="c-card__item">Menu 6&lt;/li>
+  &lt;li class="c-card__item">Menu 7&lt;/li>
+  &lt;li class="c-card__item">Menu 8&lt;/li>
+  &lt;li class="c-card__item">Menu 9&lt;/li>
+  &lt;li class="c-card__item">Menu 10&lt;/li>
 &lt;/ul></code></pre></div>
 </div>
 
-<h2 id="combo-selection" class="c-heading c-heading--medium">Combo Selection</h2>
-<p class="paragrapah">
-	Combine the <code class="c-code">c-choice</code> checkboxes with menus to easily produce combo dropdowns.
-</p>
+<h2 id="grouped" class="c-heading c-heading--medium">Grouped items</h2>
 <div class="o-grid o-grid--small-full letter-box--large">
 	<div class="o-grid__cell o-grid__cell--width-50">
-		<div class="c-menu c-menu--high">
-			<label class="c-menu__item c-choice">
+		<ul class="c-card c-card--menu u-high c-card--grouped">
+			<li class="c-card__item">Menu 1</li>
+			<li class="c-card__item">Menu 2</li>
+			<li class="c-card__item">Menu 3</li>
+			<li class="c-card__item">Menu 4</li>
+			<li class="c-card__divider"></li>
+			<li class="c-card__item c-card__item--disabled">Menu item disabled</li>
+			<li class="c-card__item c-card__item--active">Menu item active</li>
+			<li class="c-card__divider"></li>
+			<li class="c-card__item">Menu 5</li>
+			<li class="c-card__item">Menu 6</li>
+			<li class="c-card__item">Menu 7</li>
+			<li class="c-card__divider"></li>
+			<li class="c-card__item">Menu 8</li>
+			<li class="c-card__divider"></li>
+			<li class="c-card__item">Menu 9</li>
+			<li class="c-card__item">Menu 10</li>
+		</ul>
+	</div>
+	<div class="o-grid__cell o-grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="c-code c-code--multiline">&lt;ul class="c-card c-card--menu u-high c-card--grouped">
+  &lt;li class="c-card__item">Menu 1&lt;/li>
+  &lt;li class="c-card__item">Menu 2&lt;/li>
+  &lt;li class="c-card__item">Menu 3&lt;/li>
+  &lt;li class="c-card__item">Menu 4&lt;/li>
+  &lt;li class="c-card__divider">&lt;/li>
+  &lt;li class="c-card__item c-card__item--disabled">Menu item disabled&lt;/li>
+  &lt;li class="c-card__item c-card__item--active">Menu item active&lt;/li>
+  &lt;li class="c-card__divider">&lt;/li>
+  &lt;li class="c-card__item">Menu 5&lt;/li>
+  &lt;li class="c-card__item">Menu 6&lt;/li>
+  &lt;li class="c-card__item">Menu 7&lt;/li>
+  &lt;li class="c-card__divider">&lt;/li>
+  &lt;li class="c-card__item">Menu 8&lt;/li>
+  &lt;li class="c-card__divider">&lt;/li>
+  &lt;li class="c-card__item">Menu 9&lt;/li>
+  &lt;li class="c-card__item">Menu 10&lt;/li>
+&lt;/ul></code></pre></div>
+</div>
+
+<h2 id="colours" class="c-heading c-heading--medium">Coloured items</h2>
+<div class="o-grid o-grid--small-full letter-box--large">
+	<div class="o-grid__cell o-grid__cell--width-50">
+		<ul class="c-card c-card--menu">
+			<li class="c-card__item c-card__item--brand">Menu 1</li>
+			<li class="c-card__item c-card__item--brand">Menu 2</li>
+			<li class="c-card__item c-card__item--divider">Divider</li>
+			<li class="c-card__item c-card__item--brand">Menu 3</li>
+			<li class="c-card__item c-card__item--brand">Menu 4</li>
+			<li class="c-card__item c-card__item--brand c-card__item--disabled">Menu item disabled</li>
+			<li class="c-card__item c-card__item--brand c-card__item--active">Menu item active</li>
+			<li class="c-card__item c-card__item--brand">Menu 5</li>
+			<li class="c-card__item c-card__item--brand">Menu 6</li>
+			<li class="c-card__item c-card__item--brand">Menu 7</li>
+			<li class="c-card__item c-card__item--brand">Menu 8</li>
+			<li class="c-card__item c-card__item--brand">Menu 9</li>
+			<li class="c-card__item c-card__item--brand">Menu 10</li>
+		</ul>
+	</div>
+	<div class="o-grid__cell o-grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="c-code c-code--multiline">&lt;ul class="c-card c-card--menu">
+  &lt;li class="c-card__item c-card__item--brand">Menu 1&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand">Menu 2&lt;/li>
+  &lt;li class="c-card__item c-card__item--divider">Divider&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand">Menu 3&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand">Menu 4&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand c-card__item--disabled">Menu item disabled&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand c-card__item--active">Menu item active&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand">Menu 5&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand">Menu 6&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand">Menu 7&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand">Menu 8&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand">Menu 9&lt;/li>
+  &lt;li class="c-card__item c-card__item--brand">Menu 10&lt;/li>
+&lt;/ul></code></pre></div>
+</div>
+
+<h2 id="combo" class="c-heading c-heading--medium">Combo</h2>
+<div class="o-grid o-grid--small-full letter-box--large">
+	<div class="o-grid__cell o-grid__cell--width-50">
+		<div class="c-card c-card--menu u-high">
+			<label class="c-card__item c-field c-field--choice">
 				<input type="checkbox"> Item 1
 			</label>
-			<label class="c-menu__item c-choice">
+			<label class="c-card__item c-field c-field--choice">
 				<input type="checkbox"> Item 2
 			</label>
-			<div class="c-menu__item c-menu__item--divider">Divider</div>
-			<label class="c-menu__item c-choice c-choice--disabled">
-				<input type="checkbox" disabled> Disabled item
+			<div class="c-card__item c-card__item--divider">Divider</div>
+			<label class="c-card__item c-field c-field--choice">
+				<input type="checkbox"> Item 3
 			</label>
-			<label class="c-menu__item c-choice">
+			<label class="c-card__item c-field c-field--choice">
 				<input type="checkbox"> Item 4
-			</label>
-			<label class="c-menu__item c-choice">
-				<input type="checkbox"> Item 5
-			</label>
-			<label class="c-menu__item c-choice">
-				<input type="checkbox"> Item 6
-			</label>
-			<div class="c-menu__item c-menu__item--divider">Divider</div>
-			<label class="c-menu__item c-choice">
-				<input type="checkbox"> Item 7
-			</label>
-			<label class="c-menu__item c-choice">
-				<input type="checkbox"> Item 8
-			</label>
-			<label class="c-menu__item c-choice">
-				<input type="checkbox"> Item 9
-			</label>
-			<label class="c-menu__item c-choice">
-				<input type="checkbox"> Item 10
 			</label>
 		</div>
 	</div>
-	<div class="o-grid__cell o-grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="c-code c-code--multiline">&lt;div class="c-menu c-menu--high">
-  &lt;label class="c-menu__item c-choice">
-    &lt;input type="checkbox"> Item 1
-  &lt;/label>
-  &lt;label class="c-menu__item c-choice">
-    &lt;input type="checkbox"> Item 2
-  &lt;/label>
-  &lt;div class="c-menu__item c-menu__item--divider">Divider&lt;/div>
-  &lt;label class="c-menu__item c-choice c-choice--disabled">
-    &lt;input type="checkbox" disabled> Disabled item
-  &lt;/label>
-  &lt;label class="c-menu__item c-choice">
-    &lt;input type="checkbox"> Item 4
-  &lt;/label>
+	<div class="o-grid__cell o-grid__cell--width-50 letter-box--small"><pre class="pre html"><code class="c-code c-code--multiline">&lt;div class="c-card c-card--menu u-high">
+&lt;label class="c-card__item c-field c-field--choice">
+  &lt;input type="checkbox"> Item 1
+&lt;/label>
+&lt;label class="c-card__item c-field c-field--choice">
+  &lt;input type="checkbox"> Item 2
+&lt;/label>
+&lt;div class="c-card__item c-card__item--divider">Divider&lt;/div>
+&lt;label class="c-card__item c-field c-field--choice">
+  &lt;input type="checkbox"> Item 3
+&lt;/label>
+&lt;label class="c-card__item c-field c-field--choice">
+  &lt;input type="checkbox"> Item 4
+&lt;/label>
 &lt;/div></code></pre></div>
 </div>
-
-<h2 id="animation" class="c-heading c-heading--medium">Animation</h2>
-
-<div class="o-grid o-grid--small-full letter-box--large o-grid--no-gutter">
-	<div class="o-grid__cell o-grid__cell--width-50">
-		<ul class="c-menu c-menu--high a-menu a-menu--top" id="animate">
-			<li class="c-menu__item">Menu 1</li>
-			<li class="c-menu__item">Menu 2</li>
-			<li class="c-menu__item c-menu__item--divider">Divider</li>
-			<li class="c-menu__item">Menu 3</li>
-			<li class="c-menu__item">Menu 4</li>
-			<li class="c-menu__item c-menu__item--disabled">Menu item disabled</li>
-			<li class="c-menu__item c-menu__item--active">c-menu item active</li>
-			<li class="c-menu__item">Menu 5</li>
-			<li class="c-menu__item">Menu 6</li>
-			<li class="c-menu__item">Menu 7</li>
-			<li class="c-menu__item">Menu 8</li>
-			<li class="c-menu__item">Menu 9</li>
-			<li class="c-menu__item">Menu 10</li>
-		</ul>
-	</div>
-</div>
-<div class="u-letter-box--medium">
-	<button class="c-button c-button--ghost-secondary" type="button" onclick="demo()">Animate</button>
-</div>
-
-<script>
-	function demo() {
-		document.getElementById('animate').classList.remove('a-menu');
-		setTimeout(function () {
-			document.getElementById('animate').classList.add('a-menu')
-		}, 50);
-	}
-</script>
-
-<h3 class="c-heading c-heading--small c-text--mono">.a-menu</h3>
-<p class="c-paragraph">
-	Apply the <code class="c-code">.a-menu</code> class to enable animation on a menu.
-</p>
-
-<h3 class="c-heading c-heading--small"><span class="c-text--mono">--slow, --fast</span></h3>
-<p class="c-paragraph">
-	Every animation comes with slow and fast modifiers.
-</p>
-
-<h3 class="c-heading c-heading--small c-text--mono">--top, --bottom, --left, --right</h3>
-<p class="c-paragraph">
-	Add one of these modifiers to change the origin of the animation. Top will make the animations appear to start from
-	the top of the menu and so on. Default is from the center of the element.
-</p>

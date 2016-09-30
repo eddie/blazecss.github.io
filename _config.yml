@@ -5,9 +5,8 @@ description: Blaze is designed to give you structure and a good starting point f
 baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'http://blazecss.com' # the base hostname & protocol for your site
 twitter_username: blazecss
-version: '2.13.0'
-size: '8Kb'
-size_animations: '0.9kb'
+version: '3.0.0-beta.2'
+size: '9Kb'
 
 # Build settings
 markdown: kramdown
@@ -48,9 +47,11 @@ navigation-themes:
   url: /themes/custom/
 
 
-navigation-community:
-- text: Forum
-  url: /community/forum/
+navigation-support:
+- text: Sponsor
+  url: https://www.patreon.com/blaze
+- text: Stickers
+  url: https://www.stickermule.com/user/1070774181/stickers
 
 
 navigation-generics:
@@ -71,16 +72,31 @@ navigation-objects:
 - text: Images
   url: /objects/images/
 
+- text: Drawers
+  url: /objects/drawers/
+
+- text: Modals
+  url: /objects/modals/
+
 
 navigation-components:
 - text: Addresses
   url: /components/addresses/
 
+- text: Accordions
+  url: /components/accordions/
+
 - text: Alerts
   url: /components/alerts/
 
+- text: Avatars
+  url: /components/avatars/
+
 - text: Badges
   url: /components/badges/
+
+- text: Breadcrumbs
+  url: /components/breadcrumbs/
 
 - text: Bubbles
   url: /components/bubbles/
@@ -94,9 +110,6 @@ navigation-components:
 - text: Cards
   url: /components/cards/
 
-- text: Drawers
-  url: /components/drawers/
-
 - text: Headings
   url: /components/headings/
 
@@ -106,11 +119,11 @@ navigation-components:
 - text: Lists
   url: /components/lists/
 
+- text: Medias
+  url: /components/medias/
+
 - text: Menus
   url: /components/menus/
-
-- text: Modals
-  url: /components/modals/
 
 - text: Navs
   url: /components/navs/
@@ -120,6 +133,9 @@ navigation-components:
 
 - text: Pagination
   url: /components/pagination/
+
+- text: Progress
+  url: /components/progress/
 
 - text: Ranges
   url: /components/ranges/
@@ -155,3 +171,6 @@ navigation-utilities:
 
 - text: Boxing
   url: /utilities/boxing/
+
+- text: Elevation
+  url: /utilities/elevation/

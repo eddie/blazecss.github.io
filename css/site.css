@@ -271,7 +271,7 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 
 .toast-demo {
 	position: relative;
-	height: 400px;
+	height: 440px;
 	overflow: hidden;
 	border: 1px solid #eee;
 }
@@ -289,6 +289,14 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	overflow: hidden;
 	background-image: url(https://unsplash.it/1024/963?random);
 	background-size: cover;
+}
+
+.modal-demo--noimg .modal-demo {
+	background-image: none;
+}
+
+.modal-demo--noimg .c-overlay {
+	display: none;
 }
 
 .download-theme {
