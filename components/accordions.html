@@ -1,0 +1,35 @@
+---
+layout: page
+title: Accordions
+---
+
+<p class="c-paragraph">
+    Accordions are achieved by adding a modifier to a <a href="cards" class="c-link">card</a> element and utilising
+    a hidden checkbox to achieve the interaction.
+</p>
+
+<div class="o-grid o-grid--small-full">
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small">
+        <div class="c-card c-card--accordion u-high">
+            <input type="checkbox" id="accordion-1">
+            <label class="c-card__item" for="accordion-1">Item 1</label>
+            <div class="c-card__item">Pane 1</div>
+            <input type="checkbox" id="accordion-2">
+            <label class="c-card__item" for="accordion-2">Item 2</label>
+            <div class="c-card__item">Pane 2</div>
+        </div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-50 u-letter-box--small"><pre class="c-pre html"><code
+            class="c-code c-code--multiline">&lt;div class="c-card c-card--accordion u-high">
+
+  &lt;input type="checkbox" id="accordion-1">
+  &lt;label class="c-card__item" for="accordion-1">Item 1&lt;/label>
+  &lt;div class="c-card__item">Pane 1&lt;/div>
+
+  &lt;input type="checkbox" id="accordion-2">
+  &lt;label class="c-card__item" for="accordion-2">Item 2&lt;/label>
+  &lt;div class="c-card__item">Pane 2&lt;/div>
+
+&lt;/div></code></pre>
+    </div>
+</div>
