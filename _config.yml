@@ -75,9 +75,8 @@ navigation-objects:
 - text: Drawers
   url: /objects/drawers/
 
-
 - text: Medias
-  url: /components/medias/
+  url: /objects/medias/
 
 - text: Modals
   url: /objects/modals/
