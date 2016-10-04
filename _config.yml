@@ -174,3 +174,9 @@ navigation-utilities:
 
 - text: Elevation
   url: /utilities/elevation/
+
+- text: Sizes
+  url: /utilities/sizes/
+
+- text: Colors
+  url: /utilities/colors/
