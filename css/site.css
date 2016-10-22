@@ -135,22 +135,9 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	font-weight: normal;
 }
 
-.hero-button {
-	letter-spacing: 4px;
-}
-
 /*
  * Page Content
  */
-.page-strip {
-	background: #ff7043;
-	background: -moz-linear-gradient(left, #ff3d00 0%, #ff7043 50%, #ff3d00 100%);
-	background: -webkit-linear-gradient(left, #ff3d00 0%, #ff7043 50%, #ff3d00 100%);
-	background: linear-gradient(to right, #ff3d00 0%, #ff7043 50%, #ff3d00 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d00', endColorstr='#ff3d00', GradientType=1);
-	height: 1em;
-}
-
 .page-header {
 	border-bottom: 1px solid #eee;
 }
