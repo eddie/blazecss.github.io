@@ -1,6 +1,6 @@
 # Site settings
 permalink: pretty
-title: BlazeCSS - Open Source Modular CSS Toolkit
+title: Blaze CSS - Open Source Modular CSS Toolkit
 description: Blaze is designed to give you structure and a good starting point for your website.
 baseurl: '' # the subpath of your site, e.g. /blog/
 url: 'http://blazecss.com' # the base hostname & protocol for your site
