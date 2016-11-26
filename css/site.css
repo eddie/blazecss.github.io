@@ -169,10 +169,6 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	font-size: 0.9em;
 }
 
-.nav .c-list__item {
-	padding: 0.4em 0;
-}
-
 .nav .c-list__item.active {
 	display: inline-block;
 	padding-left: 0.5em;
