@@ -148,6 +148,22 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 	}
 }
 
+.o-search {
+	position: relative;
+}
+
+.o-search__results {
+	position: absolute;
+	left: 1em;
+	right: 1em;
+	text-align: left;
+}
+
+.o-search--nav .o-search__results {
+	left: 0;
+	right: 0;
+}
+
 .main {
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -276,13 +292,4 @@ a.navbtn, a.navbtn:hover, a.navbtn:active, a.navbtn:visited {
 
 .modal-demo--noimg .c-overlay {
 	display: none;
-}
-
-.download-theme {
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #fff;
-	border-top: 1px solid #f2f2ea;
 }
